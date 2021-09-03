@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url(../style/fonts/Montserrat/Montserrat-Light.ttf)  format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../style/fonts/Montserrat/Montserrat-Regular.ttf)  format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url(../style/fonts/Montserrat/Montserrat-SemiBold.ttf)  format('truetype');
+}
+
+#canvas {
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+}
+
+svg { 
+    background: #ccc;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.entity {
+    fill: #fff;
+    stroke: #000;
+    width: 100px;
+    height: 50px;
+    /*transform: translate(-50px -25px);*/
+    rx: 7px;
+    ry: 7px;
+    font-size: 20px;
+    font-family: "Montserrat Light";
+    cursor: grab;
+}
+
+.shadowed {
+    filter: drop-shadow(5px 5px 2px rgb(0,0,0,0.4));
+}
+
+.eoverlay {
+    fill: rgb(129, 218, 240,0.5);
+    r: 12px;
+    opacity: 0;
+    /*transform: translate(-50px 0px);*/
+}
+
+.eoverlay:hover {
+    opacity: 1;
+}
+
+.ename {
+    font-family: 'Montserrat';
+    cursor: grab;
+}
