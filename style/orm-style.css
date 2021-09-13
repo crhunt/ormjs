@@ -75,4 +75,5 @@ svg {
 .rel_subtype:hover {
     stroke-width: 6;
     cursor: pointer ;
+    opacity: 0.8;
 }
