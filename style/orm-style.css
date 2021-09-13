@@ -25,6 +25,8 @@ svg {
     transform-origin: center;
 }
 
+/* Entities */
+
 .entity {
     fill: #fff;
     stroke: #000;
@@ -56,4 +58,11 @@ svg {
 .ename {
     font-family: 'Montserrat';
     cursor: grab;
+}
+
+/* Relationships */
+
+.rel_line {
+    stroke: #000;
+    stroke-width: 2;
 }
