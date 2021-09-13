@@ -66,3 +66,8 @@ svg {
     stroke: #000;
     stroke-width: 2;
 }
+
+.rel_subtype {
+    stroke: rgb(131, 57, 117);
+    stroke-width: 2;
+}
