@@ -71,3 +71,8 @@ svg {
     stroke: rgb(131, 57, 117);
     stroke-width: 2;
 }
+
+.rel_subtype:hover {
+    stroke-width: 6;
+    cursor: pointer ;
+}
