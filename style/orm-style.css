@@ -47,12 +47,12 @@ svg {
 .eoverlay {
     fill: rgb(129, 218, 240,0.5);
     r: 12px;
-    opacity: 0;
-    /*transform: translate(-50px 0px);*/
+    opacity: 0.0;
+    display: block;
 }
 
 .eoverlay:hover {
-    opacity: 1;
+    opacity: 1.0;
 }
 
 .ename {

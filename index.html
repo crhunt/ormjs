@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <!--script type="text/javascript" src="lib/d3.v3.js" charset="UTF-8"></script-->
-    <script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="text/javascript" src="lib/d3.v7.js" charset="UTF-8"></script>
+    <!--script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script-->
     <script type="text/javascript" src="lib/parse-svg.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/svg-constructor.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/graph-constructor.js" charset="UTF-8"></script>
@@ -14,9 +14,13 @@
 
 <body>
 
-<button id="downloadSvgButton" download="arrows.svg" onclick="updateSvgDownloadLink()">
+<a id="downloadSvgButton" download="ormjs.svg" 
+        onclick="download_svg()">
     Download SVG
-</button>
+</a>
+<a id="uploadSvgButton" onclick="upload_svg()">
+    Upload SVG
+</a>
 
 <div id="canvas"></div>
 
