@@ -98,7 +98,7 @@ svg {
 
 .rboverlay {
     fill: rgb(129, 218, 240,0.5);
-    r: 12px;
+    r: 8px;
     opacity: 0.0;
     display: block;
 }
