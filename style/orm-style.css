@@ -58,6 +58,15 @@ svg {
     filter: drop-shadow(5px 5px 2px rgb(0,0,0,0.4));
 }
 
+.overlay {
+    fill: rgb(129, 218, 240,0.5);
+    opacity: 0.0;
+}
+
+.overlay:hover {
+    opacity: 1.0;
+}
+
 .eoverlay {
     fill: rgb(129, 218, 240,0.5);
     r: 12px;
@@ -80,9 +89,9 @@ svg {
     fill: #fff;
     stroke: #000;
     width: 50px;
-    height: 20px;
+    height: 18px;
     /*transform: translate(-50px -25px);*/
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Montserrat Light";
     cursor: grab;
 }
@@ -96,6 +105,11 @@ svg {
 
 .rboverlay:hover {
     opacity: 1.0;
+}
+
+.rbadd {
+    stroke-width: 4;
+    stroke: rgb(129, 218, 240,0.8);
 }
 
 /* Relationships */
