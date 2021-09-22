@@ -66,17 +66,12 @@ svg {
 
 .overlay:hover {
     opacity: 1.0;
+    cursor: pointer ;
 }
 
 .eoverlay {
-    fill: rgb(129, 218, 240,0.5);
     r: 12px;
-    opacity: 0.0;
     display: block;
-}
-
-.eoverlay:hover {
-    opacity: 1.0;
 }
 
 .ename {
@@ -99,14 +94,8 @@ svg {
 }
 
 .rboverlay {
-    fill: rgb(129, 218, 240,0.5);
     r: 8px;
-    opacity: 0.0;
     display: block;
-}
-
-.rboverlay:hover {
-    opacity: 1.0;
 }
 
 .rbadd {
@@ -115,6 +104,16 @@ svg {
 }
 
 /* Relationships */
+
+.relationship {
+    stroke-width: 2;
+}
+
+.relationship:hover {
+    stroke-width: 6;
+    opacity: 0.7;
+    cursor: pointer ;
+}
 
 .rel_line {
     stroke: #000;
