@@ -60,18 +60,21 @@ svg {
 }
 
 .overlay {
-    fill: rgb(129, 218, 240,0.5);
-    opacity: 0.0;
+    fill: rgb(129, 218, 240, 0.0);
+    fill-opacity: 0;
+    opacity: 0;
+    display: block;
+    cursor: pointer;
 }
 
 .overlay:hover {
-    opacity: 1.0;
-    cursor: pointer ;
+    fill-opacity: 1;
+    fill: 1;
+    fill: rgb(129, 218, 240,0.5);
 }
 
 .eoverlay {
     r: 12px;
-    display: block;
 }
 
 .ename {
@@ -95,7 +98,6 @@ svg {
 
 .rboverlay {
     r: 8px;
-    display: block;
 }
 
 .rbadd {
