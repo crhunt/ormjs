@@ -18,13 +18,15 @@ From the [ORM website](http://www.orm.net/):
 
 > Object Role Modeling (ORM) is a powerful method for designing and querying database models at the conceptual level, where the application is described in terms easily understood by non-technical users. In practice, ORM data models often capture more business rules, and are easier to validate and evolve than data models in other approaches.
 
-## ORM with Rel
+## Rel plus ORM
 
-[Rel](https://docs.relational.ai/getting-started/rel/overview/) is an expressive, declarative, and relational language designed for modeling domain knowledge. The language is designed to work with the RelationalAI Knowledge Graph Management System. ORMJS generates Rel code on-the-fly from the ORM model.
+[Rel](https://docs.relational.ai/getting-started/rel/overview/) is an expressive, declarative, and relational language designed for modeling domain knowledge. The language is designed to work with the RelationalAI Knowledge Graph Management System. 
+
+ORMJS generates Rel code on-the-fly from the ORM model.
 
 ## How to interact with ORMJS
 
-ORMJS is actively being developed and most user functions are still missing. If you'd like to toy with ORMJS in it's current state, you can do the following click commands:
+ORMJS is actively being developed and most user functions are still missing. If you'd like to toy with ORMJS in it's current state, try the following click commands:
 
 | Command | Action |
 |---------|--------|
