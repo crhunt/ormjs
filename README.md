@@ -31,5 +31,5 @@ ORMJS is actively being developed and most user functions are still missing. If 
 | Command | Action |
 |---------|--------|
 |Dblclick | Generate new entity |
-|Shift+Dblclick | Generate new rolebox |
-|Ctrl + click | Delete object |
+|Shift + Dblclick | Generate new rolebox |
+|Ctrl + Click | Delete object |
