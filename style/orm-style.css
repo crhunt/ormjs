@@ -46,12 +46,12 @@ svg {
 }
 
 .overlay {
-    fill: transparent;
+    fill: rgb(129, 218, 240, 0.0);
+    cursor: pointer;
 }
 
 .overlay:hover {
     fill: rgb(129, 218, 240, 0.5);
-    cursor: pointer;
 }
 
 /* Entities */
@@ -95,18 +95,19 @@ svg {
 
 .rboverlay {
     r: 8px;
+    stroke-width: 0;
 }
 
+
 .rbadd {
-    stroke: rgb(129, 218, 240,1);
+    stroke: rgb(129, 218, 240,0.8);
+    stroke-width: 6;
     opacity: 0.0;
     cursor: pointer;
 }
 
 .rbadd:hover {
-    stroke-width: 6;
-    opacity: 0.7;
-    cursor: pointer ;
+    opacity: 1.0;
 }
 
 /* Relationships */
