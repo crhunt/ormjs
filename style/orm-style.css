@@ -39,6 +39,21 @@ svg {
     transform-origin: center;
 }
 
+/* All objects */
+
+.shadowed {
+    filter: drop-shadow(5px 5px 2px rgb(0,0,0,0.4));
+}
+
+.overlay {
+    fill: rgb(129, 218, 240, 0.0);
+    cursor: pointer;
+}
+
+.overlay:hover {
+    fill: rgb(129, 218, 240, 0.5);
+}
+
 /* Entities */
 
 .entity {
@@ -53,23 +68,6 @@ svg {
     font-size: 20px;
     font-family: "Montserrat Light";
     cursor: grab;
-}
-
-.shadowed {
-    filter: drop-shadow(5px 5px 2px rgb(0,0,0,0.4));
-}
-
-.overlay {
-    fill: rgb(129, 218, 240, 0.5);
-    fill-opacity: 0;
-    opacity: 0;
-    display: block;
-    cursor: pointer;
-}
-
-.overlay:hover {
-    fill-opacity: 1;
-    opacity: 1;
 }
 
 .eoverlay {
@@ -97,11 +95,19 @@ svg {
 
 .rboverlay {
     r: 8px;
+    stroke-width: 0;
 }
 
+
 .rbadd {
-    stroke-width: 4;
     stroke: rgb(129, 218, 240,0.8);
+    stroke-width: 6;
+    opacity: 0.0;
+    cursor: pointer;
+}
+
+.rbadd:hover {
+    opacity: 1.0;
 }
 
 /* Relationships */
