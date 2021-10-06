@@ -22,6 +22,7 @@ body {
     position: relative;
     width: 90vw;
     height: 50vh;
+    background: #ccc;
 }
 
 #rel {
@@ -34,7 +35,6 @@ body {
 }
 
 svg { 
-    background: #ccc;
     transform-box: fill-box;
     transform-origin: center;
 }
