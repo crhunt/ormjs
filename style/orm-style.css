@@ -22,6 +22,7 @@ body {
     position: relative;
     width: 90vw;
     height: 50vh;
+    background: #ccc;
 }
 
 #rel {
@@ -34,7 +35,6 @@ body {
 }
 
 svg { 
-    background: #ccc;
     transform-box: fill-box;
     transform-origin: center;
 }
@@ -65,8 +65,6 @@ svg {
     /*transform: translate(-50px -25px);*/
     rx: 7px;
     ry: 7px;
-    font-size: 20px;
-    font-family: "Montserrat Light";
     cursor: grab;
 }
 
@@ -75,7 +73,8 @@ svg {
 }
 
 .ename {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat Light';
+    font-size: 16px;
     cursor: grab;
 }
 
@@ -110,29 +109,34 @@ svg {
     opacity: 1.0;
 }
 
+.rbname {
+    font-family: 'Montserrat Light';
+    font-size: 14px;
+}
+
 /* Relationships */
 
-.relationship {
+.connector {
     stroke-width: 2;
 }
 
-.relationship:hover {
+.connector:hover {
     stroke-width: 6;
     opacity: 0.7;
     cursor: pointer ;
 }
 
-.rel_line {
+.conn_line {
     stroke: #000;
     stroke-width: 2;
 }
 
-.rel_subtype {
+.conn_subtype {
     stroke: rgb(131, 57, 117);
     stroke-width: 2;
 }
 
-.rel_subtype:hover {
+.conn_subtype:hover {
     stroke-width: 6;
     cursor: pointer ;
     opacity: 0.8;
