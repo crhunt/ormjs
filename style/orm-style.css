@@ -51,7 +51,7 @@ svg {
 }
 
 .popup_content {
-    margin: 30px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
     width: 280px;
     height: 260px;
     overflow: hidden;
@@ -80,8 +80,20 @@ iframe {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     width: 265px;
-    height: 250px;
+    height: 270px;
     overflow: hidden;
+}
+
+.popup_form input {
+    border: none;
+    width: 150px;
+    font-family: 'Montserrat Light';
+    font-size: 16px;
+}
+
+.popup_form label {
+    font-family: 'Montserrat';
+    font-size: 16px;
 }
 
 .popup_iframe {
@@ -103,6 +115,7 @@ iframe {
     font-family: 'Montserrat';
     font-size: 18px;
     margin-top: 0px;
+    margin-bottom: 15px;
     text-align: center;
     line-height: 1;
     user-select: none;
