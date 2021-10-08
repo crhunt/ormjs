@@ -57,6 +57,18 @@ svg {
     overflow: hidden;
 }
 
+.xclose {
+    stroke: rgb(0, 0, 0,0.5);
+    stroke-width: 4;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.xclose:hover {
+    opacity: 1.0;
+    stroke-width: 6;
+}
+
 iframe {
     border: none;
     overflow: hidden;
@@ -82,6 +94,17 @@ iframe {
 .popup_form p {
     font-family: 'Montserrat Light';
     font-size: 16px;
+    user-select: none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+
+.popup_form h1 {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    margin-top: 0px;
+    text-align: center;
+    line-height: 1;
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
