@@ -26,10 +26,13 @@ ORMJS generates Rel code on-the-fly from the ORM model.
 
 ## How to interact with ORMJS
 
-ORMJS is actively being developed and most user functions are still missing. If you'd like to toy with ORMJS in it's current state, try the following click commands:
+ORMJS is actively being developed and many user functions are still missing. Right click on the canvas to create new objects (Entities and Roleboxes). Right click on an object to see options for changing that object.
+
+The following events can be triggered with keyboard shortcuts.
 
 | Command | Action |
 |---------|--------|
-|Dblclick | Generate new entity |
-|Shift + Dblclick | Generate new rolebox |
-|Ctrl + Click | Delete object |
+|Dblclick (on canvas) | Generate new entity |
+|Shift + Dblclick (on canvas) | Generate new rolebox |
+|Dblclick (on object) | Change object properties |
+|Ctrl + Click (on object) | Delete object |
