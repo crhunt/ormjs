@@ -22,7 +22,7 @@ body {
     position: relative;
     width: 90vw;
     height: 50vh;
-    background: #ccc;
+    background: #eee;
 }
 
 #rel {
@@ -76,6 +76,18 @@ svg {
     font-family: 'Montserrat Light';
     font-size: 16px;
     cursor: grab;
+    user-select: none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+
+.refmode {
+    font-family: 'Montserrat Light';
+    font-size: 14px;
+    cursor: grab;
+    user-select: none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
 }
 
 /* Roleboxes */
@@ -112,6 +124,9 @@ svg {
 .rbname {
     font-family: 'Montserrat Light';
     font-size: 14px;
+    user-select: none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
 }
 
 /* Relationships */
