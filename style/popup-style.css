@@ -150,3 +150,20 @@ td {
 .right_col {
     text-align: left;
 }
+
+/* Right click style overrides */
+
+.d3-context-menu-theme {
+	background-color: #f2f2f2;
+	border-radius: 4px;
+
+	font-family: "Montserrat";
+	font-size: 14px;
+	border: 1px solid #d4d4d4;
+}
+
+.d3-context-menu-theme ul li:hover {
+	background-color: rgb(129, 218, 240, 0.8);
+	color: #fefefe;
+    cursor: pointer;
+}
