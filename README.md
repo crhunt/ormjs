@@ -28,9 +28,9 @@ ORMJS generates Rel code on-the-fly from the ORM model.
 
 ORMJS is actively being developed and many user functions are still missing. If you would like to use ORMJS in its current state, you may:
 
-| Command | On | Action |
-|---------|----|--------|
-|RightClick | Canvas | Create Object Menu |
+| Event | On | Action |
+|-------|----|--------|
+|RightClick | Canvas | Create object menu |
 |Dblclick | Canvas | Generate new entity |
 |Shift + Dblclick | Canvas | Generate new rolebox |
 |RightClick | Object | Object Menu |
