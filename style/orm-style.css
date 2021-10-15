@@ -41,22 +41,6 @@ body {
     font-size: var(--font-size-lg);
 }
 
-#canvas {
-    position: relative;
-    width: 90vw;
-    height: 50vh;
-    background: #eee;
-}
-
-#rel {
-    display: block;
-    font-family: 'Courier New', monospace;
-    font-size: 14px;
-    width: 500px;
-    height: 400px;
-    background: rgb(229, 242, 255);
-}
-
 svg { 
     transform-box: fill-box;
     transform-origin: center;
@@ -87,7 +71,6 @@ svg {
     stroke-width: var(--stroke-width);
     width: var(--entity-width);
     height: var(--entity-height);
-    /*transform: translate(-50px -25px);*/
     rx: var(--entity-rx-ry);
     ry: var(--entity-rx-ry);
     cursor: grab;
@@ -121,9 +104,8 @@ svg {
     fill: var(--fill-color);
     stroke: var(--line-color);
     stroke-width: var(--stroke-width);
-    width: 50px;
-    height: 18px;
-    /*transform: translate(-50px -25px);*/
+    width: var(--rolebox-width);
+    height: var(--rolebox-height);
     cursor: grab;
 }
 
