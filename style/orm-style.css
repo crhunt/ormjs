@@ -5,20 +5,20 @@
     --line-color: #444444;
     --fill-color: #ffffff;
     /* General sizes */
-    --stroke-width: 2px;
-    --stroke-width-wide: 6px;
-    --font-size-xl: 18px;
-    --font-size-lg: 16px;
-    --font-size-md: 14px;
+    --stroke-width: 2px; /* 2 px */
+    --stroke-width-wide: 6px; /* 6 px */
+    --font-size-xl: 1.2em; /* 18 px */
+    --font-size-lg: 1em; /* 16 px */
+    --font-size-md: 0.8em; /* 14 px */
     /* Entity sizes */
-    --entity-rx-ry: 7px;
-    --entity-width: 100px;
-    --entity-height: 50px;
-    --entity-overlay-r: 12px;
+    --entity-rx-ry: 7px; /* 7 px */
+    --entity-width: 101px; /* 100 px */
+    --entity-height: 51px; /* 50 px */
+    --entity-overlay-r: 12px; /* 12 px */
     /* Rolebox sizes */
-    --rolebox-width: 50px;
-    --rolebox-height: 18px;
-    --rolebox-overlay-r: 8px;
+    --rolebox-width: 51px; /* 50 px */
+    --rolebox-height: 19px; /* 18 px */
+    --rolebox-overlay-r: 8px; /* 8 px */
 }
 
 @font-face {
