@@ -1,3 +1,27 @@
+:root {
+    /* Colors */
+    --overlay-color: rgb(129, 218, 240, 0.5);
+    --constraint-color: rgb(131, 57, 117);
+    --line-color: #444444;
+    --fill-color: #ffffff;
+    /* General sizes */
+    --svg-scale: 400;
+    --stroke-width: 2px; /* 2 px */
+    --stroke-width-wide: 6px; /* 6 px */
+    --font-size-xl: 1.2em; /* 18 px */
+    --font-size-lg: 1em; /* 16 px */
+    --font-size-md: 0.8em; /* 14 px */
+    /* Entity sizes */
+    --entity-rx-ry: 7px; /* 7 px */
+    --entity-width: 101px; /* 100 px */
+    --entity-height: 51px; /* 50 px */
+    --entity-overlay-r: 12px; /* 12 px */
+    /* Rolebox sizes */
+    --rolebox-width: 51px; /* 50 px */
+    --rolebox-height: 19px; /* 18 px */
+    --rolebox-overlay-r: 8px; /* 8 px */
+}
+
 @font-face {
     font-family: 'Montserrat Light';
     src: url(../style/fonts/Montserrat/Montserrat-Light.ttf)  format('truetype');
@@ -15,23 +39,7 @@
 
 body {
     font-family: 'Montserrat Light';
-    font-size: 16px;
-}
-
-#canvas {
-    position: relative;
-    width: 90vw;
-    height: 50vh;
-    background: #eee;
-}
-
-#rel {
-    display: block;
-    font-family: 'Courier New', monospace;
-    font-size: 14px;
-    width: 500px;
-    height: 400px;
-    background: rgb(229, 242, 255);
+    font-size: var(--font-size-lg);
 }
 
 svg { 
@@ -46,35 +54,36 @@ svg {
 }
 
 .overlay {
-    fill: rgb(129, 218, 240, 0.0);
+    fill: var(--overlay-color);
     cursor: pointer;
+    opacity: 0.0;
 }
 
 .overlay:hover {
-    fill: rgb(129, 218, 240, 0.5);
+    fill: var(--overlay-color);
+    opacity: 1.0;
 }
 
 /* Entities */
 
 .entity {
-    fill: #fff;
-    stroke: #000;
-    stroke-width: 2px;
-    width: 100px;
-    height: 50px;
-    /*transform: translate(-50px -25px);*/
-    rx: 7px;
-    ry: 7px;
+    fill: var(--fill-color);
+    stroke: var(--line-color);
+    stroke-width: var(--stroke-width);
+    width: var(--entity-width);
+    height: var(--entity-height);
+    rx: var(--entity-rx-ry);
+    ry: var(--entity-rx-ry);
     cursor: grab;
 }
 
 .eoverlay {
-    r: 12px;
+    r: var(--entity-overlay-r);
 }
 
 .ename {
     font-family: 'Montserrat Light';
-    font-size: 16px;
+    font-size: var(--font-size-lg);
     cursor: grab;
     user-select: none;
     -moz-user-select:none;
@@ -83,7 +92,7 @@ svg {
 
 .refmode {
     font-family: 'Montserrat Light';
-    font-size: 14px;
+    font-size: var(--font-size-md);
     cursor: grab;
     user-select: none;
     -moz-user-select:none;
@@ -93,26 +102,23 @@ svg {
 /* Roleboxes */
 
 .rolebox {
-    fill: #fff;
-    stroke: #000;
-    stroke-width: 2px;
-    width: 50px;
-    height: 18px;
-    /*transform: translate(-50px -25px);*/
-    font-size: 16px;
-    font-family: "Montserrat Light";
+    fill: var(--fill-color);
+    stroke: var(--line-color);
+    stroke-width: var(--stroke-width);
+    width: var(--rolebox-width);
+    height: var(--rolebox-height);
     cursor: grab;
 }
 
 .rboverlay {
-    r: 8px;
+    r: var(--rolebox-overlay-r);
     stroke-width: 0;
 }
 
 
 .rbadd {
-    stroke: rgb(129, 218, 240,0.8);
-    stroke-width: 6;
+    stroke: var(--overlay-color);
+    stroke-width: var(--stroke-width-wide);
     opacity: 0.0;
     cursor: pointer;
 }
@@ -123,36 +129,36 @@ svg {
 
 .rbname {
     font-family: 'Montserrat Light';
-    font-size: 14px;
+    font-size: var(--font-size-md);
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
 }
 
-/* Relationships */
+/* Connectors */
 
 .connector {
-    stroke-width: 2;
+    stroke-width: var(--stroke-width);
 }
 
 .connector:hover {
-    stroke-width: 6;
+    stroke-width: var(--stroke-width-wide);
     opacity: 0.7;
     cursor: pointer ;
 }
 
 .conn_line {
-    stroke: #000;
-    stroke-width: 2;
+    stroke: var(--line-color);
+    stroke-width: var(--stroke-width);
 }
 
 .conn_subtype {
-    stroke: rgb(131, 57, 117);
-    stroke-width: 2;
+    stroke: var(--constraint-color);
+    stroke-width: var(--stroke-width);
 }
 
 .conn_subtype:hover {
-    stroke-width: 6;
+    stroke-width: var(--stroke-width-wide);
     cursor: pointer ;
     opacity: 0.8;
 }

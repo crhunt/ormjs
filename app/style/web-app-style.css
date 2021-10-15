@@ -1,0 +1,15 @@
+#canvas {
+    position: relative;
+    width: 90vw;
+    height: 50vh;
+    background: #eee;
+}
+
+#rel {
+    display: block;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    width: 500px;
+    height: 400px;
+    background: rgb(229, 242, 255);
+}

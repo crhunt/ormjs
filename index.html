@@ -6,6 +6,11 @@
     <script type="text/javascript" src="lib/external/d3.v7.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/external/d3-context-menu.js" charset="UTF-8"></script>
     <!--script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script-->
+    <!-- Style -->
+    <link rel="stylesheet" href="style/external/d3-context-menu.css"  type="text/css" />
+    <link rel="stylesheet" href="style/orm-style.css" type="text/css">
+    <link rel="stylesheet" href="style/popup-style.css" type="text/css">
+    <link rel="stylesheet" href="app/style/web-app-style.css" type="text/css">
     <!-- ORMJS actions -->
     <script type="text/javascript" src="lib/parse-svg.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/parse-to-rel.js" charset="UTF-8"></script>
@@ -19,18 +24,13 @@
     <!-- Object properties -->
     <script type="text/javascript" src="lib/object-option-menus.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/object-property-menu.js" charset="UTF-8"></script>
-    <!-- Style -->
-    <link rel="stylesheet" href="style/external/d3-context-menu.css"  type="text/css" />
-    <link rel="stylesheet" href="style/orm-style.css" type="text/css">
-    <link rel="stylesheet" href="style/popup-style.css" type="text/css">
 </head>
 
 <body>
 
-<a id="downloadSvgButton" download="ormjs.svg">
-    Download SVG
-</a>
+<a id="downloadSvgButton" download="ormjs.svg">Download SVG</a>
 <span>Upload SVG <input type="file" id="uploadSvgButton" value="" multiple></span>
+<input type="range" id="svgscale">
 
 <div id="canvas"></div>
 

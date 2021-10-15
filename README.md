@@ -28,15 +28,15 @@ ORMJS generates Rel code on-the-fly from the ORM model.
 
 ORMJS is actively being developed and many user functions are still missing. If you would like to use ORMJS in its current state, you may:
 
-- Right click on the canvas to create new objects (Entities and Roleboxes). 
-- Right click on an object to see options for changing that object.
-- Double click on an object to change the object properties.
+| Event | On | Action |
+|-------|----|--------|
+|RightClick | Canvas | Create object menu |
+|Dblclick | Canvas | Generate new entity |
+|Shift + Dblclick | Canvas | Generate new rolebox |
+|RightClick | Object | Object Menu |
+|Dblclick | Object | Change object properties |
+|Ctrl + Click | Object | Delete object |
 
-The following events can be triggered with keyboard shortcuts.
+## External packages
 
-| Command | Action |
-|---------|--------|
-|Dblclick (on canvas) | Generate new entity |
-|Shift + Dblclick (on canvas) | Generate new rolebox |
-|Dblclick (on object) | Change object properties |
-|Ctrl + Click (on object) | Delete object |
+ORMJS uses [d3-context-menu](https://github.com/patorjk/d3-context-menu).
