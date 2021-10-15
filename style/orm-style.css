@@ -5,6 +5,7 @@
     --line-color: #444444;
     --fill-color: #ffffff;
     /* General sizes */
+    --svg-scale: 400;
     --stroke-width: 2px; /* 2 px */
     --stroke-width-wide: 6px; /* 6 px */
     --font-size-xl: 1.2em; /* 18 px */
