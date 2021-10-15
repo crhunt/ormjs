@@ -1,5 +1,22 @@
 /* Pop ups */
 
+:root {
+    /* Dimensions */
+    --pop-width: 300px;
+    --pop-height: 300px;
+    --pop-marg: 10px;
+    --pop-text-width: 150px;
+    --pop-text-size: 16px;
+    /* Submit check */
+    --pop-ch-width: 28px;
+    --pop-ch-height: 20px;
+    --pop-ch-marg: 4px;
+    --pop-stroke: 4px;
+    --pop-stroke-hover: 6px;
+    /* Close X */
+    --pop-close-sz: 15px;
+}
+
 .popup {
     fill: rgb(255,255,255,0.7);
     stroke: #000;
@@ -10,22 +27,22 @@
 }
 
 .popup_content {
-    margin: 10px 10px 10px 10px;
-    width: 280px;
-    height: 280px;
+    margin: var(--pop-marg) var(--pop-marg) var(--pop-marg) var(--pop-marg);
+    width: calc( var(--pop-width) - 2*var(--pop-marg) );
+    height: calc( var(--pop-height) - 2*var(--pop-marg) );
     overflow: hidden;
 }
 
 .xclose {
     stroke: rgb(0, 0, 0,0.5);
-    stroke-width: 4;
+    stroke-width: var(--pop-stroke);
     opacity: 0.3;
     cursor: pointer;
 }
 
 .xclose:hover {
     opacity: 1.0;
-    stroke-width: 6;
+    stroke-width: var(--pop-stroke-hover);
 }
 
 iframe {
@@ -45,8 +62,8 @@ iframe {
 .popup_form {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-    width: 280px;
-    height: 280px;
+    width: calc( var(--pop-width) - 2*var(--pop-marg) );
+    height: calc( var(--pop-height) - 2*var(--pop-marg) );
     overflow: hidden;
 }
 
@@ -57,9 +74,9 @@ iframe {
 
 .popup_form input[type="text"] {
     border: none;
-    width: 150px;
+    width: var(--pop-text-width);
     font-family: 'Montserrat Light';
-    font-size: 16px;
+    font-size: var(--pop-text-size);
 }
 
 .popup_form input[type="text"]:focus {
@@ -97,9 +114,9 @@ iframe {
 
 .popup_form h1 {
     font-family: 'Montserrat';
-    font-size: 18px;
+    font-size: var(--font-size-xl);
     margin-top: 0px;
-    margin-bottom: 15px;
+    margin-bottom: var(--font-size-lg);
     text-align: center;
     line-height: 1;
     user-select: none;
@@ -109,8 +126,6 @@ iframe {
 
 .submit_svg {
     position: relative;
-    top: 165px;
-    left: 230px;
     cursor: pointer;
     background: rgba(199, 238, 180, 0.3);
     fill: rgba(199, 238, 180, 0.3);
@@ -119,14 +134,11 @@ iframe {
 .spath {
     fill: none;
     stroke: rgba(146, 194, 122, 0.8);
-    stroke-width: 4;
-    opacity: 0.6;
     cursor: pointer;
 }
 
 .spath:hover {
     opacity: 1.0;
-    stroke-width: 6;
 }
 
 table, th, td {
@@ -158,12 +170,12 @@ td {
 	border-radius: 4px;
 
 	font-family: "Montserrat";
-	font-size: 14px;
+	font-size: var(--font-size-md);
 	border: 1px solid #d4d4d4;
 }
 
 .d3-context-menu-theme ul li:hover {
-	background-color: rgb(129, 218, 240, 0.8);
+	background-color: var(--overlay-color);
 	color: #fefefe;
     cursor: pointer;
 }
