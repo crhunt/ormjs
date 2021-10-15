@@ -1,6 +1,9 @@
 /* Pop ups */
 
 :root {
+    /* Color */
+    --pop-fill: rgb(255,255,255,0.7);
+    --pop-border: var(--line-color);
     /* Dimensions */
     --pop-width: 300px;
     --pop-height: 300px;
@@ -18,11 +21,11 @@
 }
 
 .popup {
-    fill: rgb(255,255,255,0.7);
-    stroke: #000;
-    stroke-width: 2px;
-    rx: 7px;
-    ry: 7px;
+    fill: var(--pop-fill);
+    stroke: var(--pop-border);
+    stroke-width: var(--stroke-width);
+    rx: var(--entity-rx-ry);
+    ry: var(--entity-rx-ry);
     cursor: grab;
 }
 
@@ -70,14 +73,6 @@
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.0), 0 0 8px var(--overlay-color);
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.0), 0 0 8px var(--overlay-color);
-}
-
-.popup_form input[type="submit"] { 
-    display: none;
-    cursor: grab;
-    position: relative;
-    width: 1px;
-    height: 1px;
 }
 
 .popup_form label {
