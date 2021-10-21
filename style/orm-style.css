@@ -134,6 +134,13 @@ svg {
     -webkit-user-select:none;
 }
 
+/* Rolebox Uniqueness Constraints */
+
+.rb_constraint {
+    stroke: var(--constraint-color);
+    stroke-width: var(--stroke-width);
+}
+
 /* Connectors */
 
 .connector {
