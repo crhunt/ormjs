@@ -39,4 +39,4 @@ ORMJS is actively being developed and many user functions are still missing. If 
 
 ## External packages
 
-ORMJS uses [d3-context-menu](https://github.com/patorjk/d3-context-menu).
+ORMJS uses [d3-context-menu](https://github.com/patorjk/d3-context-menu). This package is already integrated, nothing additional to download or install.
