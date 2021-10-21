@@ -13,7 +13,6 @@
     --font-size-md: 0.8em; /* 14 px */
     /* Entity sizes */
     --entity-rx-ry: 7px; /* 7 px */
-    --entity-width: 101px; /* 100 px */
     --entity-height: 51px; /* 50 px */
     --entity-overlay-r: 12px; /* 12 px */
     /* Rolebox sizes */
@@ -70,7 +69,7 @@ svg {
     fill: var(--fill-color);
     stroke: var(--line-color);
     stroke-width: var(--stroke-width);
-    width: var(--entity-width);
+    /* width determined by entity name */
     height: var(--entity-height);
     rx: var(--entity-rx-ry);
     ry: var(--entity-rx-ry);
