@@ -28,14 +28,15 @@
 
 <body>
 
+<div id="topbar">
 <a id="downloadSvgButton" download="ormjs.svg">Download SVG</a>
 <span>Upload SVG <input type="file" id="uploadSvgButton" value="" multiple></span>
 <input type="range" id="svgscale">
+<span><input type="checkbox" id="highlightNoParse"> Highlight relations not parsed to Rel</span>
+</div>
 
 <div id="canvas"></div>
-
-<div><input type="checkbox" id="highlightNoParse"> Highlight relations not parsed to Rel</div>
-<div id="rel"></div>
+<div id="code"><div id="rel"></div></div>
 
 </body>
 
