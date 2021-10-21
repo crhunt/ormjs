@@ -1,3 +1,8 @@
+/*
+    The style set here is for a simple web app and is not part of the core ORMJS 
+    functionality.
+ */
+
 #topbar {
     position: absolute;
     top: 0px;
