@@ -155,10 +155,6 @@ td {
     cursor: pointer;
 }
 
-#popsvg {
-    background: #fff;
-}
-
 #svgcell {
     display: table-cell;
     text-align: center;
@@ -168,7 +164,8 @@ td {
     align-items: center;
 }
 
-.form_table {
+td[colspan="2"].centered {
+    text-align: center;
     justify-content: center;
     align-items: center;
 }
