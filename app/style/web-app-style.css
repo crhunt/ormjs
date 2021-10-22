@@ -45,3 +45,11 @@
     padding: 10px;
     overflow: scroll;
 }
+
+#downloadSvgButton {
+    cursor: pointer;
+}
+
+#uploadSvgButton {
+    cursor: pointer;
+}
