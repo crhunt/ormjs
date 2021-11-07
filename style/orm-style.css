@@ -176,7 +176,7 @@ svg {
     opacity: 0.8;
 }
 
-.connColor {
+/*.connColor {
     stroke: var(--line-color);
     fill: var(--line-color);
     stop-color: var(--line-color);
@@ -188,7 +188,7 @@ svg {
     fill: var(--constraint-color);
     stop-color: var(--constraint-color);
     stop-opacity: 1;
-}
+}*/
 
 /* Rel */
 
