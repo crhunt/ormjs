@@ -1,15 +1,55 @@
+/*
+    The style set here is for a simple web app and is not part of the core ORMJS 
+    functionality.
+ */
+
+#topbar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 40px;
+    width: 100vw;
+}
+
 #canvas {
-    position: relative;
-    width: 90vw;
-    height: 50vh;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 65vw;
+    height: calc( 100vh - 50px );
     background: #eee;
 }
 
-#rel {
-    display: block;
-    font-family: 'Courier New', monospace;
+#code {
+    position: absolute;
+    top: 40px;
+    left: 65vw;
     font-size: 14px;
-    width: 500px;
-    height: 400px;
-    background: rgb(229, 242, 255);
+    width: 35vw;
+    height: calc( 100vh - 50px );
+    background: rgb(73, 73, 73);
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+#rel {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-family: 'Courier New', monospace;
+    color: rgb(235, 235, 235);
+    font-size: 1em;
+    width: 35vw;
+    height: calc( 100vh - 50px );
+    padding: 10px;
+    overflow: scroll;
+}
+
+#downloadSvgButton {
+    cursor: pointer;
+}
+
+#uploadSvgButton {
+    cursor: pointer;
 }

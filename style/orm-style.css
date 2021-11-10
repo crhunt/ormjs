@@ -5,7 +5,7 @@
     --line-color: #444444;
     --fill-color: #ffffff;
     /* General sizes */
-    --svg-scale: 400;
+    --svg-scale: 600;
     --stroke-width: 2px; /* 2 px */
     --stroke-width-wide: 6px; /* 6 px */
     --font-size-xl: 1.2em; /* 18 px */
@@ -13,7 +13,6 @@
     --font-size-md: 0.8em; /* 14 px */
     /* Entity sizes */
     --entity-rx-ry: 7px; /* 7 px */
-    --entity-width: 101px; /* 100 px */
     --entity-height: 51px; /* 50 px */
     --entity-overlay-r: 12px; /* 12 px */
     /* Rolebox sizes */
@@ -70,7 +69,7 @@ svg {
     fill: var(--fill-color);
     stroke: var(--line-color);
     stroke-width: var(--stroke-width);
-    width: var(--entity-width);
+    /* width determined by entity name */
     height: var(--entity-height);
     rx: var(--entity-rx-ry);
     ry: var(--entity-rx-ry);
@@ -135,6 +134,13 @@ svg {
     -webkit-user-select:none;
 }
 
+/* Rolebox Uniqueness Constraints */
+
+.rb_constraint {
+    stroke: var(--constraint-color);
+    stroke-width: var(--stroke-width);
+}
+
 /* Connectors */
 
 .connector {
@@ -152,6 +158,13 @@ svg {
     stroke-width: var(--stroke-width);
 }
 
+.conn_mandatory {
+    stroke: var(--line-color);
+    fill: var(--constraint-color);
+    stroke-width: var(--stroke-width);
+    paint-order: stroke fill;
+}
+
 .conn_subtype {
     stroke: var(--constraint-color);
     stroke-width: var(--stroke-width);
@@ -162,6 +175,20 @@ svg {
     cursor: pointer ;
     opacity: 0.8;
 }
+
+/*.connColor {
+    stroke: var(--line-color);
+    fill: var(--line-color);
+    stop-color: var(--line-color);
+    stop-opacity: 1;
+}
+
+.constraintColor {
+    stroke: var(--constraint-color);
+    fill: var(--constraint-color);
+    stop-color: var(--constraint-color);
+    stop-opacity: 1;
+}*/
 
 /* Rel */
 
