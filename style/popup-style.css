@@ -2,7 +2,7 @@
 
 :root {
     /* Color */
-    --pop-fill: rgb(255,255,255,0.7);
+    --pop-fill: rgb(255,255,255,0.8);
     --pop-border: var(--line-color);
     /* Dimensions */
     --pop-width: 300px;
