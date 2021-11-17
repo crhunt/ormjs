@@ -37,7 +37,7 @@
 }
 
 body {
-    font-family: 'Montserrat Light', 'Trebuchet MS';
+    font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif; /* Back up font is for saving svgs */
     font-size: var(--font-size-lg);
 }
 
@@ -81,7 +81,7 @@ svg {
 }
 
 .ename {
-    font-family: 'Montserrat Light', 'Trebuchet MS';
+    font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--font-size-lg);
     cursor: grab;
     user-select: none;
@@ -90,7 +90,7 @@ svg {
 }
 
 .refmode {
-    font-family: 'Montserrat Light', 'Trebuchet MS';
+    font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--font-size-md);
     cursor: grab;
     user-select: none;
@@ -127,7 +127,7 @@ svg {
 }
 
 .rbname {
-    font-family: 'Montserrat Light', 'Trebuchet MS';
+    font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--font-size-md);
     user-select: none;
     -moz-user-select:none;
