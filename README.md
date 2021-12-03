@@ -18,11 +18,13 @@ From the [ORM website](http://www.orm.net/):
 
 > Object Role Modeling (ORM) is a powerful method for designing and querying database models at the conceptual level, where the application is described in terms easily understood by non-technical users. In practice, ORM data models often capture more business rules, and are easier to validate and evolve than data models in other approaches.
 
+_Note: Not to be confused with Object Relational Mapping._
 ## Rel plus ORM
 
-[Rel](https://docs.relational.ai/getting-started/rel/overview/) is an expressive, declarative, and relational language designed for modeling domain knowledge. The language is designed to work with the RelationalAI Knowledge Graph Management System. 
+[Rel](https://docs.relational.ai/getting-started/rel/overview/) is an expressive, declarative, and relational language designed for modeling domain knowledge. Rel is used by the RelationalAI Knowledge Graph Management System to create
+data models. 
 
-ORMJS generates Rel code on-the-fly from the ORM model.
+ORMJS generates Rel integrity constraints on-the-fly from the ORM model.
 
 ## How to interact with ORMJS
 
@@ -30,12 +32,12 @@ ORMJS is actively being developed and many user functions are still missing. If 
 
 | Event | On | Action |
 |-------|----|--------|
-|RightClick | Canvas | Create object menu |
-|Dblclick | Canvas | Generate new entity |
-|Shift + Dblclick | Canvas | Generate new rolebox |
-|RightClick | Object | Object Menu |
-|Dblclick | Object | Change object properties |
-|Ctrl + Click | Object | Delete object |
+| RightClick | Canvas | Create object menu |
+| Dblclick | Canvas | Generate new entity |
+| Shift + Dblclick | Canvas | Generate new rolebox |
+| RightClick | Object | Object Menu |
+| Dblclick | Object | Change object properties |
+| Ctrl + Click | Object | Delete object |
 
 ## External packages
 
