@@ -100,6 +100,24 @@ svg {
     -webkit-user-select:none;
 }
 
+/* Values */
+
+.value {
+    fill: var(--fill-color);
+    stroke: var(--line-color);
+    stroke-width: var(--stroke-width);
+    stroke-dasharray: 5,3;
+    /* width determined by entity name */
+    height: var(--entity-height);
+    rx: var(--entity-rx-ry);
+    ry: var(--entity-rx-ry);
+    cursor: grab;
+}
+
+.voverlay {
+    r: var(--entity-overlay-r);
+}
+
 /* Roleboxes */
 
 .rolebox {
