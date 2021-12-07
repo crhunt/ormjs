@@ -6,6 +6,8 @@
     --fill-color: #ffffff;
     /* General sizes */
     --svg-scale: 600;
+    --svg-scale-max: 1000;
+    --svg-scale-min: 100;
     --stroke-width: 2px; /* 2 px */
     --stroke-width-wide: 6px; /* 6 px */
     --font-size-xl: 1.2em; /* 18 px */
