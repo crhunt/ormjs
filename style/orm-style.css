@@ -13,6 +13,7 @@
     --font-size-xl: 1.2em; /* 18 px */
     --font-size-lg: 1em; /* 16 px */
     --font-size-md: 0.8em; /* 14 px */
+    --font-size-sm: 0.7em; /* 14 px */
     /* Entity sizes */
     --entity-rx-ry: 7px; /* 7 px */
     --entity-height: 51px; /* 50 px */
