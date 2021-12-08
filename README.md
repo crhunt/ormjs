@@ -48,46 +48,45 @@ Note: Asterisk (&#42;) indicates partial support. Dash (--) indicates no planned
 
 | Construct | ORMJS | Rel |
 |-----------|-------|-----|
-|Entity type |&#9775;|&#9775;|
-|Value type |&#9775;|&#9775;|
-|Entity type with popular reference mode |&#9775;|&#9775;|
-|Entity type with unit-based reference mode |&#9775;|&#9774;|
-|Entity type with general reference mode |&#9775;|&#9774;|
-|Independent object type |&#9775;|&#9774;|
-|Independent object type |&#9775; &#42;|&#9774;|
-|External object type |&#9774;|&#9774;|
-|Predicate |&#9775;|&#9774;|
-|Duplicate type or predicate shape |&#9774;|&#9774;|
-|Unary fact type |&#9775;|&#9774;|
-|Binary fact type |&#9775;|&#9775;|
-|Ternary fact type |&#9775;|&#9775;|
-|Quaternary fact type |&#9775;|&#9775;|
-|Objectification (aka nesting) |&#9774;|&#9774;|
-|Internal uniqueness constraint (UC) on unaries |&#9775;|&#9774;|
-|Internal UC on binaries |&#9775;|&#9774;|
-|Internal UC on ternaries. For n-aries, each UC must span n-1 roles. |&#9775;|&#9774;|
-|Simple mandatory role constraint |&#9775;|&#9774;|
-|Inclusive-or constraint |&#9774;|&#9774;|
-|Preferred internal UC |&#9774;|&#9774;|
-|External UC |&#9774;|&#9774;|
-|Object type value constraint |&#9774;|&#9774;|
-|Role value constraint |&#9774;|&#9774;|
-|Subset constraint |&#9774;|&#9774;|
-|Join subset constraint |&#9774;|&#9774;|
-|Exclusion constraint |&#9774;|&#9774;|
-|Exclusive-or constraint |&#9774;|&#9774;|
-|Equality constraint |&#9774;|&#9774;|
+|Entity type |&#9745;|&#9745;|
+|Value type |&#9745;|&#9745;|
+|Entity type with popular reference mode |&#9745;|&#9745;|
+|Entity type with unit-based reference mode |&#9745;|&#9744;|
+|Entity type with general reference mode |&#9745;|&#9744;|
+|Independent object type |&#9745; &#42;|&#9744;|
+|External object type |&#9744;|&#9744;|
+|Predicate |&#9745;|&#9744;|
+|Duplicate type or predicate shape |&#9744;|&#9744;|
+|Unary fact type |&#9745;|&#9744;|
+|Binary fact type |&#9745;|&#9745;|
+|Ternary fact type |&#9745;|&#9745;|
+|Quaternary fact type |&#9745;|&#9745;|
+|Objectification (aka nesting) |&#9744;|&#9744;|
+|Internal uniqueness constraint (UC) on unaries |&#9745;|&#9744;|
+|Internal UC on binaries |&#9745;|&#9744;|
+|Internal UC on ternaries. For n-aries, each UC must span n-1 roles. |&#9745;|&#9744;|
+|Simple mandatory role constraint |&#9745;|&#9744;|
+|Inclusive-or constraint |&#9744;|&#9744;|
+|Preferred internal UC |&#9744;|&#9744;|
+|External UC |&#9744;|&#9744;|
+|Object type value constraint |&#9744;|&#9744;|
+|Role value constraint |&#9744;|&#9744;|
+|Subset constraint |&#9744;|&#9744;|
+|Join subset constraint |&#9744;|&#9744;|
+|Exclusion constraint |&#9744;|&#9744;|
+|Exclusive-or constraint |&#9744;|&#9744;|
+|Equality constraint |&#9744;|&#9744;|
 |Derived fact type, and derivation rule |--|--|
 |Semiderived fact type, and derivation rule |--|--|
-|Subtyping |&#9775;|&#9775;|
-|Subtyping constraints |&#9774;|&#9774;|
+|Subtyping |&#9745;|&#9745;|
+|Subtyping constraints |&#9744;|&#9744;|
 |Subtyping derivation status |--|--|
-|Internal frequency constraint |&#9774;|&#9774;|
-|External frequency constraint |&#9774;|&#9774;|
-|Ring constraints |&#9774;|&#9774;|
-|Value comparison constraints |&#9774;|&#9774;|
-|Object cardinality constraint |&#9774;|&#9774;|
-|Role cardinality constraint |&#9774;|&#9774;|
+|Internal frequency constraint |&#9744;|&#9744;|
+|External frequency constraint |&#9744;|&#9744;|
+|Ring constraints |&#9744;|&#9744;|
+|Value comparison constraints |&#9744;|&#9744;|
+|Object cardinality constraint |&#9744;|&#9744;|
+|Role cardinality constraint |&#9744;|&#9744;|
 |Deontic constraints |--|--|
 |Textual constraints |--|--|
 |Objectification display options |--|--|
