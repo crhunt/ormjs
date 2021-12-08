@@ -44,53 +44,53 @@ ORMJS is actively being developed and many user functions are still missing. If 
 
 As features are added to ORMJS, track progress here against ORM 2 Graphical Notation standard.
 
-Note: Asterisk (*) indicates partial support. Dash (--) indicates no planned support in V1.
+Note: Asterisk (&#42;) indicates partial support. Dash (--) indicates no planned support in V1.
 
 | Construct | ORMJS | Rel |
 |-----------|-------|-----|
-|Entity type |<ul><li>[x]</li></ul>|<ul><li>[x]</li></ul>|
-|Value type |<ul><li>[x]</li></ul>|<ul><li>[x]</li></ul>|
-|Entity type with popular reference mode |<ul><li>[x]</li></ul>|<ul><li>[x]</li></ul>|
-|Entity type with unit-based reference mode |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
-|Entity type with general reference mode |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
-|Independent object type |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
-|Independent object type |<ul><li>[x](*)</li></ul>|<ul><li>[ ]</li></ul>|
-|External object type |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Predicate |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
-|Duplicate type or predicate shape |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Unary fact type |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
-|Binary fact type |<ul><li>[x]</li></ul>|<ul><li>[x]</li></ul>|
-|Ternary fact type |<ul><li>[x]</li></ul>|<ul><li>[x]</li></ul>|
-|Quaternary fact type |<ul><li>[x]</li></ul>|<ul><li>[x]</li></ul>|
-|Objectification (aka nesting) |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Internal uniqueness constraint (UC) on unaries |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
-|Internal UC on binaries |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
-|Internal UC on ternaries. For n-aries, each UC must span n-1 roles. |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
-|Simple mandatory role constraint |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
-|Inclusive-or constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Preferred internal UC |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|External UC |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Object type value constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Role value constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Subset constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Join subset constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Exclusion constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Exclusive-or constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Equality constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Derived fact type, and derivation rule |<ul><li>--</li></ul>|<ul><li>--</li></ul>|
-|Semiderived fact type, and derivation rule |<ul><li>--</li></ul>|<ul><li>--</li></ul>|
-|Subtyping |<ul><li>[x]</li></ul>|<ul><li>[x]</li></ul>|
-|Subtyping constraints |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Subtyping derivation status |<ul><li>--</li></ul>|<ul><li>--</li></ul>|
-|Internal frequency constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|External frequency constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Ring constraints |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Value comparison constraints |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Object cardinality constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Role cardinality constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
-|Deontic constraints |<ul><li>--</li></ul>|<ul><li>--</li></ul>|
-|Textual constraints |<ul><li>--</li></ul>|<ul><li>--</li></ul>|
-|Objectification display options |<ul><li>--</li></ul>|<ul><li>--</li></ul>|
+|Entity type |&#9775;|&#9775;|
+|Value type |&#9775;|&#9775;|
+|Entity type with popular reference mode |&#9775;|&#9775;|
+|Entity type with unit-based reference mode |&#9775;|&#9774;|
+|Entity type with general reference mode |&#9775;|&#9774;|
+|Independent object type |&#9775;|&#9774;|
+|Independent object type |&#9775; &#42;|&#9774;|
+|External object type |&#9774;|&#9774;|
+|Predicate |&#9775;|&#9774;|
+|Duplicate type or predicate shape |&#9774;|&#9774;|
+|Unary fact type |&#9775;|&#9774;|
+|Binary fact type |&#9775;|&#9775;|
+|Ternary fact type |&#9775;|&#9775;|
+|Quaternary fact type |&#9775;|&#9775;|
+|Objectification (aka nesting) |&#9774;|&#9774;|
+|Internal uniqueness constraint (UC) on unaries |&#9775;|&#9774;|
+|Internal UC on binaries |&#9775;|&#9774;|
+|Internal UC on ternaries. For n-aries, each UC must span n-1 roles. |&#9775;|&#9774;|
+|Simple mandatory role constraint |&#9775;|&#9774;|
+|Inclusive-or constraint |&#9774;|&#9774;|
+|Preferred internal UC |&#9774;|&#9774;|
+|External UC |&#9774;|&#9774;|
+|Object type value constraint |&#9774;|&#9774;|
+|Role value constraint |&#9774;|&#9774;|
+|Subset constraint |&#9774;|&#9774;|
+|Join subset constraint |&#9774;|&#9774;|
+|Exclusion constraint |&#9774;|&#9774;|
+|Exclusive-or constraint |&#9774;|&#9774;|
+|Equality constraint |&#9774;|&#9774;|
+|Derived fact type, and derivation rule |--|--|
+|Semiderived fact type, and derivation rule |--|--|
+|Subtyping |&#9775;|&#9775;|
+|Subtyping constraints |&#9774;|&#9774;|
+|Subtyping derivation status |--|--|
+|Internal frequency constraint |&#9774;|&#9774;|
+|External frequency constraint |&#9774;|&#9774;|
+|Ring constraints |&#9774;|&#9774;|
+|Value comparison constraints |&#9774;|&#9774;|
+|Object cardinality constraint |&#9774;|&#9774;|
+|Role cardinality constraint |&#9774;|&#9774;|
+|Deontic constraints |--|--|
+|Textual constraints |--|--|
+|Objectification display options |--|--|
 ## External packages
 
 ORMJS uses [d3-context-menu](https://github.com/patorjk/d3-context-menu). This package is already integrated, nothing additional to download or install.
