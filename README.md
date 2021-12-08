@@ -34,11 +34,63 @@ ORMJS is actively being developed and many user functions are still missing. If 
 |-------|----|--------|
 | RightClick | Canvas | Create object menu |
 | Dblclick | Canvas | Generate new entity |
-| Shift + Dblclick | Canvas | Generate new rolebox |
+| Shift + Dblclick | Canvas | Generate new fact |
+| Ctrl + Shift + Dblclick | Canvas | Generate new value |
 | RightClick | Object | Object Menu |
 | Dblclick | Object | Change object properties |
 | Ctrl + Click | Object | Delete object |
 
+## ORM 2 Graphical Notation Checklist
+
+As features are added to ORMJS, track progress here against ORM 2 Graphical Notation standard.
+
+Note: Asterisk (*) indicates partial support. Dash (--) indicates no planned support in V1.
+
+| Construct | ORMJS | Rel |
+|-----------|-------|-----|
+|Entity type |<ul><li>[x]</li></ul>|<ul><li>[x]</li></ul>|
+|Value type |<ul><li>[x]</li></ul>|<ul><li>[x]</li></ul>|
+|Entity type with popular reference mode |<ul><li>[x]</li></ul>|<ul><li>[x]</li></ul>|
+|Entity type with unit-based reference mode |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
+|Entity type with general reference mode |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
+|Independent object type |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
+|Independent object type |<ul><li>[x](*)</li></ul>|<ul><li>[ ]</li></ul>|
+|External object type |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Predicate |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
+|Duplicate type or predicate shape |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Unary fact type |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
+|Binary fact type |<ul><li>[x]</li></ul>|<ul><li>[x]</li></ul>|
+|Ternary fact type |<ul><li>[x]</li></ul>|<ul><li>[x]</li></ul>|
+|Quaternary fact type |<ul><li>[x]</li></ul>|<ul><li>[x]</li></ul>|
+|Objectification (aka nesting) |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Internal uniqueness constraint (UC) on unaries |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
+|Internal UC on binaries |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
+|Internal UC on ternaries. For n-aries, each UC must span n-1 roles. |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
+|Simple mandatory role constraint |<ul><li>[x]</li></ul>|<ul><li>[ ]</li></ul>|
+|Inclusive-or constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Preferred internal UC |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|External UC |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Object type value constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Role value constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Subset constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Join subset constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Exclusion constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Exclusive-or constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Equality constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Derived fact type, and derivation rule |<ul><li>--</li></ul>|<ul><li>--</li></ul>|
+|Semiderived fact type, and derivation rule |<ul><li>--</li></ul>|<ul><li>--</li></ul>|
+|Subtyping |<ul><li>[x]</li></ul>|<ul><li>[x]</li></ul>|
+|Subtyping constraints |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Subtyping derivation status |<ul><li>--</li></ul>|<ul><li>--</li></ul>|
+|Internal frequency constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|External frequency constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Ring constraints |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Value comparison constraints |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Object cardinality constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Role cardinality constraint |<ul><li>[ ]</li></ul>|<ul><li>[ ]</li></ul>|
+|Deontic constraints |<ul><li>--</li></ul>|<ul><li>--</li></ul>|
+|Textual constraints |<ul><li>--</li></ul>|<ul><li>--</li></ul>|
+|Objectification display options |<ul><li>--</li></ul>|<ul><li>--</li></ul>|
 ## External packages
 
 ORMJS uses [d3-context-menu](https://github.com/patorjk/d3-context-menu). This package is already integrated, nothing additional to download or install.
