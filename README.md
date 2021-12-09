@@ -53,7 +53,7 @@ Note: Asterisk (&#42;) indicates partial support. Dash (--) indicates no planned
 |Entity type with popular reference mode |&#9745;|&#9745;|
 |Entity type with unit-based reference mode |&#9745;|&#9744;|
 |Entity type with general reference mode |&#9745;|&#9744;|
-|Independent object type |&#9745; &#42;|&#9744;|
+|Independent object type |&#9745;|&#9744;|
 |External object type |&#9744;|&#9744;|
 |Predicate |&#9745;|&#9744;|
 |Duplicate type or predicate shape |&#9744;|&#9744;|
