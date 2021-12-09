@@ -75,6 +75,20 @@
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.0), 0 0 8px var(--overlay-color);
 }
 
+.popup_form input[type="radio"] {
+    background-color: #fff;
+    margin: 0 0.2em 0 0;
+    font: inherit;
+    color: var(--overlay-color);
+    width: var(--font-size-lg);
+    height: var(--font-size-lg);
+    transform: translateY(-0.1em);
+}
+
+.popup_form input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+
 .popup_form label {
     font-family: 'Montserrat';
     font-size: var(--font-size-lg);
@@ -136,6 +150,11 @@ td {
 
 .right_col {
     text-align: left;
+}
+
+.right_col_small {
+    text-align: left;
+    font-size: var(--font-size-sm);
 }
 
 /* Right click style overrides */

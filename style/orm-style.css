@@ -13,6 +13,7 @@
     --font-size-xl: 1.2em; /* 18 px */
     --font-size-lg: 1em; /* 16 px */
     --font-size-md: 0.8em; /* 14 px */
+    --font-size-sm: 0.7em; /* 14 px */
     /* Entity sizes */
     --entity-rx-ry: 7px; /* 7 px */
     --entity-height: 51px; /* 50 px */
@@ -98,6 +99,24 @@ svg {
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
+}
+
+/* Values */
+
+.value {
+    fill: var(--fill-color);
+    stroke: var(--line-color);
+    stroke-width: var(--stroke-width);
+    stroke-dasharray: 5,3;
+    /* width determined by entity name */
+    height: var(--entity-height);
+    rx: var(--entity-rx-ry);
+    ry: var(--entity-rx-ry);
+    cursor: grab;
+}
+
+.voverlay {
+    r: var(--entity-overlay-r);
 }
 
 /* Roleboxes */
