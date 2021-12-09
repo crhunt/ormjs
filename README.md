@@ -78,7 +78,7 @@ Note: Asterisk (&#42;) indicates partial support. Dash (--) indicates no planned
 |Equality constraint |&#9744;|&#9744;|
 |Derived fact type, and derivation rule |--|--|
 |Semiderived fact type, and derivation rule |--|--|
-|Subtyping |&#9745;|&#9745;|
+|Subtyping |&#9745; &#42;|&#9745;|
 |Subtyping constraints |&#9744;|&#9744;|
 |Subtyping derivation status |--|--|
 |Internal frequency constraint |&#9744;|&#9744;|
