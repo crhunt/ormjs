@@ -53,3 +53,7 @@
 #uploadSvgButton {
     cursor: pointer;
 }
+
+input[type="range"] {
+    transform: translateY(0.3em);
+}
