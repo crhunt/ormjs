@@ -39,11 +39,18 @@
 <span><a id="downloadSvgButton" download="ormjs.svg">Download SVG</a></span> | 
 <span>Upload SVG: <input type="file" id="uploadSvgButton" value="" multiple></span>
 <span>Zoom: <input type="range" id="svgscale"></span> 
-<span><input type="checkbox" id="highlightNoParse"> Highlight relations not parsed to Rel</span>
 </div>
 
 <div id="canvas"></div>
-<div id="code"><div id="rel"></div></div>
+
+<div id="code">
+    <div id="rel_options">
+        <div><input type="checkbox" id="highlightNoParse"> Highlight relations not parsed to Rel</div>
+        <div><input type="checkbox" id="graphFormat"> Graph Rel Format</div>
+        <div><input type="checkbox" id="shortFormat"> Short Rel Format</div>
+    </div>
+    <div id="rel"></div>
+</div>
 
 </body>
 
