@@ -17,25 +17,26 @@
     top: 0px;
     left: 0px;
     height: var(--topbar-h);
-    width: 100vw;
+    width: calc( var(--canvas-w) - var(--margin-h) );
+    padding-left: var(--margin-h);
 }
 
 #canvas {
     position: absolute;
-    top: var(--topbar-h);
+    top: 0px;
     left: 0px;
     width: var(--canvas-w);
-    height: calc( 100vh - var(--topbar-h) - var(--margin-h) );
+    height: calc( 100vh - var(--margin-h) );
     background: #eee;
 }
 
 #code {
     position: absolute;
-    top: var(--topbar-h);
+    top: 0px;
     left: var(--canvas-w);
     font-size: 14px;
     width: var(--code-w);
-    height: calc( 100vh - var(--topbar-h) - var(--margin-h) );
+    height: calc( 100vh - var(--margin-h) );
     background: rgb(73, 73, 73);
     overflow: hidden;
     margin: 0px;
@@ -66,7 +67,7 @@
     /*background-color:rgb(27, 71, 97,0.7);*/
     font-size: 1em;
     width: var(--code-w);
-    height: calc( 100vh - var(--topbar-h) - 2*var(--margin-h) - var(--optionbar-h) );
+    height: calc( 100vh - 2*var(--margin-h) - var(--optionbar-h) );
     padding: 10px;
     overflow: scroll;
 }
