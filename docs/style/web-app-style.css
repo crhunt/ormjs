@@ -30,7 +30,7 @@
     background: #eee;
 }
 
-#code {
+#codepanel {
     position: absolute;
     top: 0px;
     left: var(--canvas-w);
