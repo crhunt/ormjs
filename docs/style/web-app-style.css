@@ -6,7 +6,7 @@
 :root {
     /* Div sizes */
     --topbar-h: 40px;
-    --optionbar-h: 60px;
+    --optionbar-h: 82px;
     --canvas-w: 65vw;
     --code-w: 35vw;
     --margin-h: 10px;
@@ -48,9 +48,9 @@
     top: 0px;
     left: 0px;
     font-family: 'Montserrat';
+    font-size: var(--font-size-lg);
     color: #000;
     background-color: #fff;
-    font-size: 1em;
     width: var(--code-w);
     height: var(--optionbar-h);
     padding: var(--margin-h);
@@ -82,4 +82,11 @@
 
 input[type="range"] {
     transform: translateY(0.3em);
+}
+
+.spacy {
+    margin: 5px 0px 2px 0px;
+    line-height: 1.4em;
+    font-family: "Montserrat Light";
+    font-size: var(--font-size-lg);
 }
