@@ -6,7 +6,7 @@
 :root {
     /* Div sizes */
     --topbar-h: 40px;
-    --optionbar-h: 82px;
+    --optionbar-h: 100px;
     --canvas-w: 65vw;
     --code-w: 35vw;
     --margin-h: 10px;
