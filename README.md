@@ -62,9 +62,9 @@ Note: Asterisk (&#42;) indicates partial support. Dash (--) indicates no planned
 |Ternary fact type |&#9745;|&#9745;|
 |Quaternary fact type |&#9745;|&#9745;|
 |Objectification (aka nesting) |&#9744;|&#9744;|
-|Internal uniqueness constraint (UC) on unaries |&#9744;|&#9744;|
-|Internal UC on binaries |&#9745;|&#9745;|
-|Internal UC on ternaries. For n-aries, each UC must span n-1 roles. |&#9745;|&#9745;|
+|Internal uniqueness constraint (UC) on unaries |--|--|
+|Internal UC on binaries |&#9745;|&#9744;|
+|Internal UC on ternaries. For n-aries, each UC must span n-1 roles. |&#9745;|&#9744;|
 |Simple mandatory role constraint |&#9745;|&#9745;|
 |Inclusive-or constraint |&#9744;|&#9744;|
 |Preferred internal UC |&#9744;|&#9744;|
