@@ -55,17 +55,17 @@ Note: Asterisk (&#42;) indicates partial support. Dash (--) indicates no planned
 |Entity type with general reference mode |&#9745;|&#9744;|
 |Independent object type |&#9745;|&#9744;|
 |External object type |&#9744;|&#9744;|
-|Predicate |&#9745;|&#9744;|
-|Duplicate type or predicate shape |&#9744;|&#9744;|
-|Unary fact type |&#9745;|&#9744;|
+|Predicate |&#9745;|&#9745;|
+|Duplicate type or predicate shape |&#9745;|&#9745;|
+|Unary fact type |&#9745;|&#9745;|
 |Binary fact type |&#9745;|&#9745;|
 |Ternary fact type |&#9745;|&#9745;|
 |Quaternary fact type |&#9745;|&#9745;|
 |Objectification (aka nesting) |&#9744;|&#9744;|
-|Internal uniqueness constraint (UC) on unaries |&#9745;|&#9744;|
+|Internal uniqueness constraint (UC) on unaries |--|--|
 |Internal UC on binaries |&#9745;|&#9744;|
 |Internal UC on ternaries. For n-aries, each UC must span n-1 roles. |&#9745;|&#9744;|
-|Simple mandatory role constraint |&#9745;|&#9744;|
+|Simple mandatory role constraint |&#9745;|&#9745;|
 |Inclusive-or constraint |&#9744;|&#9744;|
 |Preferred internal UC |&#9744;|&#9744;|
 |External UC |&#9744;|&#9744;|
@@ -78,7 +78,7 @@ Note: Asterisk (&#42;) indicates partial support. Dash (--) indicates no planned
 |Equality constraint |&#9744;|&#9744;|
 |Derived fact type, and derivation rule |--|--|
 |Semiderived fact type, and derivation rule |--|--|
-|Subtyping |&#9745; &#42;|&#9745;|
+|Subtyping |&#9745; &#42;|&#9744;|
 |Subtyping constraints |&#9744;|&#9744;|
 |Subtyping derivation status |--|--|
 |Internal frequency constraint |&#9744;|&#9744;|
