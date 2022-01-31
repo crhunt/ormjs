@@ -68,6 +68,10 @@ svg {
 
 /* Entities */
 
+.entity_prototype {
+    cursor: grab;
+}
+
 .entity {
     fill: var(--fill-color);
     stroke: var(--line-color);
@@ -76,7 +80,6 @@ svg {
     height: var(--entity-height);
     rx: var(--entity-rx-ry);
     ry: var(--entity-rx-ry);
-    cursor: grab;
 }
 
 .eoverlay {
@@ -86,7 +89,6 @@ svg {
 .ename {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--font-size-lg);
-    cursor: grab;
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
@@ -103,6 +105,10 @@ svg {
 
 /* Values */
 
+.value_prototype {
+    cursor: grab;
+}
+
 .value {
     fill: var(--fill-color);
     stroke: var(--line-color);
@@ -112,7 +118,6 @@ svg {
     height: var(--entity-height);
     rx: var(--entity-rx-ry);
     ry: var(--entity-rx-ry);
-    cursor: grab;
 }
 
 .voverlay {
@@ -121,13 +126,16 @@ svg {
 
 /* Roleboxes */
 
+.rolebox_group {
+    cursor: grab;
+}
+
 .rolebox {
     fill: var(--fill-color);
     stroke: var(--line-color);
     stroke-width: var(--stroke-width);
     width: var(--rolebox-width);
     height: var(--rolebox-height);
-    cursor: grab;
 }
 
 .rboverlay {
