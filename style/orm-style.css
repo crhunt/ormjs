@@ -97,7 +97,6 @@ svg {
 .refmode {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--font-size-md);
-    cursor: grab;
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
