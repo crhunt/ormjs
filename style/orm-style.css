@@ -68,6 +68,10 @@ svg {
 
 /* Entities */
 
+.entity_prototype {
+    cursor: grab;
+}
+
 .entity {
     fill: var(--fill-color);
     stroke: var(--line-color);
@@ -76,7 +80,6 @@ svg {
     height: var(--entity-height);
     rx: var(--entity-rx-ry);
     ry: var(--entity-rx-ry);
-    cursor: grab;
 }
 
 .eoverlay {
@@ -86,7 +89,6 @@ svg {
 .ename {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--font-size-lg);
-    cursor: grab;
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
@@ -95,13 +97,16 @@ svg {
 .refmode {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--font-size-md);
-    cursor: grab;
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
 }
 
 /* Values */
+
+.value_prototype {
+    cursor: grab;
+}
 
 .value {
     fill: var(--fill-color);
@@ -112,7 +117,6 @@ svg {
     height: var(--entity-height);
     rx: var(--entity-rx-ry);
     ry: var(--entity-rx-ry);
-    cursor: grab;
 }
 
 .voverlay {
@@ -121,13 +125,16 @@ svg {
 
 /* Roleboxes */
 
+.rolebox_group {
+    cursor: grab;
+}
+
 .rolebox {
     fill: var(--fill-color);
     stroke: var(--line-color);
     stroke-width: var(--stroke-width);
     width: var(--rolebox-width);
     height: var(--rolebox-height);
-    cursor: grab;
 }
 
 .rboverlay {
@@ -211,8 +218,20 @@ svg {
     stop-opacity: 1;
 }*/
 
+/* Highlight Rectangle */
+
+.highlight_rect {
+    fill: var(--overlay-color);
+    stroke: var(--line-color);
+    stroke-width: 0px;
+}
+
 /* Rel */
 
 .notparsed {
     filter: drop-shadow(0px 0px 5px rgba(255, 51, 51, 0.7));
+}
+
+.selected {
+    filter: drop-shadow(0px 0px 5px var(--overlay-color));
 }

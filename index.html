@@ -18,18 +18,19 @@
     <link rel="stylesheet" href="docs/style/web-app-style.css" type="text/css" />
     <!-- Load ORMJS library. This is order-sensitive. -->
     <!-- Load ORMJS diagrams from SVG -->
-    <script type="text/javascript" src="lib/parse-svg.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/parsers/parse-svg.js" charset="UTF-8"></script>
     <!-- Parse diagram to other formats -->
-    <script type="text/javascript" src="lib/parse-to-xml.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/parse-to-rel.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/parsers/parse-to-xml.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/parsers/parse-to-rel.js" charset="UTF-8"></script>
     <!-- Parse diagram to metamodel -->
     <script type="text/javascript" src="lib/metamodel/metamodel-object.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/metamodel/metamodel-role.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/metamodel/metamodel-readings.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/metamodel/metamodel-fact.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/metamodel/metamodel-constructor.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/parse-orm.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/parsers/parse-orm.js" charset="UTF-8"></script>
     <!-- Graph constructors -->
+    <script type="text/javascript" src="lib/highlight-rect.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/svg-constructor.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/graph-constructor.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/entity-constructor.js" charset="UTF-8"></script>
@@ -39,13 +40,14 @@
     <script type="text/javascript" src="lib/connector-constructor.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/connector-paths.js" charset="UTF-8"></script>
     <!-- Object properties -->
-    <script type="text/javascript" src="lib/object-option-menus.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/object-property-menu.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/menus/object-option-menus.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/menus/object-property-menu.js" charset="UTF-8"></script>
 </head>
 
 <body>
 
 <div id="canvas"></div>
+<div class="canvas_container"><canvas id="hidden_canvas"></canvas></div>
 
 <div id="codepanel">
     <div id="rel_options">
@@ -60,9 +62,15 @@
 </div>
 
 <div id="topbar">
-    <span><a id="downloadSvgButton" download="ormjs.svg">Download SVG</a></span> | 
-    <span>Upload SVG: <input type="file" id="uploadSvgButton" value="" multiple></span>
-    <span>Zoom: <input type="range" id="svgscale"></span> 
+    <span><label class="file-upload"><a id="downloadPngButton" class="topbutton" download="ormjs.png">Download PNG</a></label></span>
+    <span><label class="file-upload"><a id="downloadSvgButton" class="topbutton" download="ormjs.svg">Download SVG</a></label></span>
+    
+    <label for="uploadSvgButton" class="file-upload">Upload SVG</label>
+    <input type="file" id="uploadSvgButton" value="" multiple>
+    <span id="uploadname" class="filename"></span>
+    
+    <!--span>Upload SVG: <input type="file" id="uploadSvgButton" value="" multiple></span-->
+    <span class="zoom">Zoom: <input type="range" id="svgscale"></span> 
 </div>
 
 <script>

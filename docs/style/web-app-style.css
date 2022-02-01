@@ -8,6 +8,7 @@
     --topbar-h: 40px;
     --optionbar-h: 100px;
     --canvas-w: 65vw;
+    --canvas-h: 98vh;
     --code-w: 35vw;
     --margin-h: 10px;
 }
@@ -19,6 +20,7 @@
     height: var(--topbar-h);
     width: calc( var(--canvas-w) - var(--margin-h) );
     padding-left: var(--margin-h);
+    padding-top: 5px;
 }
 
 #canvas {
@@ -26,7 +28,7 @@
     top: 0px;
     left: 0px;
     width: var(--canvas-w);
-    height: calc( 100vh - var(--margin-h) );
+    height: var(--canvas-h);;
     background: #eee;
 }
 
@@ -36,7 +38,7 @@
     left: var(--canvas-w);
     font-size: 14px;
     width: var(--code-w);
-    height: calc( 100vh - var(--margin-h) );
+    height: var(--canvas-h);
     background: rgb(73, 73, 73);
     overflow: hidden;
     margin: 0px;
@@ -72,12 +74,10 @@
     overflow: scroll;
 }
 
-#downloadSvgButton {
+.topbutton {
     cursor: pointer;
-}
-
-#uploadSvgButton {
-    cursor: pointer;
+    text-decoration: inherit;
+    color: inherit;
 }
 
 input[type="range"] {
@@ -89,4 +89,48 @@ input[type="range"] {
     line-height: 1.4em;
     font-family: "Montserrat Light";
     font-size: var(--font-size-lg);
+}
+
+/* Canvas for PNG download */
+
+#hidden_canvas {
+    visibility: hidden;
+}
+
+.canvas_container {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* File Upload */
+
+input[type="file"] {
+    display: none;
+}
+
+.file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.file-upload:hover {
+    background-color:rgba(255,255,255, 0.7)
+}
+
+.file-upload a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+.filename {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.zoom {
+    float: right;
+    margin-right: 15px;
 }
