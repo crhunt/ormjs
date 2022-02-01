@@ -20,6 +20,7 @@
     height: var(--topbar-h);
     width: calc( var(--canvas-w) - var(--margin-h) );
     padding-left: var(--margin-h);
+    padding-top: 5px;
 }
 
 #canvas {
@@ -90,6 +91,8 @@ input[type="range"] {
     font-size: var(--font-size-lg);
 }
 
+/* Canvas for PNG download */
+
 #hidden_canvas {
     visibility: hidden;
 }
@@ -98,4 +101,36 @@ input[type="range"] {
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+
+/* File Upload */
+
+input[type="file"] {
+    display: none;
+}
+
+.file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.file-upload:hover {
+    background-color:rgba(255,255,255, 0.7)
+}
+
+.file-upload a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+.filename {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.zoom {
+    float: right;
+    margin-right: 15px;
 }

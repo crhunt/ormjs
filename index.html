@@ -62,10 +62,15 @@
 </div>
 
 <div id="topbar">
-    <span><a id="downloadPngButton" class="topbutton" download="ormjs.png">Download PNG</a></span> | 
-    <span><a id="downloadSvgButton" class="topbutton" download="ormjs.svg">Download SVG</a></span> | 
-    <span>Upload SVG: <input type="file" id="uploadSvgButton" value="" multiple></span>
-    <span>Zoom: <input type="range" id="svgscale"></span> 
+    <span><label class="file-upload"><a id="downloadPngButton" class="topbutton" download="ormjs.png">Download PNG</a></label></span>
+    <span><label class="file-upload"><a id="downloadSvgButton" class="topbutton" download="ormjs.svg">Download SVG</a></label></span>
+    
+    <label for="uploadSvgButton" class="file-upload">Upload SVG</label>
+    <input type="file" id="uploadSvgButton" value="" multiple>
+    <span id="uploadname" class="filename"></span>
+    
+    <!--span>Upload SVG: <input type="file" id="uploadSvgButton" value="" multiple></span-->
+    <span class="zoom">Zoom: <input type="range" id="svgscale"></span> 
 </div>
 
 <script>
