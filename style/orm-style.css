@@ -218,6 +218,14 @@ svg {
     stop-opacity: 1;
 }*/
 
+/* Highlight Rectangle */
+
+.highlight_rect {
+    fill: var(--overlay-color);
+    stroke: var(--line-color);
+    stroke-width: 0px;
+}
+
 /* Rel */
 
 .notparsed {
