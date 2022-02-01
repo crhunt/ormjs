@@ -8,6 +8,7 @@
     --topbar-h: 40px;
     --optionbar-h: 100px;
     --canvas-w: 65vw;
+    --canvas-h: 98vh;
     --code-w: 35vw;
     --margin-h: 10px;
 }
@@ -26,7 +27,7 @@
     top: 0px;
     left: 0px;
     width: var(--canvas-w);
-    height: calc( 100vh - var(--margin-h) );
+    height: var(--canvas-h);;
     background: #eee;
 }
 
@@ -36,7 +37,7 @@
     left: var(--canvas-w);
     font-size: 14px;
     width: var(--code-w);
-    height: calc( 100vh - var(--margin-h) );
+    height: var(--canvas-h);
     background: rgb(73, 73, 73);
     overflow: hidden;
     margin: 0px;
