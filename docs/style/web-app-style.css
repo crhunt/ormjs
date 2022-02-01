@@ -72,12 +72,10 @@
     overflow: scroll;
 }
 
-#downloadSvgButton {
+.topbutton {
     cursor: pointer;
-}
-
-#uploadSvgButton {
-    cursor: pointer;
+    text-decoration: inherit;
+    color: inherit;
 }
 
 input[type="range"] {
@@ -89,4 +87,14 @@ input[type="range"] {
     line-height: 1.4em;
     font-family: "Montserrat Light";
     font-size: var(--font-size-lg);
+}
+
+#hidden_canvas {
+    visibility: hidden;
+}
+
+.canvas_container {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }

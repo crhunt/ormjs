@@ -47,6 +47,7 @@
 <body>
 
 <div id="canvas"></div>
+<div class="canvas_container"><canvas id="hidden_canvas"></canvas></div>
 
 <div id="codepanel">
     <div id="rel_options">
@@ -61,7 +62,8 @@
 </div>
 
 <div id="topbar">
-    <span><a id="downloadSvgButton" download="ormjs.svg">Download SVG</a></span> | 
+    <span><a id="downloadPngButton" class="topbutton" download="ormjs.png">Download PNG</a></span> | 
+    <span><a id="downloadSvgButton" class="topbutton" download="ormjs.svg">Download SVG</a></span> | 
     <span>Upload SVG: <input type="file" id="uploadSvgButton" value="" multiple></span>
     <span>Zoom: <input type="range" id="svgscale"></span> 
 </div>
