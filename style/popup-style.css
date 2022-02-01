@@ -20,13 +20,16 @@
     --pop-close-sz: 15px;
 }
 
+.popup_group {
+    cursor: grab;
+}
+
 .popup {
     fill: var(--pop-fill);
     stroke: var(--pop-border);
     stroke-width: var(--stroke-width);
     rx: var(--entity-rx-ry);
     ry: var(--entity-rx-ry);
-    cursor: grab;
 }
 
 .popup_content {
@@ -187,4 +190,8 @@ td[colspan="2"].centered {
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+.poprbg {
+    cursor: pointer;
 }
