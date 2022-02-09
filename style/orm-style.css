@@ -19,9 +19,11 @@
     --entity-height: 51px; /* 50 px */
     --entity-overlay-r: 12px; /* 12 px */
     /* Rolebox sizes */
-    --rolebox-width: 51px; /* 50 px */
-    --rolebox-height: 19px; /* 18 px */
+    --rolebox-width: 51px; /* 51 px */
+    --rolebox-height: 19px; /* 19 px */
     --rolebox-overlay-r: 8px; /* 8 px */
+    /* Constraint sizes */
+    --constraint-radius: 15px; /* 29 px */
 }
 
 @font-face {
@@ -217,6 +219,18 @@ svg {
     stop-color: var(--constraint-color);
     stop-opacity: 1;
 }*/
+
+/* External constraints */
+
+.constraint_prototype {
+    cursor: grab;
+}
+
+.constraint {
+    fill: var(--fill-color);
+    stroke: var(--constraint-color);
+    stroke-width: var(--stroke-width);
+}
 
 /* Highlight Rectangle */
 
