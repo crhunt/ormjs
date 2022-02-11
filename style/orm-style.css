@@ -240,6 +240,12 @@ svg {
     stroke-width: var(--stroke-width);
 }
 
+.constraint_val {
+    stroke: var(--constraint-color);
+    stroke-width: var(--stroke-width);
+    fill: var(--constraint-color);
+}
+
 /* Highlight Rectangle */
 
 .highlight_rect {
