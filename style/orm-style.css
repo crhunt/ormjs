@@ -191,7 +191,7 @@ svg {
 .conn_constraint {
     stroke: var(--constraint-color);
     stroke-width: var(--stroke-width);
-    stroke-dasharray: 5,3;
+    stroke-dasharray: 3,5;
 }
 
 .conn_mandatory {
