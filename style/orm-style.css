@@ -24,6 +24,7 @@
     --rolebox-overlay-r: 8px; /* 8 px */
     /* Constraint sizes */
     --constraint-radius: 15px; /* 29 px */
+    --constraint-oradius: 23px; /* 29 px */
 }
 
 @font-face {
