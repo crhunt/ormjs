@@ -195,3 +195,16 @@ td[colspan="2"].centered {
 .poprbg {
     cursor: pointer;
 }
+
+/* Constraint popup */
+
+.constraint_box {
+    fill: #ccc;
+    stroke: #d4d4d4;
+    stroke-width: var(--stroke-width);
+}
+
+.popsvg {
+    background: #944848;
+    overflow-y: scroll;
+}
