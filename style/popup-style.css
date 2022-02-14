@@ -56,7 +56,8 @@
     padding: 0 0 0 0;
     width: calc( var(--pop-width) - 2*var(--pop-marg) );
     height: calc( var(--pop-height) - 2*var(--pop-marg) );
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .popup_form form {
