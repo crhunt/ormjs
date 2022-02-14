@@ -199,12 +199,23 @@ td[colspan="2"].centered {
 /* Constraint popup */
 
 .constraint_box {
-    fill: #ccc;
-    stroke: #d4d4d4;
-    stroke-width: var(--stroke-width);
+    fill: rgba(255,255,255,0.0);
+    stroke: rgba(255,255,255,0.0);
+    stroke-width: calc(2*var(--stroke-width));
+}
+
+.constraint_box.selected {
+    fill: rgba(255,255,255,0.0);
+    stroke: var(--overlay-color);
+    stroke-width: calc(2*var(--stroke-width));
+}
+
+.constraint_box.hovered {
+    fill: var(--overlay-color);
+    stroke: var(--overlay-color);
 }
 
 .popsvg {
-    background: #944848;
+    background: rgba(255,255,255,0.0);
     overflow-y: scroll;
 }
