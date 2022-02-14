@@ -245,6 +245,14 @@ svg {
     stroke-width: var(--stroke-width);
     fill: var(--constraint-color);
 }
+.constraint_text {
+    font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
+    font-size: var(--font-size-lg);
+    color: var(--constraint-color);
+    stroke: var(--constraint-color);
+    stroke-width: calc(var(--stroke-width)/2);
+    user-select: none;
+}
 
 /* Highlight Rectangle */
 
