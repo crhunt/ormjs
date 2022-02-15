@@ -221,5 +221,5 @@ td[colspan="2"].centered {
 
 .popsvg {
     background: rgba(255,255,255,0.0);
-    overflow-y: scroll;
+    overflow: hidden;
 }
