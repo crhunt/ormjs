@@ -160,6 +160,10 @@ td {
     font-size: var(--font-size-sm);
 }
 
+.warning {
+    color: rgb(146, 11, 11);
+}
+
 /* Right click style overrides */
 
 .d3-context-menu-theme {

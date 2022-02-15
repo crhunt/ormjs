@@ -248,6 +248,7 @@ svg {
 .constraint_text {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--font-size-lg);
+    letter-spacing: 0.1em;
     color: var(--constraint-color);
     stroke: var(--constraint-color);
     stroke-width: calc(var(--stroke-width)/2);
