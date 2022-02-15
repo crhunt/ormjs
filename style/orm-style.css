@@ -1,7 +1,8 @@
 :root {
     /* Colors */
-    --overlay-color: rgb(129, 218, 240, 0.5);
+    --overlay-color: rgba(129, 218, 240, 0.5);
     --constraint-color: rgb(131, 57, 117);
+    --clear-color: rgba(255, 255, 255,0.0);
     --line-color: #444444;
     --fill-color: #ffffff;
     /* General sizes */
@@ -214,20 +215,6 @@ svg {
     opacity: 0.8;
 }
 
-/*.connColor {
-    stroke: var(--line-color);
-    fill: var(--line-color);
-    stop-color: var(--line-color);
-    stop-opacity: 1;
-}
-
-.constraintColor {
-    stroke: var(--constraint-color);
-    fill: var(--constraint-color);
-    stop-color: var(--constraint-color);
-    stop-opacity: 1;
-}*/
-
 /* External constraints */
 
 .constraint_prototype {
@@ -238,6 +225,10 @@ svg {
     fill: var(--fill-color);
     stroke: var(--constraint-color);
     stroke-width: var(--stroke-width);
+}
+.constraint.clear {
+    fill: var(--clear-color);
+    stroke: var(--clear-color);
 }
 
 .constraint_val {
