@@ -202,8 +202,8 @@ svg {
     /*stroke-dasharray: none;*/
     stroke: var(--clear-color);
     fill: var(--constraint-color);
-    outline: calc(0.5*var(--stroke-width)) dashed var(--constraint-color);
-    outline-offset: calc(-2*var(--stroke-width));
+    outline: calc(1*var(--stroke-width)) dashed var(--constraint-color);
+    outline-offset: calc(-2.5*var(--stroke-width));
     /*paint-order: stroke fill;*/
 }
 
@@ -236,10 +236,21 @@ svg {
     fill: var(--constraint-color);
 }
 
+.conn_subtype.dashed {
+    /*stroke-dasharray: none;*/
+    stroke: var(--clear-color);
+    fill: var(--constraint-color);
+    outline: calc( 1.5*var(--stroke-width)) dashed var(--constraint-color);
+    outline-offset: calc(-2*var(--stroke-width-wide) - 0.5*var(--stroke-width) );
+    /*paint-order: stroke fill;*/
+}
+
 .conn_subtype:hover {
+    stroke: var(--constraint-color);
     stroke-width: var(--stroke-width-wide);
     cursor: pointer ;
     opacity: 0.8;
+    outline: none;
 }
 
 /* External constraints */
