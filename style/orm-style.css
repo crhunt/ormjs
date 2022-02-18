@@ -219,47 +219,6 @@ svg {
     stroke-dasharray: none;
 }
 
-
-.conn_line {
-    stroke: var(--line-color);
-    stroke-width: var(--stroke-width);
-}
-
-.conn_constraint {
-    stroke: var(--constraint-color);
-    stroke-width: var(--stroke-width);
-    fill: var(--constraint-color);
-    stroke-dasharray: 3,3;
-}
-
-/*.conn_constraint.connected {
-    stroke: var(--clear-color);
-    fill: var(--constraint-color);
-    outline: calc(1*var(--stroke-width)) dashed var(--constraint-color);
-    outline-offset: calc(-2.5*var(--stroke-width));
-}
-
-.conn_constraint.connected.arrow {
-    stroke: var(--clear-color);
-    fill: var(--constraint-color);
-    outline: calc(0.5*var(--stroke-width)) dashed var(--constraint-color);
-    outline-offset: calc(-2*var(--stroke-width-wide) + var(--stroke-width));
-}
-
-.conn_constraint.connected:hover {
-    stroke-dasharray: none;
-    stroke: var(--constraint-color);
-    stroke-width: var(--stroke-width-wide);
-    outline: none;
-}*/
-
-.conn_mandatory {
-    stroke: var(--line-color);
-    fill: var(--constraint-color);
-    stroke-width: var(--stroke-width);
-    paint-order: stroke fill;
-}
-
 .subtype {
     stroke: var(--constraint-color);
     stroke-width: calc(1.5*var(--stroke-width));
@@ -269,21 +228,6 @@ svg {
 .subtype.dashed {
     stroke-dasharray: 4,5;
 }
-
-/*.conn_subtype.dashed {
-    stroke: var(--clear-color);
-    fill: var(--constraint-color);
-    outline: calc( 1.5*var(--stroke-width)) dashed var(--constraint-color);
-    outline-offset: calc(-2*var(--stroke-width-wide) - 0.5*var(--stroke-width) );
-}
-
-.conn_subtype:hover {
-    stroke: var(--constraint-color);
-    stroke-width: var(--stroke-width-wide);
-    cursor: pointer ;
-    opacity: 0.8;
-    outline: none;
-}*/
 
 /* External constraints */
 
@@ -306,6 +250,7 @@ svg {
     stroke-width: var(--stroke-width);
     fill: var(--constraint-color);
 }
+
 .constraint_text {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--font-size-lg);
