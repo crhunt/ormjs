@@ -256,6 +256,7 @@ svg {
     font-size: var(--font-size-lg);
     letter-spacing: 0.1em;
     color: var(--constraint-color);
+    fill: var(--constraint-color);
     stroke: var(--constraint-color);
     stroke-width: calc(var(--stroke-width)/2);
     user-select: none;
