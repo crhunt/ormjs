@@ -175,16 +175,50 @@ svg {
 
 /* Connectors */
 
-.connector {
-    stroke-width: var(--stroke-width);
+.connector_prototype {
+    cursor: pointer;
 }
 
-.connector:hover {
+.connector {
+    stroke-width: var(--stroke-width);
+    stroke: var(--line-color);
+    stroke-linecap: "round";
+}
+
+.connector.conn_mouseover {
     stroke-width: var(--stroke-width-wide);
     opacity: 0.7;
     cursor: pointer ;
     stroke-dasharray: none;
 }
+
+.connector.clear.conn_mouseover {
+    fill-opacity: 0.7;
+}
+
+.connector.clear {
+    stroke-width: var(--stroke-width-wide);
+    stroke: var(--clear-color);
+    fill: var(--constraint-color);
+}
+
+.connector.line {
+    stroke: var(--line-color);
+}
+
+.connector.constraint {
+    stroke-dasharray: 4,5;
+    stroke: var(--constraint-color);
+    fill: var(--constraint-color);
+}
+
+.connector.constraint.object {
+    stroke: var(--clear-color);
+    stroke-width: var(--stroke-width-wide);
+    fill: var(--constraint-color);
+    stroke-dasharray: none;
+}
+
 
 .conn_line {
     stroke: var(--line-color);
@@ -198,22 +232,18 @@ svg {
     stroke-dasharray: 3,3;
 }
 
-.conn_constraint.connected {
-    /*stroke-dasharray: none;*/
+/*.conn_constraint.connected {
     stroke: var(--clear-color);
     fill: var(--constraint-color);
     outline: calc(1*var(--stroke-width)) dashed var(--constraint-color);
     outline-offset: calc(-2.5*var(--stroke-width));
-    /*paint-order: stroke fill;*/
 }
 
 .conn_constraint.connected.arrow {
-    /*stroke-dasharray: none;*/
     stroke: var(--clear-color);
     fill: var(--constraint-color);
     outline: calc(0.5*var(--stroke-width)) dashed var(--constraint-color);
     outline-offset: calc(-2*var(--stroke-width-wide) + var(--stroke-width));
-    /*paint-order: stroke fill;*/
 }
 
 .conn_constraint.connected:hover {
@@ -221,7 +251,7 @@ svg {
     stroke: var(--constraint-color);
     stroke-width: var(--stroke-width-wide);
     outline: none;
-}
+}*/
 
 .conn_mandatory {
     stroke: var(--line-color);
@@ -230,19 +260,21 @@ svg {
     paint-order: stroke fill;
 }
 
-.conn_subtype {
+.subtype {
     stroke: var(--constraint-color);
     stroke-width: calc(1.5*var(--stroke-width));
     fill: var(--constraint-color);
 }
 
-.conn_subtype.dashed {
-    /*stroke-dasharray: none;*/
+.subtype.dashed {
+    stroke-dasharray: 4,5;
+}
+
+/*.conn_subtype.dashed {
     stroke: var(--clear-color);
     fill: var(--constraint-color);
     outline: calc( 1.5*var(--stroke-width)) dashed var(--constraint-color);
     outline-offset: calc(-2*var(--stroke-width-wide) - 0.5*var(--stroke-width) );
-    /*paint-order: stroke fill;*/
 }
 
 .conn_subtype:hover {
@@ -251,7 +283,7 @@ svg {
     cursor: pointer ;
     opacity: 0.8;
     outline: none;
-}
+}*/
 
 /* External constraints */
 
