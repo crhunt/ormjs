@@ -1,7 +1,8 @@
 :root {
     /* Colors */
-    --overlay-color: rgb(129, 218, 240, 0.5);
+    --overlay-color: rgba(129, 218, 240, 0.5);
     --constraint-color: rgb(131, 57, 117);
+    --clear-color: rgba(255, 255, 255,0.0);
     --line-color: #444444;
     --fill-color: #ffffff;
     /* General sizes */
@@ -19,9 +20,12 @@
     --entity-height: 51px; /* 50 px */
     --entity-overlay-r: 12px; /* 12 px */
     /* Rolebox sizes */
-    --rolebox-width: 51px; /* 50 px */
-    --rolebox-height: 19px; /* 18 px */
+    --rolebox-width: 51px; /* 51 px */
+    --rolebox-height: 19px; /* 19 px */
     --rolebox-overlay-r: 8px; /* 8 px */
+    /* Constraint sizes */
+    --constraint-radius: 14px; /* 29 px */
+    --constraint-oradius: 22px; /* 29 px */
 }
 
 @font-face {
@@ -171,52 +175,84 @@ svg {
 
 /* Connectors */
 
+.connector_prototype {
+    cursor: pointer;
+}
+
 .connector {
     stroke-width: var(--stroke-width);
+    stroke-linecap: "round";
 }
 
-.connector:hover {
+.connector.conn_mouseover {
     stroke-width: var(--stroke-width-wide);
     opacity: 0.7;
-    cursor: pointer ;
+    stroke-dasharray: none;
 }
 
-.conn_line {
-    stroke: var(--line-color);
-    stroke-width: var(--stroke-width);
-}
-
-.conn_mandatory {
-    stroke: var(--line-color);
-    fill: var(--constraint-color);
-    stroke-width: var(--stroke-width);
-    paint-order: stroke fill;
-}
-
-.conn_subtype {
+.clear.arrow.conn_mouseover {
     stroke: var(--constraint-color);
-    stroke-width: var(--stroke-width);
 }
 
-.conn_subtype:hover {
+.connector.clear {
     stroke-width: var(--stroke-width-wide);
-    cursor: pointer ;
-    opacity: 0.8;
+    stroke: var(--clear-color);
+    fill: var(--constraint-color);
+    stroke-dasharray: none;
 }
 
-/*.connColor {
+.connector.line {
     stroke: var(--line-color);
-    fill: var(--line-color);
-    stop-color: var(--line-color);
-    stop-opacity: 1;
 }
 
-.constraintColor {
+.connector.constraint {
+    stroke-dasharray: 4,5;
     stroke: var(--constraint-color);
     fill: var(--constraint-color);
-    stop-color: var(--constraint-color);
-    stop-opacity: 1;
-}*/
+}
+
+.subtype {
+    stroke: var(--constraint-color);
+    stroke-width: calc(1.5*var(--stroke-width));
+    fill: var(--constraint-color);
+}
+
+.subtype.dashed {
+    stroke-dasharray: 4,5;
+}
+
+/* External constraints */
+
+.constraint_prototype {
+    cursor: grab;
+}
+
+.constraint {
+    fill: var(--fill-color);
+    stroke: var(--constraint-color);
+    stroke-width: var(--stroke-width);
+}
+.constraint.clear {
+    fill: var(--clear-color);
+    stroke: var(--clear-color);
+}
+
+.constraint_val {
+    stroke: var(--constraint-color);
+    stroke-width: var(--stroke-width);
+    fill: var(--constraint-color);
+}
+
+.constraint_text {
+    font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
+    font-size: var(--font-size-lg);
+    letter-spacing: 0.1em;
+    color: var(--constraint-color);
+    fill: var(--constraint-color);
+    stroke: var(--constraint-color);
+    stroke-width: calc(var(--stroke-width)/2);
+    user-select: none;
+}
 
 /* Highlight Rectangle */
 

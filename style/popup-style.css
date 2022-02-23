@@ -160,6 +160,10 @@ td {
     font-size: var(--font-size-sm);
 }
 
+.warning {
+    color: rgb(146, 11, 11);
+}
+
 /* Right click style overrides */
 
 .d3-context-menu-theme {
@@ -194,4 +198,28 @@ td[colspan="2"].centered {
 
 .poprbg {
     cursor: pointer;
+}
+
+/* Constraint popup */
+
+.constraint_box {
+    fill: rgba(255,255,255,0.0);
+    stroke: rgba(255,255,255,0.0);
+    stroke-width: calc(2*var(--stroke-width));
+}
+
+.constraint_box.selected {
+    fill: rgba(255,255,255,0.0);
+    stroke: var(--overlay-color);
+    stroke-width: calc(2*var(--stroke-width));
+}
+
+.constraint_box.hovered {
+    fill: var(--overlay-color);
+    stroke: var(--overlay-color);
+}
+
+.popsvg {
+    background: rgba(255,255,255,0.0);
+    overflow: hidden;
 }
