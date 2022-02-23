@@ -1,6 +1,6 @@
 # ORMJS: Object Role Modeling in JavaScript
 
-> :warning: This project is in active development. Consider everything an alpha prototype. Release notes will be published here.
+> :warning: This project is in active development. Consider this code an alpha prototype. Release notes will be published here.
 
 ORMJS is a completely clientside Object Role Modeling (ORM) solution, accessible from any modern browser. It is implemented in javascript d3v7.
 
@@ -36,11 +36,12 @@ ORMJS is designed to have a minimalist, intuitive user interface. Develop an ORM
 | Dblclick | Canvas | Generate new entity |
 | Shift + Dblclick | Canvas | Generate new fact |
 | Ctrl + Shift + Dblclick | Canvas | Generate new value |
+| Click + Drag | Canvas | Select multiple objects |
 | RightClick | Object | Object context menu |
 | Dblclick | Object | Open object property menu |
 | Ctrl + Click | Object | Delete object |
 
-Objects can be created and changed using two menus: 
+Objects can be created and modified using two menus: 
 1. the object context menu (access via right-click on the object) and 
 2. the object property menu (access via double-click, or via right-click --> Properties).
 
@@ -84,8 +85,8 @@ Note: Asterisk (&#42;) indicates partial support. Dash (--) indicates no planned
 |Equality constraint |&#9745;|&#9744;|
 |Derived fact type, and derivation rule |--|--|
 |Semiderived fact type, and derivation rule |--|--|
-|Subtyping |&#9745; &#42;|&#9744;|
-|Subtyping constraints |&#9744;|&#9744;|
+|Subtyping |&#9745;|&#9744;|
+|Subtyping constraints |&#9745;|&#9744;|
 |Subtyping derivation status |--|--|
 |Internal frequency constraint |&#9745;|&#9744;|
 |External frequency constraint |&#9745;|&#9744;|
