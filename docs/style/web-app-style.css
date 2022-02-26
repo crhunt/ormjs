@@ -113,7 +113,7 @@ body {
     left: 0px;
     font-family: 'Courier New',Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
     color: rgb(235, 235, 235);
-    background-color:rgb(27, 71, 97,0.7);
+    /*background-color:rgb(27, 71, 97,0.7);*/
     font-size: 1em;
     /*width: var(--code-w);*/
     width: inherit;
