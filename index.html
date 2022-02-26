@@ -45,12 +45,38 @@
     <!-- Object properties -->
     <script type="text/javascript" src="lib/menus/object-option-menus.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/menus/object-property-menu.js" charset="UTF-8"></script>
+    <!-- End Load ORMJS library. -->
+    <!-- Web app scripts -->
+    <script type="text/javascript" src="docs/lib/utilities.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="docs/lib/highlight.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="docs/lib/dragbar.js" charset="UTF-8"></script>
 </head>
 
 <body>
 
+<div class="container">
+
+<div class="right_box">
+
+<div id="topbar">
+    <span><label class="file-upload"><a id="downloadPngButton" class="topbutton" download="ormjs.png">Download PNG</a></label></span>
+    <span><label class="file-upload"><a id="downloadSvgButton" class="topbutton" download="ormjs.svg">Download SVG</a></label></span>
+    
+    <label for="uploadSvgButton" class="file-upload">Upload SVG</label>
+    <input type="file" id="uploadSvgButton" value="" multiple>
+    <span id="uploadname" class="filename"></span>
+    
+    <!--span>Upload SVG: <input type="file" id="uploadSvgButton" value="" multiple></span-->
+    <span class="zoom">Zoom: <input type="range" id="svgscale"></span> 
+</div>
 <div id="canvas"></div>
 <div class="canvas_container"><canvas id="hidden_canvas"></canvas></div>
+
+</div>
+
+<div class="vdragbar"></div>
+
+<div class="right_box">
 
 <div id="codepanel">
     <div id="rel_options">
@@ -64,20 +90,12 @@
     <div id="rel"><pre><code class="language-js"></code></pre></div>
 </div>
 
-<div id="topbar">
-    <span><label class="file-upload"><a id="downloadPngButton" class="topbutton" download="ormjs.png">Download PNG</a></label></span>
-    <span><label class="file-upload"><a id="downloadSvgButton" class="topbutton" download="ormjs.svg">Download SVG</a></label></span>
-    
-    <label for="uploadSvgButton" class="file-upload">Upload SVG</label>
-    <input type="file" id="uploadSvgButton" value="" multiple>
-    <span id="uploadname" class="filename"></span>
-    
-    <!--span>Upload SVG: <input type="file" id="uploadSvgButton" value="" multiple></span-->
-    <span class="zoom">Zoom: <input type="range" id="svgscale"></span> 
+</div>
+
 </div>
 
 <script>
-// Select the target node.
+/*// Select the target node.
 var target = document.querySelector('#rel')
 
 // Create an observer instance.
@@ -90,7 +108,7 @@ observer.observe(target, {
     attributes:    true,
     childList:     true,
     characterData: true
-});
+});*/
 </script>
 
 </body>

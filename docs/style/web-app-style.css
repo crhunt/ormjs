@@ -8,36 +8,82 @@
     --topbar-h: 40px;
     --optionbar-h: 100px;
     --canvas-w: 65vw;
-    --canvas-h: 98vh;
+    --canvas-h: 97vh;
     --code-w: 35vw;
     --margin-h: 10px;
 }
 
+.container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.left_box {
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    height: calc( var(--canvas-h) );
+    margin: 0;
+    padding: 0;
+
+}
+
+.right_box {
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    height: calc( var(--canvas-h) );
+    margin: 0;
+    padding: 0;
+}
+
+.vdragbar {
+    width: 10px;
+    padding: 0;
+    cursor: ew-resize;
+    flex: 0 0 auto;
+  }
+  
+.vdragbar::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: calc( var(--canvas-h) );
+    background: none;
+    margin: 0 auto;
+  }
+
 #topbar {
-    position: absolute;
+    position: relative;
     top: 0px;
     left: 0px;
     height: var(--topbar-h);
-    width: calc( var(--canvas-w) - var(--margin-h) );
-    padding-left: var(--margin-h);
-    padding-top: 5px;
+    /*width: calc( var(--canvas-w) - var(--margin-h) );*/
+    width: inherit;
+    padding-left: 0px;
+    padding-top: calc( var(--margin-h) );
 }
 
 #canvas {
-    position: absolute;
+    position: relative;
     top: 0px;
     left: 0px;
-    width: var(--canvas-w);
-    height: var(--canvas-h);;
+    /*width: var(--canvas-w);*/
+    width: inherit;
+    height: calc( var(--canvas-h) - var(--topbar-h) - var(--margin-h) );
     background: #eee;
 }
 
 #codepanel {
-    position: absolute;
+    position: relative;
     top: 0px;
-    left: var(--canvas-w);
+    left: 0px;
     font-size: 14px;
-    width: var(--code-w);
+    /*width: var(--code-w);*/
+    width: inherit;
     height: var(--canvas-h);
     background: rgb(73, 73, 73);
     overflow: hidden;
@@ -53,7 +99,8 @@
     font-size: var(--font-size-lg);
     color: #000;
     background-color: #fff;
-    width: var(--code-w);
+    /*width: var(--code-w);*/
+    width: inherit;
     height: var(--optionbar-h);
     padding: var(--margin-h);
     overflow: hide;
@@ -66,12 +113,13 @@
     left: 0px;
     font-family: 'Courier New',Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
     color: rgb(235, 235, 235);
-    /*background-color:rgb(27, 71, 97,0.7);*/
+    background-color:rgb(27, 71, 97,0.7);
     font-size: 1em;
-    width: var(--code-w);
+    /*width: var(--code-w);*/
+    width: inherit;
     height: calc( 100vh - 2*var(--margin-h) - var(--optionbar-h) );
     padding: 10px;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .topbutton {
