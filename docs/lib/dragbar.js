@@ -8,7 +8,8 @@ function activate_vdragbar(handle_class,wrapper_class,leftdiv) {
     document.addEventListener('mousedown', function(e) {
         // If mousedown event is fired from .handler, toggle flag to true
         if (e.target === handler) {
-        isHandlerDragging = true;
+            isHandlerDragging = true;
+            boxA.style.flexShrink = 1;
         }
     });
     
@@ -34,11 +35,12 @@ function activate_vdragbar(handle_class,wrapper_class,leftdiv) {
         var spc = (10 - 4)/2; // (handler width - handler before width)/2
         boxA.style.width = Math.min( boxAmaxWidth, Math.max(boxAminWidth, pointerRelativeXpos - spc) ) + 'px';
         boxA.style.flexGrow = 0;
-        });
+    });
 
-        document.addEventListener('mouseup', function(e) {
+    document.addEventListener('mouseup', function(e) {
         // Turn off dragging flag when user mouse is up
         isHandlerDragging = false;
+        boxA.style.flexShrink = 0;
     });
         
 }

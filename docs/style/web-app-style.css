@@ -25,16 +25,17 @@ body {
 
 .left_box {
     box-sizing: border-box;
-    flex: 1 1 auto;
+    flex: 0 0 auto;
     height: calc( var(--canvas-h) );
     margin: 0;
     padding: 0;
+    width: calc( var(--canvas-w) );
 
 }
 
 .right_box {
     box-sizing: border-box;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
     height: calc( var(--canvas-h) );
     margin: 0;
     padding: 0;
