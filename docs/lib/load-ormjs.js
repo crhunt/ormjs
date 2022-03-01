@@ -6,10 +6,10 @@ var ormjs;
 
 window.onload = function() {
 
-    initialize_globals();
+    //initialize_globals();
     
     // Create metamodel
-    //initialize_metamodel();
+    initialize_metamodel();
     // Create model
     var model = new ormjs.Model();
 
