@@ -1,6 +1,6 @@
 /* Initialize ORMJS on page load */
 
-//var svg; // Defined in svg-constructor
+// Note: disentangle what users shouldn't need to initialize
 
 var ormjs;
 
