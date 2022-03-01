@@ -16,23 +16,22 @@
     <link rel="stylesheet" href="style/orm-style.css" type="text/css" />
     <link rel="stylesheet" href="style/popup-style.css" type="text/css" />
     <link rel="stylesheet" href="docs/style/web-app-style.css" type="text/css" />
+    <!-- Web app scripts -->
+    <script type="text/javascript" src="docs/lib/utilities.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="docs/lib/highlight.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="docs/lib/dragbar.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="docs/lib/load-ormjs.js" charset="UTF-8"></script>
     <!-- Load ORMJS library. This is order-sensitive. -->
     <!-- Load ORMJS diagrams from SVG -->
     <script type="text/javascript" src="lib/parsers/parse-svg.js" charset="UTF-8"></script>
     <!-- Parse diagram to other formats -->
     <script type="text/javascript" src="lib/parsers/parse-to-xml.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/parsers/parse-to-rel.js" charset="UTF-8"></script>
-    <!-- Parse diagram to metamodel -->
-    <script type="text/javascript" src="lib/metamodel/metamodel-object.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/metamodel/metamodel-role.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/metamodel/metamodel-readings.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/metamodel/metamodel-fact.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/metamodel/metamodel-constructor.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/parsers/parse-orm.js" charset="UTF-8"></script>
     <!-- Graph constructors -->
-    <script type="text/javascript" src="lib/highlight-rect.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/svg-constructor.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/model-constructor.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/highlight-region.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/graph-constructor.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/view-constructor.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/entity-constructor.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/value-constructor.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/rolebox-constructor.js" charset="UTF-8"></script>
@@ -44,12 +43,41 @@
     <!-- Object properties -->
     <script type="text/javascript" src="lib/menus/object-option-menus.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/menus/object-property-menu.js" charset="UTF-8"></script>
+    <!-- Parse diagram to metamodel -->
+    <script type="text/javascript" src="lib/metamodel/metamodel-object.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/metamodel/metamodel-role.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/metamodel/metamodel-readings.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/metamodel/metamodel-fact.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/metamodel/metamodel-constructor.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/parsers/parse-orm.js" charset="UTF-8"></script>
+    <!-- End Load ORMJS library. -->
 </head>
 
 <body>
 
+<div class="container">
+
+<div class="left_box">
+
+<div id="topbar">
+    <span><label class="file-upload"><a id="downloadPngButton" class="topbutton" download="ormjs.png">Download PNG</a></label></span>
+    <span><label class="file-upload"><a id="downloadSvgButton" class="topbutton" download="ormjs.svg">Download SVG</a></label></span>
+    
+    <label for="uploadSvgButton" class="file-upload">Upload SVG</label>
+    <input type="file" id="uploadSvgButton" value="" multiple>
+    <span id="uploadname" class="filename"></span>
+    
+    <!--span>Upload SVG: <input type="file" id="uploadSvgButton" value="" multiple></span-->
+    <span class="zoom">Zoom: <input type="range" id="svgscale"></span> 
+</div>
 <div id="canvas"></div>
 <div class="canvas_container"><canvas id="hidden_canvas"></canvas></div>
+
+</div>
+
+<div class="vdragbar"></div>
+
+<div class="right_box">
 
 <div id="codepanel">
     <div id="rel_options">
@@ -63,34 +91,9 @@
     <div id="rel"><pre><code class="language-js"></code></pre></div>
 </div>
 
-<div id="topbar">
-    <span><label class="file-upload"><a id="downloadPngButton" class="topbutton" download="ormjs.png">Download PNG</a></label></span>
-    <span><label class="file-upload"><a id="downloadSvgButton" class="topbutton" download="ormjs.svg">Download SVG</a></label></span>
-    
-    <label for="uploadSvgButton" class="file-upload">Upload SVG</label>
-    <input type="file" id="uploadSvgButton" value="" multiple>
-    <span id="uploadname" class="filename"></span>
-    
-    <!--span>Upload SVG: <input type="file" id="uploadSvgButton" value="" multiple></span-->
-    <span class="zoom">Zoom: <input type="range" id="svgscale"></span> 
 </div>
 
-<script>
-// Select the target node.
-var target = document.querySelector('#rel')
-
-// Create an observer instance.
-var observer = new MutationObserver(function(mutations) {
-    Prism.highlightAll();
-});
-
-// Pass in the target node, as well as the observer options.
-observer.observe(target, {
-    attributes:    true,
-    childList:     true,
-    characterData: true
-});
-</script>
+</div>
 
 </body>
 
