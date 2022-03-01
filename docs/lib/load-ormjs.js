@@ -12,7 +12,6 @@ window.onload = function() {
     //initialize_metamodel();
     // Create model
     var model = new ormjs.Model();
-    console.log("load: objects", model.objects)
 
     // Initialize web-app utilities
     webapp_utilities();
@@ -20,7 +19,6 @@ window.onload = function() {
     // Create SVG
     var svgobj = new ormjs.View({model: model.id});
     svgobj.set_current();
-    console.log("load: objects 2",model.objects)
 
     // Button actions
     // Download diagram as image
