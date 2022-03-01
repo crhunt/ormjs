@@ -1,15 +1,26 @@
 /* Initialize ORMJS on page load */
 
-var svg; // Defined in svg-constructor
+//var svg; // Defined in svg-constructor
+
+var ormjs;
 
 window.onload = function() {
 
     initialize_globals();
+    
+    // Create metamodel
+    //initialize_metamodel();
+    // Create model
+    var model = new ormjs.Model();
+    console.log("load: objects", model.objects)
+
+    // Initialize web-app utilities
     webapp_utilities();
 
     // Create SVG
-    var svgobj = new View();
+    var svgobj = new ormjs.View({model: model.id});
     svgobj.set_current();
+    console.log("load: objects 2",model.objects)
 
     // Button actions
     // Download diagram as image
@@ -39,6 +50,6 @@ window.onload = function() {
 
     // Draw an initial entity
     //draw_entity(0,0);
-    new Entity({x:0, y:0});
+    new ormjs.Entity({x: 0, y: 0, model: model.id});
 
 }
