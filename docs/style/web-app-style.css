@@ -119,8 +119,8 @@ body {
     /*width: var(--code-w);*/
     width: inherit;
     height: calc( 100vh - 2*var(--margin-h) - var(--optionbar-h) );
-    padding: 10px;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .topbutton {
