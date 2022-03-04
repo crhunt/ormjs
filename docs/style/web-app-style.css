@@ -123,6 +123,13 @@ body {
     overflow-y: scroll;
 }
 
+#rel p {
+    font-family: 'Montserrat', 'Trebuchet MS', Tahoma, Sans-Serif;
+    font-size: var(--font-size-lg);
+    line-height: 1.2em;
+    margin-left: 15px;
+}
+
 .topbutton {
     cursor: pointer;
     text-decoration: inherit;

@@ -11,6 +11,7 @@ function set_traversal(view) {
 
     console.log("set_traversal", view, view.id)
 
+    view.traversal_target = "rel";
     if(d3.select("#traversalMode").property("checked")){
         view.traversal = true;
     } else {
