@@ -1,0 +1,18 @@
+/* Style for traversal mode */
+
+.tselected {
+    filter: drop-shadow(5px 5px 1px rgb(108, 150, 69));
+}
+
+.tneighbor {
+    /*filter: drop-shadow(0px 0px 5px rgb(134, 87, 42));*/
+}
+
+.thidden {
+    /*filter: drop-shadow(0px 0px 5px rgb(18, 7, 82));*/
+    display: none;
+}
+
+.toverlay {
+    display: none;
+}
