@@ -34,6 +34,10 @@ window.onload = function() {
     d3.select("#highlightNoParse")
       .property("checked",false)
       .on("change",set_highlighter);
+    // Traversal Mode
+    d3.select("#traversalMode")
+      .property("checked",false)
+      .on("change",() => {set_traversal(svgobj)});
     // Set Rel display format
     d3.select("#graphFormat")
       .property("checked",false)
@@ -47,7 +51,6 @@ window.onload = function() {
       .on("change",set_xml_parser);
 
     // Draw an initial entity
-    //draw_entity(0,0);
     new ormjs.Entity({x: 0, y: 0, model: model.id});
 
 }

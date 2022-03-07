@@ -12,10 +12,12 @@
     <script type="text/javascript" src="docs/lib/external/prism.js" charset="UTF-8"></script>
     <!-- Style -->
     <link rel="stylesheet" href="style/external/d3-context-menu.css" type="text/css" />
-    <link href="docs/style/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="style/orm-style.css" type="text/css" />
     <link rel="stylesheet" href="style/popup-style.css" type="text/css" />
+    <link rel="stylesheet" href="style/traversal.css" type="text/css" />
+    <!-- Web app style -->
     <link rel="stylesheet" href="docs/style/web-app-style.css" type="text/css" />
+    <link rel="stylesheet" href="docs/style/prism.css" type="text/css" />
     <!-- Web app scripts -->
     <script type="text/javascript" src="docs/lib/utilities.js" charset="UTF-8"></script>
     <script type="text/javascript" src="docs/lib/highlight.js" charset="UTF-8"></script>
@@ -28,18 +30,19 @@
     <script type="text/javascript" src="lib/parsers/parse-to-xml.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/parsers/parse-to-rel.js" charset="UTF-8"></script>
     <!-- Graph constructors -->
-    <script type="text/javascript" src="lib/model-constructor.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/highlight-region.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/graph-constructor.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/view-constructor.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/entity-constructor.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/value-constructor.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/rolebox-constructor.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/rolebox-constraints.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/constraint-constructor.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/constraint-paths.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/connector-constructor.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/connector-paths.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/constructor/model-constructor.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/constructor/graph-constructor.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/constructor/view-constructor.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/constructor/entity-constructor.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/constructor/value-constructor.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/constructor/rolebox-constructor.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/constructor/rolebox-constraints.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/constructor/constraint-constructor.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/constructor/constraint-paths.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/constructor/connector-constructor.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/constructor/connector-paths.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/tools/highlight-region.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/tools/traversal.js" charset="UTF-8"></script>
     <!-- Object properties -->
     <script type="text/javascript" src="lib/menus/object-option-menus.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/menus/object-property-menu.js" charset="UTF-8"></script>
@@ -82,6 +85,7 @@
 <div id="codepanel">
     <div id="rel_options">
         <div><input type="checkbox" id="highlightNoParse" /> Highlight relations not parsed to Rel</div>
+        <div><input type="checkbox" id="traversalMode" /> Traversal</div>
         <div class="spacy">For testing purposes:
         <div><input type="checkbox" id="graphFormat" /> Graph Rel Format</div>
         <div><input type="checkbox" id="shortFormat" /> Short Rel Format</div>

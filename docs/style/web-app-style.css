@@ -6,7 +6,7 @@
 :root {
     /* Div sizes */
     --topbar-h: 40px;
-    --optionbar-h: 100px;
+    --optionbar-h: 120px;
     --canvas-w: 65vw;
     --canvas-h: 97vh;
     --code-w: 35vw;
@@ -121,6 +121,13 @@ body {
     height: calc( 100vh - 2*var(--margin-h) - var(--optionbar-h) );
     overflow-x: hidden;
     overflow-y: scroll;
+}
+
+#rel p {
+    font-family: 'Montserrat', 'Trebuchet MS', Tahoma, Sans-Serif;
+    font-size: var(--font-size-lg);
+    line-height: 1.2em;
+    margin-left: 15px;
 }
 
 .topbutton {
