@@ -59,6 +59,6 @@ window.onload = function() {
       .on("change", () => { set_xml_parser(model); });
 
     // Draw an initial entity
-    new ormjs.Entity({x: 0, y: 0, view: view});
+    new ormjs.Entity({x: 0, y: 0, view: view.id, model: model.id});
 
 }
