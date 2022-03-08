@@ -20,13 +20,13 @@ function set_traversal(view) {
     ormjs.Traversal.update(view);
 }
 
-function set_highlighter(modelID) {
+function set_highlighter(view) {
     if(d3.select("#highlightNoParse").property("checked")){
-        ormjs.display.highlightNoParse = true;
+        view.highlight = true;
     } else {
-        ormjs.display.highlightNoParse = false;
+        view.highlight = false;
     }
-    ormjs.RelHighlighter.highlight(modelID);
+    ormjs.RelHighlighter.highlight(view);
 }
 
 function set_xml_parser(metamodel) {

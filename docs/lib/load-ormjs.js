@@ -33,7 +33,7 @@ window.onload = function() {
     // Highlight ORM elements not parsed to Rel
     d3.select("#highlightNoParse")
       .property("checked",false)
-      .on("change",() => { set_highlighter(model.id); });
+      .on("change",() => { set_highlighter(svgobj); });
     // Traversal Mode
     d3.select("#traversalMode")
       .property("checked",false)
