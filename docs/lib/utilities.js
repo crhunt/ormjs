@@ -19,3 +19,22 @@ function set_traversal(view) {
     }
     ormjs.Traversal.update(view);
 }
+
+function set_highlighter(modelID) {
+    if(d3.select("#highlightNoParse").property("checked")){
+        ormjs.display.highlightNoParse = true;
+    } else {
+        ormjs.display.highlightNoParse = false;
+    }
+    ormjs.RelHighlighter.highlight(modelID);
+}
+
+function set_xml_parser(metamodel) {
+    if(d3.select("#parse_xml").property("checked")){
+        ormjs.display.parse_xml = true;
+    } else {
+        ormjs.display.parse_xml = false;
+    }
+    ormjs.GenerateRel.display_rel( metamodel );
+    display_xml(metamodel);
+}

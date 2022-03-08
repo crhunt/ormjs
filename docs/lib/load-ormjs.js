@@ -33,11 +33,11 @@ window.onload = function() {
     // Highlight ORM elements not parsed to Rel
     d3.select("#highlightNoParse")
       .property("checked",false)
-      .on("change",set_highlighter);
+      .on("change",() => { set_highlighter(model.id); });
     // Traversal Mode
     d3.select("#traversalMode")
       .property("checked",false)
-      .on("change",() => {set_traversal(svgobj)});
+      .on("change",() => { set_traversal(svgobj); });
     // Set Rel display format
     d3.select("#graphFormat")
       .property("checked",false)
@@ -48,7 +48,7 @@ window.onload = function() {
     // Highlight ORM elements not parsed to Rel
     d3.select("#parse_xml")
       .property("checked",false)
-      .on("change",set_xml_parser);
+      .on("change", () => { set_xml_parser(model.metamodel); });
 
     // Draw an initial entity
     new ormjs.Entity({x: 0, y: 0, model: model.id});
