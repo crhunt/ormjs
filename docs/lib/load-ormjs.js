@@ -21,7 +21,7 @@ window.onload = function() {
     webapp_utilities();
 
     // Create SVG
-    var view = new ormjs.View({model: model.id});
+    var view = new ormjs.View({model: model.id, parent: "canvas"});
     view.set_current();
 
     view.traversal = false;
