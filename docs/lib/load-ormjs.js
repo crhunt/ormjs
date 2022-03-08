@@ -6,19 +6,27 @@ var ormjs;
 
 window.onload = function() {
 
-    //initialize_globals();
-    
-    // Create metamodel
-    //initialize_metamodel();
     // Create model
     var model = new ormjs.Model();
+
+    // Display settings
+    ormjs.display.graphFormat = false;
+    ormjs.display.shortFormat = true;
+    model.generate_xml = false;
+    model.generate_rel = true;
+    model.rel_target = "rel";
+    model.xml_target = "rel";
 
     // Initialize web-app utilities
     webapp_utilities();
 
     // Create SVG
-    var svgobj = new ormjs.View({model: model.id});
-    svgobj.set_current();
+    var view = new ormjs.View({model: model.id});
+    view.set_current();
+
+    view.traversal = false;
+    view.traversal_target = "rel";
+    view.highlight = false;
 
     // Button actions
     // Download diagram as image
@@ -32,23 +40,23 @@ window.onload = function() {
       .on("change", upload_svg, false);
     // Highlight ORM elements not parsed to Rel
     d3.select("#highlightNoParse")
-      .property("checked",false)
-      .on("change",() => { set_highlighter(svgobj); });
+      .property("checked", view.highlight)
+      .on("change",() => { set_highlighter(view); });
     // Traversal Mode
     d3.select("#traversalMode")
-      .property("checked",false)
-      .on("change",() => { set_traversal(svgobj); });
+      .property("checked", view.traversal)
+      .on("change",() => { set_traversal(view); });
     // Set Rel display format
     d3.select("#graphFormat")
-      .property("checked",false)
-      .on("change",set_graphformat);
+      .property("checked", ormjs.display.graphFormat)
+      .on("change",() => { set_graphformat(model); } );
     d3.select("#shortFormat")
-      .property("checked",true)
-      .on("change",set_shortformat);
+      .property("checked", ormjs.display.shortFormat)
+      .on("change",() => { set_shortformat(model); } );
     // Highlight ORM elements not parsed to Rel
     d3.select("#parse_xml")
-      .property("checked",false)
-      .on("change", () => { set_xml_parser(model.metamodel); });
+      .property("checked", model.generate_xml)
+      .on("change", () => { set_xml_parser(model); });
 
     // Draw an initial entity
     new ormjs.Entity({x: 0, y: 0, model: model.id});
