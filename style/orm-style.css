@@ -1,10 +1,19 @@
 :root {
-    /* Colors */
-    --overlay-color: rgba(129, 218, 240, 0.5);
-    --constraint-color: rgb(131, 57, 117);
-    --clear-color: rgba(255, 255, 255,0.0);
-    --line-color: #444444;
-    --fill-color: #ffffff;
+    /* Color palette */
+    --rai-dark-blue: rgb(0.5,6.5,77.1);
+    --rai-pink: rgb(241.8,126,96.2);
+    --overlay-blue: rgba(129, 218, 240, 0.5);
+    --constraint-purple: rgb(131, 57, 117);
+    --transparent-white: rgba(255, 255, 255,0.0);
+    --grey-black: #444444;
+    --white: rgba(255, 255, 255,1.0);
+    /* Color settings */
+    --overlay-color: var(--overlay-blue);
+    --constraint-color: var(--constraint-purple);
+    --clear-color: var(--transparent-white);
+    --line-color: var(--grey-black);
+    --fill-color: var(--white);
+    --text-color: var(--grey-black);
     /* General sizes */
     --svg-scale: 600;
     --svg-scale-max: 1000;
@@ -93,6 +102,7 @@ svg {
 .ename {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--font-size-lg);
+    color: var(--text-color);
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
@@ -101,6 +111,7 @@ svg {
 .refmode {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--font-size-md);
+    color: var(--text-color);
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
@@ -161,6 +172,7 @@ svg {
 .rbname {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--font-size-md);
+    color: var(--text-color);
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
