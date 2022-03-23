@@ -49,7 +49,7 @@
     --constraint-border: var(--stroke-width);
     --constraint-fill-color: var(--fill-color);
     /* RAI color palette settings */
-    --line-color: rgb(214, 214, 214);
+    /*--line-color: #dcdee0;
     --entity-fill-color: var(--rai-pink);
     --value-fill-color: var(--rai-pink);
     --role-fill-color: var(--rai-dark-blue);
@@ -62,6 +62,27 @@
     --value-border-color: var(--white);
     --role-border-color: var(--white);
     --constraint-color: rgb(172, 102, 159);
+    --line-color: rgb(22.1, 22.9, 23.7);*/
+    /* RAI color palette v3 (uncomment RAI settings above) */
+    /*--lite-line-color: #dcdee0;
+    --entity-border: var(--stroke-width);
+    --entity-border-color: var(--lite-line-color);
+    --value-border: var(--stroke-width);
+    --value-border-color: var(--lite-line-color);
+    --role-border-color: var(--lite-line-color);*/
+    /* No text (combine with other RAI settings above) */
+    /*--entity-text-color: var(--transparent-white);
+    --predicate-text-color: var(--transparent-white);*/
+    /* RAI color palette v2 (comment RAI settings above) */
+    /*--entity-border-color: var(--rai-dark-blue);
+    --value-border-color: var(--rai-dark-blue);
+    --role-border-color: var(--rai-dark-blue);
+    --constraint-color: var(--rai-pink);
+    --entity-text-color: var(--rai-dark-blue);
+    --predicate-text-color: var(--rai-dark-blue);
+    --line-color: #dcdee0;
+    --line-color: rgb(22.1, 22.9, 23.7);*/
+
 }
 
 @font-face {
