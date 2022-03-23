@@ -7,7 +7,7 @@
     --transparent-white: rgba(255, 255, 255,0.0);
     --grey-black: #444444;
     --white: rgba(255, 255, 255,1.0);
-    /* Color settings */
+    /* General color settings */
     --overlay-color: var(--overlay-blue);
     --constraint-color: var(--constraint-purple);
     --clear-color: var(--transparent-white);
@@ -24,17 +24,44 @@
     --font-size-lg: 1em; /* 16 px */
     --font-size-md: 0.8em; /* 14 px */
     --font-size-sm: 0.7em; /* 14 px */
-    /* Entity sizes */
+    /* Entity / Value */
     --entity-rx-ry: 7px; /* 7 px */
     --entity-height: 51px; /* 50 px */
     --entity-overlay-r: 12px; /* 12 px */
-    /* Rolebox sizes */
+    --entity-text-color: var(--text-color);
+    --entity-fill-color: var(--fill-color);
+    --value-fill-color: var(--fill-color);
+    --entity-border: var(--stroke-width);
+    --value-border: var(--stroke-width);
+    --entity-border-color: var(--line-color);
+    --value-border-color: var(--line-color);
+    /* Rolebox */
     --rolebox-width: 51px; /* 51 px */
     --rolebox-height: 19px; /* 19 px */
     --rolebox-overlay-r: 8px; /* 8 px */
-    /* Constraint sizes */
+    --rolebox-border: var(--stroke-width);
+    --role-fill-color: var(--fill-color);
+    --role-border-color: var(--line-color);
+    --predicate-text-color: var(--text-color);
+    /* Constraint */
     --constraint-radius: 14px; /* 29 px */
     --constraint-oradius: 22px; /* 29 px */
+    --constraint-border: var(--stroke-width);
+    --constraint-fill-color: var(--fill-color);
+    /* RAI color palette settings */
+    --line-color: rgb(214, 214, 214);
+    --entity-fill-color: var(--rai-pink);
+    --value-fill-color: var(--rai-pink);
+    --role-fill-color: var(--rai-dark-blue);
+    --constraint-fill-color: var(--white);
+    --entity-text-color: var(--white);
+    --predicate-text-color: var(--rai-dark-blue);
+    --entity-border: 3px;
+    --entity-border-color: var(--white);
+    --value-border: 3px;
+    --value-border-color: var(--white);
+    --role-border-color: var(--white);
+    --constraint-color: rgb(172, 102, 159);
 }
 
 @font-face {
@@ -86,9 +113,9 @@ svg {
 }
 
 .entity {
-    fill: var(--fill-color);
-    stroke: var(--line-color);
-    stroke-width: var(--stroke-width);
+    fill: var(--entity-fill-color);
+    stroke: var(--entity-border-color);
+    stroke-width: var(--entity-border);
     /* width determined by entity name */
     height: var(--entity-height);
     rx: var(--entity-rx-ry);
@@ -102,7 +129,7 @@ svg {
 .ename {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--font-size-lg);
-    color: var(--text-color);
+    fill: var(--entity-text-color);
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
@@ -111,7 +138,7 @@ svg {
 .refmode {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--font-size-md);
-    color: var(--text-color);
+    fill: var(--entity-text-color);
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
@@ -124,9 +151,9 @@ svg {
 }
 
 .value {
-    fill: var(--fill-color);
-    stroke: var(--line-color);
-    stroke-width: var(--stroke-width);
+    fill: var(--value-fill-color);
+    stroke: var(--value-border-color);
+    stroke-width: var(--value-border);
     stroke-dasharray: 5,3;
     /* width determined by entity name */
     height: var(--entity-height);
@@ -145,9 +172,9 @@ svg {
 }
 
 .rolebox {
-    fill: var(--fill-color);
-    stroke: var(--line-color);
-    stroke-width: var(--stroke-width);
+    fill: var(--role-fill-color);
+    stroke: var(--role-border-color);
+    stroke-width: var(--rolebox-border);
     width: var(--rolebox-width);
     height: var(--rolebox-height);
 }
@@ -172,7 +199,7 @@ svg {
 .rbname {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--font-size-md);
-    color: var(--text-color);
+    fill: var(--predicate-text-color);
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
@@ -182,7 +209,7 @@ svg {
 
 .rb_constraint {
     stroke: var(--constraint-color);
-    stroke-width: var(--stroke-width);
+    stroke-width: var(--constraint-border);
 }
 
 /* Connectors */
@@ -240,7 +267,7 @@ svg {
 }
 
 .constraint {
-    fill: var(--fill-color);
+    fill: var(--constraint-fill-color);
     stroke: var(--constraint-color);
     stroke-width: var(--stroke-width);
 }

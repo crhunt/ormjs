@@ -75,7 +75,8 @@ body {
     /*width: var(--canvas-w);*/
     width: inherit;
     height: calc( var(--canvas-h) - var(--topbar-h) - var(--margin-h) );
-    background: #eee;
+    /*background: #eee;*/
+    background: #fff;
 }
 
 #codepanel {
