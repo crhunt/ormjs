@@ -20,11 +20,11 @@
     --ojs-pop-close-sz: 15px;
 }
 
-.popup_group {
+.ormjs-popup_group {
     cursor: grab;
 }
 
-.popup {
+.ormjs-popup {
     fill: var(--ojs-pop-fill);
     stroke: var(--ojs-pop-border);
     stroke-width: var(--ojs-stroke-width);
@@ -32,26 +32,26 @@
     ry: var(--ojs-entity-rx-ry);
 }
 
-.popup_content {
+.ormjs-popup_content {
     margin: var(--ojs-pop-marg) var(--ojs-pop-marg) var(--ojs-pop-marg) var(--ojs-pop-marg);
     width: calc( var(--ojs-pop-width) - 2*var(--ojs-pop-marg) );
     height: calc( var(--ojs-pop-height) - 2*var(--ojs-pop-marg) );
     overflow: hidden;
 }
 
-.xclose {
+.ormjs-xclose {
     stroke: rgb(0, 0, 0,0.5);
     stroke-width: var(--ojs-pop-stroke);
     opacity: 0.3;
     cursor: pointer;
 }
 
-.xclose:hover {
+.ormjs-xclose:hover {
     opacity: 1.0;
     stroke-width: var(--ojs-pop-stroke-hover);
 }
 
-.popup_form {
+.ormjs-popup_form {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     width: calc( var(--ojs-pop-width) - 2*var(--ojs-pop-marg) );
@@ -59,26 +59,26 @@
     overflow: hidden;
 }
 
-.popup_form form {
+.ormjs-popup_form form {
     margin-top: 0px;
     padding-top: 0px;
 }
 
-.popup_form input[type="text"] {
+.ormjs-popup_form input[type="text"] {
     border: none;
     width: var(--ojs-pop-text-width);
     font-family: 'Montserrat Light';
     font-size: var(--ojs-pop-text-size);
 }
 
-.popup_form input[type="text"]:focus {
+.ormjs-popup_form input[type="text"]:focus {
     border-color: rbga(129, 218, 240, 1.0);
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.0), 0 0 8px var(--ojs-overlay-color);
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.0), 0 0 8px var(--ojs-overlay-color);
 }
 
-.popup_form input[type="radio"] {
+.ormjs-popup_form input[type="radio"] {
     background-color: #fff;
     margin: 0 0.2em 0 0;
     font: inherit;
@@ -88,15 +88,15 @@
     transform: translateY(-0.1em);
 }
 
-.popup_form input[type="radio"]:checked::before {
+.ormjs-popup_form input[type="radio"]:checked::before {
     transform: scale(1);
   }
 
-.popup_form label {
+.ormjs-popup_form label {
     font-family: 'Montserrat';
     font-size: var(--ojs-font-size-lg);
 }
-.popup_form p {
+.ormjs-popup_form p {
     font-family: 'Montserrat Light';
     font-size: var(--ojs-font-size-lg);
     user-select: none;
@@ -104,7 +104,7 @@
     -webkit-user-select:none;
 }
 
-.popup_form h1 {
+.ormjs-popup_form h1 {
     font-family: 'Montserrat';
     font-size: var(--ojs-font-size-xl);
     margin-top: 0px;
@@ -116,51 +116,51 @@
     -webkit-user-select:none;
 }
 
-.submit_svg {
+.ormjs-submit_svg {
     position: relative;
     cursor: pointer;
     background: rgba(199, 238, 180, 0.3);
     fill: rgba(199, 238, 180, 0.3);
 }
 
-.spath {
+.ormjs-spath {
     fill: none;
     stroke: rgba(146, 194, 122, 0.8);
     cursor: pointer;
 }
 
-.spath:hover {
+.ormjs-spath:hover {
     opacity: 1.0;
 }
 
-table, th, td {
+.ormjs-popup_form table, th, td {
     margin: auto;
 }
 
-tr {
+.ormjs-popup_form tr {
     width: 1%;
 }
 
-td {
+.ormjs-popup_form td {
     vertical-align: center;
     padding-left: 3px;
     padding-right: 3px;
 }
 
-.left_col { /* I don't think they are 0 based */
+.ormjs-popup-left_col { /* I don't think they are 0 based */
     text-align: right;
  }
 
-.right_col {
+ .ormjs-popup-right_col {
     text-align: left;
 }
 
-.right_col_small {
+.ormjs-popup-right_col_small {
     text-align: left;
     font-size: var(--ojs-font-size-sm);
 }
 
-.warning {
+.ormjs-warning {
     color: rgb(146, 11, 11);
 }
 
@@ -181,45 +181,36 @@ td {
     cursor: pointer;
 }
 
-#svgcell {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    background: rgb(104, 51, 51);
-    justify-content: center;
-    align-items: center;
-}
-
-td[colspan="2"].centered {
+td[colspan="2"].ormjs-centered {
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
-.poprbg {
+.ormjs-poprbg {
     cursor: pointer;
 }
 
 /* Constraint popup */
 
-.constraint_box {
+.ormjs-constraint_box {
     fill: rgba(255,255,255,0.0);
     stroke: rgba(255,255,255,0.0);
     stroke-width: calc(2*var(--ojs-stroke-width));
 }
 
-.constraint_box.selected {
+.ormjs-constraint_box.selected {
     fill: rgba(255,255,255,0.0);
     stroke: var(--ojs-overlay-color);
     stroke-width: calc(2*var(--ojs-stroke-width));
 }
 
-.constraint_box.hovered {
+.ormjs-constraint_box.hovered {
     fill: var(--ojs-overlay-color);
     stroke: var(--ojs-overlay-color);
 }
 
-.popsvg {
+.ormjs-popsvg {
     background: rgba(255,255,255,0.0);
     overflow: hidden;
 }
