@@ -1,0 +1,21 @@
+:root {
+    /* RAI color palette settings */
+    --entity-fill-color: var(--rai-pink);
+    --entity-text-color: var(--white);
+    --value-fill-color: var(--white);
+    --value-text-color: var(--rai-pink);
+    --role-fill-color: var(--rai-dark-blue);
+    --constraint-fill-color: var(--white);
+    --predicate-text-color: var(--rai-dark-blue);
+    --entity-border: 2px;
+    --entity-border-color: var(--white);
+    --value-border: 2px;
+    --value-border-color: var(--rai-pink);
+    --role-border-color: var(--white);
+    --line-color: var(--rai-dark-grey);
+    --constraint-color: rgb(240, 194, 181);
+    /* No text (combine with other RAI settings above) */
+    /*--entity-text-color: var(--transparent-white);
+    --predicate-text-color: var(--transparent-white);*/
+
+}

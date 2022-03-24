@@ -1,34 +1,36 @@
 :root {
     /* Color palette */
-    --rai-dark-blue: rgb(0.5,6.5,77.1);
+    /*--rai-dark-blue: rgb(0.5,6.5,77.1);
     --rai-pink: rgb(241.8,126,96.2);
+    --rai-dark-grey: rgb(22.1, 22.9, 23.7);
+    --rai-lite-grey: #dcdee0;
     --overlay-blue: rgba(129, 218, 240, 0.5);
     --constraint-purple: rgb(131, 57, 117);
     --transparent-white: rgba(255, 255, 255,0.0);
     --grey-black: #444444;
-    --white: rgba(255, 255, 255,1.0);
+    --white: rgba(255, 255, 255,1.0);*/
     /* General color settings */
-    --overlay-color: var(--overlay-blue);
+    /*--overlay-color: var(--overlay-blue);
     --constraint-color: var(--constraint-purple);
     --clear-color: var(--transparent-white);
     --line-color: var(--grey-black);
     --fill-color: var(--white);
     --text-color: var(--grey-black);
     /* General sizes */
-    --svg-scale: 600;
+    /*--svg-scale: 600;
     --svg-scale-max: 1000;
     --svg-scale-min: 100;
     --stroke-width: 2px; /* 2 px */
-    --stroke-width-wide: 6px; /* 6 px */
-    --font-size-xl: 1.2em; /* 18 px */
-    --font-size-lg: 1em; /* 16 px */
-    --font-size-md: 0.8em; /* 14 px */
-    --font-size-sm: 0.7em; /* 14 px */
+    /*--stroke-width-wide: 6px; /* 6 px */
+    /*--font-size-xl: 1.2em; /* 18 px */
+    /*--font-size-lg: 1em; /* 16 px */
+    /*--font-size-md: 0.8em; /* 14 px */
+    /*--font-size-sm: 0.7em; /* 14 px */
     /* Entity / Value */
-    --entity-rx-ry: 7px; /* 7 px */
-    --entity-height: 51px; /* 50 px */
-    --entity-overlay-r: 12px; /* 12 px */
-    --entity-text-color: var(--text-color);
+    /*--entity-rx-ry: 7px; /* 7 px */
+    /*--entity-height: 51px; /* 50 px */
+    /*--entity-overlay-r: 12px; /* 12 px */
+    /*--entity-text-color: var(--text-color);
     --entity-fill-color: var(--fill-color);
     --value-fill-color: var(--fill-color);
     --entity-border: var(--stroke-width);
@@ -36,25 +38,25 @@
     --entity-border-color: var(--line-color);
     --value-border-color: var(--line-color);
     /* Rolebox */
-    --rolebox-width: 51px; /* 51 px */
-    --rolebox-height: 19px; /* 19 px */
-    --rolebox-overlay-r: 8px; /* 8 px */
-    --rolebox-border: var(--stroke-width);
+    /*--rolebox-width: 51px; /* 51 px */
+    /*--rolebox-height: 19px; /* 19 px */
+    /*--rolebox-overlay-r: 8px; /* 8 px */
+    /*--rolebox-border: var(--stroke-width);
     --role-fill-color: var(--fill-color);
     --role-border-color: var(--line-color);
     --predicate-text-color: var(--text-color);
     /* Constraint */
-    --constraint-radius: 14px; /* 29 px */
-    --constraint-oradius: 22px; /* 29 px */
-    --constraint-border: var(--stroke-width);
+    /*--constraint-radius: 14px; /* 29 px */
+    /*--constraint-oradius: 22px; /* 29 px */
+    /*--constraint-border: var(--stroke-width);
     --constraint-fill-color: var(--fill-color);
     /* RAI color palette settings */
-    --entity-fill-color: var(--rai-pink);
+    /*--entity-fill-color: var(--rai-pink);
+    --entity-text-color: var(--white);
     --value-fill-color: var(--white);
     --value-text-color: var(--rai-pink);
     --role-fill-color: var(--rai-dark-blue);
     --constraint-fill-color: var(--white);
-    --entity-text-color: var(--white);
     --predicate-text-color: var(--rai-dark-blue);
     --entity-border: 2px;
     --entity-border-color: var(--white);
@@ -63,9 +65,9 @@
     --role-border-color: var(--white);
     --constraint-color: rgb(172, 102, 159);
     --constraint-color: rgb(240, 194, 181);
-    --line-color: rgb(22.1, 22.9, 23.7);
+    --line-color: var(--rai-dark-grey);*/
     /* RAI color palette v3 (uncomment RAI settings above) */
-    /*--lite-line-color: #dcdee0;
+    /*--lite-line-color: var(--rai-lite-grey);
     --entity-border: var(--stroke-width);
     --entity-border-color: var(--lite-line-color);
     --value-border: var(--stroke-width);
