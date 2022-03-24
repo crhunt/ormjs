@@ -110,11 +110,11 @@ svg {
 
 /* Roleboxes */
 
-.rolebox_group {
+.ormjs-rolebox_group {
     cursor: grab;
 }
 
-.rolebox {
+.ormjs-rolebox {
     fill: var(--ojs-role-fill-color);
     stroke: var(--ojs-role-border-color);
     stroke-width: var(--ojs-rolebox-border);
@@ -122,24 +122,24 @@ svg {
     height: var(--ojs-rolebox-height);
 }
 
-.rboverlay {
+.ormjs-rboverlay {
     r: var(--ojs-rolebox-overlay-r);
     stroke-width: 0;
 }
 
 
-.rbadd {
+.ormjs-rbadd {
     stroke: var(--ojs-overlay-color);
     stroke-width: var(--ojs-stroke-width-wide);
     opacity: 0.0;
     cursor: pointer;
 }
 
-.rbadd:hover {
+.ormjs-rbadd:hover {
     opacity: 1.0;
 }
 
-.rbname {
+.ormjs-rbname {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--ojs-font-size-md);
     fill: var(--ojs-predicate-text-color);
@@ -150,7 +150,7 @@ svg {
 
 /* Rolebox Uniqueness Constraints */
 
-.rb_constraint {
+.ormjs-rb_constraint {
     stroke: var(--ojs-constraint-color);
     stroke-width: var(--ojs-constraint-border);
 }
