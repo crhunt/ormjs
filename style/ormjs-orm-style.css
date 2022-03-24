@@ -157,49 +157,49 @@ svg {
 
 /* Connectors */
 
-.connector_prototype {
+.ormjs-connector_prototype {
     cursor: pointer;
 }
 
-.connector {
+.ormjs-connector {
     stroke-width: var(--ojs-stroke-width);
     stroke-linecap: "round";
 }
 
-.connector.conn_mouseover {
+.ormjs-connector.conn_mouseover {
     stroke-width: var(--ojs-stroke-width-wide);
     opacity: 0.7;
     stroke-dasharray: none;
 }
 
-.clear.arrow.conn_mouseover {
+.ormjs-connector.clear.arrow.conn_mouseover {
     stroke: var(--ojs-constraint-color);
 }
 
-.connector.clear {
+.ormjs-connector.clear {
     stroke-width: var(--ojs-stroke-width-wide);
     stroke: var(--ojs-clear-color);
     fill: var(--ojs-constraint-color);
     stroke-dasharray: none;
 }
 
-.connector.line {
+.ormjs-connector.line {
     stroke: var(--ojs-line-color);
 }
 
-.connector.constraint {
+.ormjs-connector.constraint {
     stroke-dasharray: 4,5;
     stroke: var(--ojs-constraint-color);
     fill: var(--ojs-constraint-color);
 }
 
-.subtype {
+.ormjs-connector.subtype {
     stroke: var(--ojs-constraint-color);
     stroke-width: calc(1.5*var(--ojs-stroke-width));
     fill: var(--ojs-constraint-color);
 }
 
-.subtype.dashed {
+.ormjs-connector.subtype.dashed {
     stroke-dasharray: 4,5;
 }
 
