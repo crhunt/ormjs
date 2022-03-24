@@ -56,7 +56,7 @@ svg {
     ry: var(--ojs-entity-rx-ry);
 }
 
-.ormjs-eoverlay {
+.ormjs-overlay.eoverlay {
     r: var(--ojs-entity-overlay-r);
 }
 
@@ -95,7 +95,7 @@ svg {
     ry: var(--ojs-entity-rx-ry);
 }
 
-.ormjs-voverlay {
+.ormjs-overlay.voverlay {
     r: var(--ojs-entity-overlay-r);
 }
 
@@ -122,7 +122,7 @@ svg {
     height: var(--ojs-rolebox-height);
 }
 
-.ormjs-rboverlay {
+.ormjs-overlay.rboverlay {
     r: var(--ojs-rolebox-overlay-r);
     stroke-width: 0;
 }
@@ -205,27 +205,27 @@ svg {
 
 /* External constraints */
 
-.constraint_prototype {
+.ormjs-constraint_prototype {
     cursor: grab;
 }
 
-.constraint {
+.ormjs-constraint {
     fill: var(--ojs-constraint-fill-color);
     stroke: var(--ojs-constraint-color);
     stroke-width: var(--ojs-stroke-width);
 }
-.constraint.clear {
+.ormjs-constraint.clear {
     fill: var(--ojs-clear-color);
     stroke: var(--ojs-clear-color);
 }
 
-.constraint_val {
+.ormjs-constraint_val {
     stroke: var(--ojs-constraint-color);
     stroke-width: var(--ojs-stroke-width);
     fill: var(--ojs-constraint-color);
 }
 
-.constraint_text {
+.ormjs-constraint_text {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--ojs-font-size-lg);
     letter-spacing: 0.1em;
@@ -238,7 +238,7 @@ svg {
 
 /* Highlight Rectangle */
 
-.highlight_rect {
+.ormjs-highlight_rect {
     fill: var(--ojs-overlay-color);
     stroke: var(--ojs-line-color);
     stroke-width: 0px;
@@ -246,10 +246,10 @@ svg {
 
 /* Rel */
 
-.notparsed {
+.ormjs-notparsed {
     filter: drop-shadow(0px 0px 5px rgba(255, 51, 51, 0.7));
 }
 
-.selected {
+.ormjs-selected {
     filter: drop-shadow(0px 0px 5px var(--ojs-overlay-color));
 }
