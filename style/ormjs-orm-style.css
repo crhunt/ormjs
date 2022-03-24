@@ -49,20 +49,21 @@
     --constraint-border: var(--stroke-width);
     --constraint-fill-color: var(--fill-color);
     /* RAI color palette settings */
-    /*--line-color: #dcdee0;
     --entity-fill-color: var(--rai-pink);
-    --value-fill-color: var(--rai-pink);
+    --value-fill-color: var(--white);
+    --value-text-color: var(--rai-pink);
     --role-fill-color: var(--rai-dark-blue);
     --constraint-fill-color: var(--white);
     --entity-text-color: var(--white);
     --predicate-text-color: var(--rai-dark-blue);
-    --entity-border: 3px;
+    --entity-border: 2px;
     --entity-border-color: var(--white);
-    --value-border: 3px;
-    --value-border-color: var(--white);
+    --value-border: 2px;
+    --value-border-color: var(--rai-pink);
     --role-border-color: var(--white);
     --constraint-color: rgb(172, 102, 159);
-    --line-color: rgb(22.1, 22.9, 23.7);*/
+    --constraint-color: rgb(240, 194, 181);
+    --line-color: rgb(22.1, 22.9, 23.7);
     /* RAI color palette v3 (uncomment RAI settings above) */
     /*--lite-line-color: #dcdee0;
     --entity-border: var(--stroke-width);
@@ -184,6 +185,15 @@ svg {
 
 .voverlay {
     r: var(--entity-overlay-r);
+}
+
+.vname {
+    font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
+    font-size: var(--font-size-lg);
+    fill: var(--value-text-color);
+    user-select: none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
 }
 
 /* Roleboxes */
