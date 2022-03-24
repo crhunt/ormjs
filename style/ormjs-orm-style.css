@@ -25,28 +25,28 @@ svg {
 
 /* All objects */
 
-.shadowed {
+.ormjs-shadowed {
     filter: drop-shadow(5px 5px 2px rgb(0,0,0,0.4));
 }
 
-.overlay {
+.ormjs-overlay {
     fill: var(--ojs-overlay-color);
     cursor: pointer;
     opacity: 0.0;
 }
 
-.overlay:hover {
+.ormjs-overlay:hover {
     fill: var(--ojs-overlay-color);
     opacity: 1.0;
 }
 
 /* Entities */
 
-.entity_prototype {
+.ormjs-entity_prototype {
     cursor: grab;
 }
 
-.entity {
+.ormjs-entity {
     fill: var(--ojs-entity-fill-color);
     stroke: var(--ojs-entity-border-color);
     stroke-width: var(--ojs-entity-border);
@@ -56,11 +56,11 @@ svg {
     ry: var(--ojs-entity-rx-ry);
 }
 
-.eoverlay {
+.ormjs-eoverlay {
     r: var(--ojs-entity-overlay-r);
 }
 
-.ename {
+.ormjs-ename {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--ojs-font-size-lg);
     fill: var(--ojs-entity-text-color);
@@ -69,7 +69,7 @@ svg {
     -webkit-user-select:none;
 }
 
-.refmode {
+.ormjs-refmode {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--ojs-font-size-md);
     fill: var(--ojs-entity-text-color);
@@ -80,11 +80,11 @@ svg {
 
 /* Values */
 
-.value_prototype {
+.ormjs-value_prototype {
     cursor: grab;
 }
 
-.value {
+.ormjs-value {
     fill: var(--ojs-value-fill-color);
     stroke: var(--ojs-value-border-color);
     stroke-width: var(--ojs-value-border);
@@ -95,11 +95,11 @@ svg {
     ry: var(--ojs-entity-rx-ry);
 }
 
-.voverlay {
+.ormjs-voverlay {
     r: var(--ojs-entity-overlay-r);
 }
 
-.vname {
+.ormjs-vname {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--ojs-font-size-lg);
     fill: var(--ojs-value-text-color);
