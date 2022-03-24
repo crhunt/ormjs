@@ -1,56 +1,56 @@
 :root {
     /* Color palette */
-    --rai-dark-blue: rgb(0.5,6.5,77.1);
-    --rai-pink: rgb(241.8,126,96.2);
-    --rai-dark-grey: rgb(22.1, 22.9, 23.7);
-    --rai-lite-grey: #dcdee0;
-    --overlay-blue: rgba(129, 218, 240, 0.5);
-    --constraint-purple: rgb(131, 57, 117);
-    --transparent-white: rgba(255, 255, 255,0.0);
-    --grey-black: #444444;
-    --white: rgba(255, 255, 255,1.0);
+    --ojs-rai-dark-blue: rgb(0.5,6.5,77.1);
+    --ojs-rai-pink: rgb(241.8,126,96.2);
+    --ojs-rai-dark-grey: rgb(22.1, 22.9, 23.7);
+    --ojs-rai-lite-grey: #dcdee0;
+    --ojs-overlay-blue: rgba(129, 218, 240, 0.5);
+    --ojs-constraint-purple: rgb(131, 57, 117);
+    --ojs-transparent-white: rgba(255, 255, 255,0.0);
+    --ojs-grey-black: #444444;
+    --ojs-white: rgba(255, 255, 255,1.0);
     /* General sizes */
-    --svg-scale: 600;
-    --svg-scale-max: 1000;
-    --svg-scale-min: 100;
-    --stroke-width: 2px; /* 2 px */
-    --stroke-width-wide: 6px; /* 6 px */
-    --font-size-xl: 1.2em; /* 18 px */
-    --font-size-lg: 1em; /* 16 px */
-    --font-size-md: 0.8em; /* 14 px */
-    --font-size-sm: 0.7em; /* 14 px */
+    --ojs-svg-scale: 600;
+    --ojs-svg-scale-max: 1000;
+    --ojs-svg-scale-min: 100;
+    --ojs-stroke-width: 2px; /* 2 px */
+    --ojs-stroke-width-wide: 6px; /* 6 px */
+    --ojs-font-size-xl: 1.2em; /* 18 px */
+    --ojs-font-size-lg: 1em; /* 16 px */
+    --ojs-font-size-md: 0.8em; /* 14 px */
+    --ojs-font-size-sm: 0.7em; /* 14 px */
 
     /* Default style */
-    --overlay-color: var(--overlay-blue);
-    --constraint-color: var(--constraint-purple);
-    --clear-color: var(--transparent-white);
-    --line-color: var(--grey-black);
-    --fill-color: var(--white);
-    --text-color: var(--grey-black);
+    --ojs-overlay-color: var(--ojs-overlay-blue);
+    --ojs-constraint-color: var(--ojs-constraint-purple);
+    --ojs-clear-color: var(--ojs-transparent-white);
+    --ojs-line-color: var(--ojs-grey-black);
+    --ojs-fill-color: var(--ojs-white);
+    --ojs-text-color: var(--ojs-grey-black);
     /* Entity / Value */
-    --entity-rx-ry: 7px; /* 7 px */
-    --entity-height: 51px; /* 50 px */
-    --entity-overlay-r: 12px; /* 12 px */
-    --entity-text-color: var(--text-color);
-    --entity-fill-color: var(--fill-color);
-    --entity-border: var(--stroke-width);
-    --entity-border-color: var(--line-color);
+    --ojs-entity-rx-ry: 7px; /* 7 px */
+    --ojs-entity-height: 51px; /* 50 px */
+    --ojs-entity-overlay-r: 12px; /* 12 px */
+    --ojs-entity-text-color: var(--ojs-text-color);
+    --ojs-entity-fill-color: var(--ojs-fill-color);
+    --ojs-entity-border: var(--ojs-stroke-width);
+    --ojs-entity-border-color: var(--ojs-line-color);
     /* Value */
-    --value-text-color: var(--text-color);
-    --value-fill-color: var(--fill-color);
-    --value-border: var(--stroke-width);
-    --value-border-color: var(--line-color);
+    --ojs-value-text-color: var(--ojs-text-color);
+    --ojs-value-fill-color: var(--ojs-fill-color);
+    --ojs-value-border: var(--ojs-stroke-width);
+    --ojs-value-border-color: var(--ojs-line-color);
     /* Rolebox */
-    --rolebox-width: 51px; /* 51 px */
-    --rolebox-height: 19px; /* 19 px */
-    --rolebox-overlay-r: 8px; /* 8 px */
-    --rolebox-border: var(--stroke-width);
-    --role-fill-color: var(--fill-color);
-    --role-border-color: var(--line-color);
-    --predicate-text-color: var(--text-color);
+    --ojs-rolebox-width: 51px; /* 51 px */
+    --ojs-rolebox-height: 19px; /* 19 px */
+    --ojs-rolebox-overlay-r: 8px; /* 8 px */
+    --ojs-rolebox-border: var(--ojs-stroke-width);
+    --ojs-role-fill-color: var(--ojs-fill-color);
+    --ojs-role-border-color: var(--ojs-line-color);
+    --ojs-predicate-text-color: var(--ojs-text-color);
     /* Constraint */
-    --constraint-radius: 14px; /* 29 px */
-    --constraint-oradius: 22px; /* 29 px */
-    --constraint-border: var(--stroke-width);
-    --constraint-fill-color: var(--fill-color);
+    --ojs-constraint-radius: 14px; /* 29 px */
+    --ojs-constraint-oradius: 22px; /* 29 px */
+    --ojs-constraint-border: var(--ojs-stroke-width);
+    --ojs-constraint-fill-color: var(--ojs-fill-color);
 }

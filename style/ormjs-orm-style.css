@@ -15,7 +15,7 @@
 
 body {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif; /* Back up font is for saving svgs */
-    font-size: var(--font-size-lg);
+    font-size: var(--ojs-font-size-lg);
 }
 
 svg { 
@@ -30,13 +30,13 @@ svg {
 }
 
 .overlay {
-    fill: var(--overlay-color);
+    fill: var(--ojs-overlay-color);
     cursor: pointer;
     opacity: 0.0;
 }
 
 .overlay:hover {
-    fill: var(--overlay-color);
+    fill: var(--ojs-overlay-color);
     opacity: 1.0;
 }
 
@@ -47,23 +47,23 @@ svg {
 }
 
 .entity {
-    fill: var(--entity-fill-color);
-    stroke: var(--entity-border-color);
-    stroke-width: var(--entity-border);
+    fill: var(--ojs-entity-fill-color);
+    stroke: var(--ojs-entity-border-color);
+    stroke-width: var(--ojs-entity-border);
     /* width determined by entity name */
-    height: var(--entity-height);
-    rx: var(--entity-rx-ry);
-    ry: var(--entity-rx-ry);
+    height: var(--ojs-entity-height);
+    rx: var(--ojs-entity-rx-ry);
+    ry: var(--ojs-entity-rx-ry);
 }
 
 .eoverlay {
-    r: var(--entity-overlay-r);
+    r: var(--ojs-entity-overlay-r);
 }
 
 .ename {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
-    font-size: var(--font-size-lg);
-    fill: var(--entity-text-color);
+    font-size: var(--ojs-font-size-lg);
+    fill: var(--ojs-entity-text-color);
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
@@ -71,8 +71,8 @@ svg {
 
 .refmode {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
-    font-size: var(--font-size-md);
-    fill: var(--entity-text-color);
+    font-size: var(--ojs-font-size-md);
+    fill: var(--ojs-entity-text-color);
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
@@ -85,24 +85,24 @@ svg {
 }
 
 .value {
-    fill: var(--value-fill-color);
-    stroke: var(--value-border-color);
-    stroke-width: var(--value-border);
+    fill: var(--ojs-value-fill-color);
+    stroke: var(--ojs-value-border-color);
+    stroke-width: var(--ojs-value-border);
     stroke-dasharray: 5,3;
     /* width determined by entity name */
-    height: var(--entity-height);
-    rx: var(--entity-rx-ry);
-    ry: var(--entity-rx-ry);
+    height: var(--ojs-entity-height);
+    rx: var(--ojs-entity-rx-ry);
+    ry: var(--ojs-entity-rx-ry);
 }
 
 .voverlay {
-    r: var(--entity-overlay-r);
+    r: var(--ojs-entity-overlay-r);
 }
 
 .vname {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
-    font-size: var(--font-size-lg);
-    fill: var(--value-text-color);
+    font-size: var(--ojs-font-size-lg);
+    fill: var(--ojs-value-text-color);
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
@@ -115,22 +115,22 @@ svg {
 }
 
 .rolebox {
-    fill: var(--role-fill-color);
-    stroke: var(--role-border-color);
-    stroke-width: var(--rolebox-border);
-    width: var(--rolebox-width);
-    height: var(--rolebox-height);
+    fill: var(--ojs-role-fill-color);
+    stroke: var(--ojs-role-border-color);
+    stroke-width: var(--ojs-rolebox-border);
+    width: var(--ojs-rolebox-width);
+    height: var(--ojs-rolebox-height);
 }
 
 .rboverlay {
-    r: var(--rolebox-overlay-r);
+    r: var(--ojs-rolebox-overlay-r);
     stroke-width: 0;
 }
 
 
 .rbadd {
-    stroke: var(--overlay-color);
-    stroke-width: var(--stroke-width-wide);
+    stroke: var(--ojs-overlay-color);
+    stroke-width: var(--ojs-stroke-width-wide);
     opacity: 0.0;
     cursor: pointer;
 }
@@ -141,8 +141,8 @@ svg {
 
 .rbname {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
-    font-size: var(--font-size-md);
-    fill: var(--predicate-text-color);
+    font-size: var(--ojs-font-size-md);
+    fill: var(--ojs-predicate-text-color);
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
@@ -151,8 +151,8 @@ svg {
 /* Rolebox Uniqueness Constraints */
 
 .rb_constraint {
-    stroke: var(--constraint-color);
-    stroke-width: var(--constraint-border);
+    stroke: var(--ojs-constraint-color);
+    stroke-width: var(--ojs-constraint-border);
 }
 
 /* Connectors */
@@ -162,41 +162,41 @@ svg {
 }
 
 .connector {
-    stroke-width: var(--stroke-width);
+    stroke-width: var(--ojs-stroke-width);
     stroke-linecap: "round";
 }
 
 .connector.conn_mouseover {
-    stroke-width: var(--stroke-width-wide);
+    stroke-width: var(--ojs-stroke-width-wide);
     opacity: 0.7;
     stroke-dasharray: none;
 }
 
 .clear.arrow.conn_mouseover {
-    stroke: var(--constraint-color);
+    stroke: var(--ojs-constraint-color);
 }
 
 .connector.clear {
-    stroke-width: var(--stroke-width-wide);
-    stroke: var(--clear-color);
-    fill: var(--constraint-color);
+    stroke-width: var(--ojs-stroke-width-wide);
+    stroke: var(--ojs-clear-color);
+    fill: var(--ojs-constraint-color);
     stroke-dasharray: none;
 }
 
 .connector.line {
-    stroke: var(--line-color);
+    stroke: var(--ojs-line-color);
 }
 
 .connector.constraint {
     stroke-dasharray: 4,5;
-    stroke: var(--constraint-color);
-    fill: var(--constraint-color);
+    stroke: var(--ojs-constraint-color);
+    fill: var(--ojs-constraint-color);
 }
 
 .subtype {
-    stroke: var(--constraint-color);
-    stroke-width: calc(1.5*var(--stroke-width));
-    fill: var(--constraint-color);
+    stroke: var(--ojs-constraint-color);
+    stroke-width: calc(1.5*var(--ojs-stroke-width));
+    fill: var(--ojs-constraint-color);
 }
 
 .subtype.dashed {
@@ -210,37 +210,37 @@ svg {
 }
 
 .constraint {
-    fill: var(--constraint-fill-color);
-    stroke: var(--constraint-color);
-    stroke-width: var(--stroke-width);
+    fill: var(--ojs-constraint-fill-color);
+    stroke: var(--ojs-constraint-color);
+    stroke-width: var(--ojs-stroke-width);
 }
 .constraint.clear {
-    fill: var(--clear-color);
-    stroke: var(--clear-color);
+    fill: var(--ojs-clear-color);
+    stroke: var(--ojs-clear-color);
 }
 
 .constraint_val {
-    stroke: var(--constraint-color);
-    stroke-width: var(--stroke-width);
-    fill: var(--constraint-color);
+    stroke: var(--ojs-constraint-color);
+    stroke-width: var(--ojs-stroke-width);
+    fill: var(--ojs-constraint-color);
 }
 
 .constraint_text {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
-    font-size: var(--font-size-lg);
+    font-size: var(--ojs-font-size-lg);
     letter-spacing: 0.1em;
-    color: var(--constraint-color);
-    fill: var(--constraint-color);
-    stroke: var(--constraint-color);
-    stroke-width: calc(var(--stroke-width)/2);
+    color: var(--ojs-constraint-color);
+    fill: var(--ojs-constraint-color);
+    stroke: var(--ojs-constraint-color);
+    stroke-width: calc(var(--ojs-stroke-width)/2);
     user-select: none;
 }
 
 /* Highlight Rectangle */
 
 .highlight_rect {
-    fill: var(--overlay-color);
-    stroke: var(--line-color);
+    fill: var(--ojs-overlay-color);
+    stroke: var(--ojs-line-color);
     stroke-width: 0px;
 }
 
@@ -251,5 +251,5 @@ svg {
 }
 
 .selected {
-    filter: drop-shadow(0px 0px 5px var(--overlay-color));
+    filter: drop-shadow(0px 0px 5px var(--ojs-overlay-color));
 }

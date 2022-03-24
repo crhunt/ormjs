@@ -1,21 +1,21 @@
 :root {
     /* RAI color palette settings */
-    --entity-fill-color: var(--rai-pink);
-    --entity-text-color: var(--white);
-    --value-fill-color: var(--white);
-    --value-text-color: var(--rai-pink);
-    --role-fill-color: var(--rai-dark-blue);
-    --constraint-fill-color: var(--white);
-    --predicate-text-color: var(--rai-dark-blue);
-    --entity-border: 2px;
-    --entity-border-color: var(--white);
-    --value-border: 2px;
-    --value-border-color: var(--rai-pink);
-    --role-border-color: var(--white);
-    --line-color: var(--rai-dark-grey);
-    --constraint-color: rgb(240, 194, 181);
+    --ojs-entity-fill-color: var(--ojs-rai-pink);
+    --ojs-entity-text-color: var(--ojs-white);
+    --ojs-value-fill-color: var(--ojs-white);
+    --ojs-value-text-color: var(--ojs-rai-pink);
+    --ojs-role-fill-color: var(--ojs-rai-dark-blue);
+    --ojs-constraint-fill-color: var(--ojs-white);
+    --ojs-predicate-text-color: var(--ojs-rai-dark-blue);
+    --ojs-entity-border: 2px;
+    --ojs-entity-border-color: var(--ojs-white);
+    --ojs-value-border: 2px;
+    --ojs-value-border-color: var(--ojs-rai-pink);
+    --ojs-role-border-color: var(--ojs-white);
+    --ojs-line-color: var(--ojs-rai-dark-grey);
+    --ojs-constraint-color: rgb(240, 194, 181);
     /* No text (combine with other RAI settings above) */
-    /*--entity-text-color: var(--transparent-white);
-    --predicate-text-color: var(--transparent-white);*/
+    /*--ojs-entity-text-color: var(--ojs-transparent-white);
+    --ojs-predicate-text-color: var(--ojs-transparent-white);*/
 
 }

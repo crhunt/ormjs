@@ -1,11 +1,11 @@
 :root {
     /* RAI color palette 2 settings */
-    --entity-border-color: var(--rai-dark-blue);
-    --value-border-color: var(--rai-dark-blue);
-    --role-border-color: var(--rai-dark-blue);
-    --constraint-color: var(--rai-pink);
-    --entity-text-color: var(--rai-dark-blue);
-    --value-text-color: var(--rai-dark-blue);
-    --predicate-text-color: var(--rai-dark-blue);
-    --line-color: var(--rai-dark-grey);
+    --ojs-entity-border-color: var(--ojs-rai-dark-blue);
+    --ojs-value-border-color: var(--ojs-rai-dark-blue);
+    --ojs-role-border-color: var(--ojs-rai-dark-blue);
+    --ojs-constraint-color: var(--ojs-rai-pink);
+    --ojs-entity-text-color: var(--ojs-rai-dark-blue);
+    --ojs-value-text-color: var(--ojs-rai-dark-blue);
+    --ojs-predicate-text-color: var(--ojs-rai-dark-blue);
+    --ojs-line-color: var(--ojs-rai-dark-grey);
 }

@@ -2,22 +2,22 @@
 
 :root {
     /* Color */
-    --pop-fill: rgb(255,255,255,0.95);
-    --pop-border: var(--line-color);
+    --ojs-pop-fill: rgb(255,255,255,0.95);
+    --ojs-pop-border: var(--ojs-line-color);
     /* Dimensions */
-    --pop-width: 300px;
-    --pop-height: 300px;
-    --pop-marg: 10px;
-    --pop-text-width: 150px;
-    --pop-text-size: 16px;
+    --ojs-pop-width: 300px;
+    --ojs-pop-height: 300px;
+    --ojs-pop-marg: 10px;
+    --ojs-pop-text-width: 150px;
+    --ojs-pop-text-size: 16px;
     /* Submit check */
-    --pop-ch-width: 28px;
-    --pop-ch-height: 20px;
-    --pop-ch-marg: 4px;
-    --pop-stroke: 4px;
-    --pop-stroke-hover: 6px;
+    --ojs-pop-ch-width: 28px;
+    --ojs-pop-ch-height: 20px;
+    --ojs-pop-ch-marg: 4px;
+    --ojs-pop-stroke: 4px;
+    --ojs-pop-stroke-hover: 6px;
     /* Close X */
-    --pop-close-sz: 15px;
+    --ojs-pop-close-sz: 15px;
 }
 
 .popup_group {
@@ -25,37 +25,37 @@
 }
 
 .popup {
-    fill: var(--pop-fill);
-    stroke: var(--pop-border);
-    stroke-width: var(--stroke-width);
-    rx: var(--entity-rx-ry);
-    ry: var(--entity-rx-ry);
+    fill: var(--ojs-pop-fill);
+    stroke: var(--ojs-pop-border);
+    stroke-width: var(--ojs-stroke-width);
+    rx: var(--ojs-entity-rx-ry);
+    ry: var(--ojs-entity-rx-ry);
 }
 
 .popup_content {
-    margin: var(--pop-marg) var(--pop-marg) var(--pop-marg) var(--pop-marg);
-    width: calc( var(--pop-width) - 2*var(--pop-marg) );
-    height: calc( var(--pop-height) - 2*var(--pop-marg) );
+    margin: var(--ojs-pop-marg) var(--ojs-pop-marg) var(--ojs-pop-marg) var(--ojs-pop-marg);
+    width: calc( var(--ojs-pop-width) - 2*var(--ojs-pop-marg) );
+    height: calc( var(--ojs-pop-height) - 2*var(--ojs-pop-marg) );
     overflow: hidden;
 }
 
 .xclose {
     stroke: rgb(0, 0, 0,0.5);
-    stroke-width: var(--pop-stroke);
+    stroke-width: var(--ojs-pop-stroke);
     opacity: 0.3;
     cursor: pointer;
 }
 
 .xclose:hover {
     opacity: 1.0;
-    stroke-width: var(--pop-stroke-hover);
+    stroke-width: var(--ojs-pop-stroke-hover);
 }
 
 .popup_form {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-    width: calc( var(--pop-width) - 2*var(--pop-marg) );
-    height: calc( var(--pop-height) - 2*var(--pop-marg) );
+    width: calc( var(--ojs-pop-width) - 2*var(--ojs-pop-marg) );
+    height: calc( var(--ojs-pop-height) - 2*var(--ojs-pop-marg) );
     overflow: hidden;
 }
 
@@ -66,25 +66,25 @@
 
 .popup_form input[type="text"] {
     border: none;
-    width: var(--pop-text-width);
+    width: var(--ojs-pop-text-width);
     font-family: 'Montserrat Light';
-    font-size: var(--pop-text-size);
+    font-size: var(--ojs-pop-text-size);
 }
 
 .popup_form input[type="text"]:focus {
     border-color: rbga(129, 218, 240, 1.0);
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.0), 0 0 8px var(--overlay-color);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.0), 0 0 8px var(--overlay-color);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.0), 0 0 8px var(--ojs-overlay-color);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.0), 0 0 8px var(--ojs-overlay-color);
 }
 
 .popup_form input[type="radio"] {
     background-color: #fff;
     margin: 0 0.2em 0 0;
     font: inherit;
-    color: var(--overlay-color);
-    width: var(--font-size-lg);
-    height: var(--font-size-lg);
+    color: var(--ojs-overlay-color);
+    width: var(--ojs-font-size-lg);
+    height: var(--ojs-font-size-lg);
     transform: translateY(-0.1em);
 }
 
@@ -94,11 +94,11 @@
 
 .popup_form label {
     font-family: 'Montserrat';
-    font-size: var(--font-size-lg);
+    font-size: var(--ojs-font-size-lg);
 }
 .popup_form p {
     font-family: 'Montserrat Light';
-    font-size: var(--font-size-lg);
+    font-size: var(--ojs-font-size-lg);
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
@@ -106,9 +106,9 @@
 
 .popup_form h1 {
     font-family: 'Montserrat';
-    font-size: var(--font-size-xl);
+    font-size: var(--ojs-font-size-xl);
     margin-top: 0px;
-    margin-bottom: var(--font-size-lg);
+    margin-bottom: var(--ojs-font-size-lg);
     text-align: center;
     line-height: 1;
     user-select: none;
@@ -157,7 +157,7 @@ td {
 
 .right_col_small {
     text-align: left;
-    font-size: var(--font-size-sm);
+    font-size: var(--ojs-font-size-sm);
 }
 
 .warning {
@@ -171,12 +171,12 @@ td {
 	border-radius: 4px;
 
 	font-family: "Montserrat";
-	font-size: var(--font-size-md);
+	font-size: var(--ojs-font-size-md);
 	border: 1px solid #d4d4d4;
 }
 
 .d3-context-menu-theme ul li:hover {
-	background-color: var(--overlay-color);
+	background-color: var(--ojs-overlay-color);
 	color: #fefefe;
     cursor: pointer;
 }
@@ -205,18 +205,18 @@ td[colspan="2"].centered {
 .constraint_box {
     fill: rgba(255,255,255,0.0);
     stroke: rgba(255,255,255,0.0);
-    stroke-width: calc(2*var(--stroke-width));
+    stroke-width: calc(2*var(--ojs-stroke-width));
 }
 
 .constraint_box.selected {
     fill: rgba(255,255,255,0.0);
-    stroke: var(--overlay-color);
-    stroke-width: calc(2*var(--stroke-width));
+    stroke: var(--ojs-overlay-color);
+    stroke-width: calc(2*var(--ojs-stroke-width));
 }
 
 .constraint_box.hovered {
-    fill: var(--overlay-color);
-    stroke: var(--overlay-color);
+    fill: var(--ojs-overlay-color);
+    stroke: var(--ojs-overlay-color);
 }
 
 .popsvg {
