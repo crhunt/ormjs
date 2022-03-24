@@ -6,6 +6,8 @@ var ormjs;
 
 window.onload = function() {
 
+    ormjs.initialize();
+
     // Create model
     var model = new ormjs.Model();
 
