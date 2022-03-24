@@ -9,28 +9,30 @@
     <script type="text/javascript" src="lib/external/d3.v7.js" charset="UTF-8"></script>
     <!--script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script-->
     <script type="text/javascript" src="lib/external/d3-context-menu.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="docs/lib/external/prism.js" charset="UTF-8"></script>
+    <!-- Web app 3rd party libraries -->
+    <script type="text/javascript" src="docs/app/lib/external/prism.js" charset="UTF-8"></script>
     <!-- Style -->
     <link rel="stylesheet" href="style/external/d3-context-menu.css" type="text/css" />
-    <link rel="stylesheet" href="style/orm-style.css" type="text/css" />
-    <link rel="stylesheet" href="style/popup-style.css" type="text/css" />
-    <link rel="stylesheet" href="style/traversal.css" type="text/css" />
+    <link rel="stylesheet" href="style/ormjs-orm-style.css" type="text/css" />
+    <link rel="stylesheet" href="style/ormjs-popup-style.css" type="text/css" />
+    <link rel="stylesheet" href="style/ormjs-traversal.css" type="text/css" />
     <!-- Web app style -->
-    <link rel="stylesheet" href="docs/style/web-app-style.css" type="text/css" />
-    <link rel="stylesheet" href="docs/style/prism.css" type="text/css" />
+    <link rel="stylesheet" href="docs/app/style/web-app-style.css" type="text/css" />
+    <link rel="stylesheet" href="docs/app/style/prism.css" type="text/css" />
     <!-- Web app scripts -->
-    <script type="text/javascript" src="docs/lib/utilities.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="docs/lib/highlight.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="docs/lib/dragbar.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="docs/lib/load-ormjs.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="docs/app/lib/utilities.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="docs/app/lib/highlight.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="docs/app/lib/dragbar.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="docs/app/lib/load-ormjs.js" charset="UTF-8"></script>
+    
     <!-- Load ORMJS library. This is order-sensitive. -->
+    <script type="text/javascript" src="lib/constructor/initialize-ormjs.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/constructor/model-constructor.js" charset="UTF-8"></script>
     <!-- Load ORMJS diagrams from SVG -->
     <script type="text/javascript" src="lib/parsers/parse-svg.js" charset="UTF-8"></script>
     <!-- Parse diagram to other formats -->
-    <script type="text/javascript" src="lib/parsers/parse-to-xml.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/parsers/parse-to-rel.js" charset="UTF-8"></script>
     <!-- Graph constructors -->
-    <script type="text/javascript" src="lib/constructor/model-constructor.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/constructor/graph-constructor.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/constructor/view-constructor.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/constructor/entity-constructor.js" charset="UTF-8"></script>
@@ -52,7 +54,6 @@
     <script type="text/javascript" src="lib/metamodel/metamodel-readings.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/metamodel/metamodel-fact.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/metamodel/metamodel-constructor.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/parsers/parse-orm.js" charset="UTF-8"></script>
     <!-- End Load ORMJS library. -->
 </head>
 
