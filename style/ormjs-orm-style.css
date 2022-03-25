@@ -253,3 +253,15 @@ svg {
 .ormjs-selected {
     filter: drop-shadow(0px 0px 5px var(--ojs-overlay-color));
 }
+
+/* Export to PNG */
+
+.ormjs-hidden-canvas-container {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.ormjs-hidden-canvas {
+    visibility: hidden;
+}

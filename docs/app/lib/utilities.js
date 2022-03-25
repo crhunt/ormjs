@@ -38,6 +38,29 @@ function set_xml_parser(model) {
     model.update();
 }
 
+function download_png(event) {
+
+    var dlbutton = "downloadPngButton";
+
+    // Set download name
+    d3.select(`#${dlbutton}`).attr("download", () => {
+        return download_name( d3.select(`#${dlbutton}`).attr("download"), ".png" );
+    });
+
+    var modelID = 'id-model-0';
+    var view = ormjs.models[modelID].currentview;
+    //create_png(view.id);
+
+    ormjs.PNG.download(event, view.id, dlbutton);
+}
+
+function download_name(df,suff) {
+    if(!(d3.select("#uploadname").html()  === "")) {
+        return d3.select("#uploadname").html().split(".")[0] + suff;
+    }
+    return df;
+}
+
 /* Settings that determine how to determine if facts are shadowed */
 
     /* Set whether to use Graph Rel format. This determines:

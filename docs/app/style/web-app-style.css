@@ -148,18 +148,6 @@ input[type="range"] {
     font-size: var(--font-size-lg);
 }
 
-/* Canvas for PNG download */
-
-#hidden_canvas {
-    visibility: hidden;
-}
-
-.canvas_container {
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
 /* File Upload */
 
 input[type="file"] {
