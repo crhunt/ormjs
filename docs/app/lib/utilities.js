@@ -38,6 +38,20 @@ function set_xml_parser(model) {
     model.update();
 }
 
+function download_svg(event) {
+    var dlbutton = "downloadSvgButton";
+
+    // Set download name
+    d3.select(`#${dlbutton}`).attr("download", () => {
+        return download_name( d3.select(`#${dlbutton}`).attr("download"), ".svg" );
+    });
+
+    var modelID = 'id-model-0';
+    var view = ormjs.models[modelID].currentview;
+
+    ormjs.SVG.download(view.id, dlbutton);
+}
+
 function download_png(event) {
 
     var dlbutton = "downloadPngButton";
@@ -49,7 +63,6 @@ function download_png(event) {
 
     var modelID = 'id-model-0';
     var view = ormjs.models[modelID].currentview;
-    //create_png(view.id);
 
     ormjs.PNG.download(event, view.id, dlbutton);
 }
