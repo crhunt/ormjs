@@ -38,6 +38,18 @@ function set_xml_parser(model) {
     model.update();
 }
 
+function upload_svg() {
+    var file = this.files[0];
+    var modelID = 'ormjsid-model-0';
+    var view = ormjs.models[modelID].currentview;
+
+    // Set upload name based on filename
+    d3.select("#uploadname").html(file.name);
+
+    // Upload
+    ormjs.SVG.upload(file, view.id);
+}
+
 function download_svg(event) {
     var dlbutton = "downloadSvgButton";
 
@@ -46,7 +58,7 @@ function download_svg(event) {
         return download_name( d3.select(`#${dlbutton}`).attr("download"), ".svg" );
     });
 
-    var modelID = 'id-model-0';
+    var modelID = 'ormjsid-model-0';
     var view = ormjs.models[modelID].currentview;
 
     ormjs.SVG.download(view.id, dlbutton);
@@ -61,7 +73,7 @@ function download_png(event) {
         return download_name( d3.select(`#${dlbutton}`).attr("download"), ".png" );
     });
 
-    var modelID = 'id-model-0';
+    var modelID = 'ormjsid-model-0';
     var view = ormjs.models[modelID].currentview;
 
     ormjs.PNG.download(event, view.id, dlbutton);
