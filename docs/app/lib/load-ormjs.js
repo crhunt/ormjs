@@ -39,7 +39,14 @@ window.onload = function() {
       .on("click", download_svg);
     // Upload diagram
     d3.select("#uploadSvgButton")
-      .on("change", upload_svg, false);
+      .on("change", () => { upload_svg(view); });
+    // SVG scale control
+    var d = view.d3object.datum();
+    d3.select("#svgscale")
+        .property("min", d.scale_min)
+        .property("max", d.scale_max)
+        .property("value", d.scale)
+        .on("change", () => { set_svgscale(view); });
     // Highlight ORM elements not parsed to Rel
     d3.select("#highlightNoParse")
       .property("checked", view.highlight)

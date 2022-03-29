@@ -38,16 +38,18 @@ function set_xml_parser(model) {
     model.update();
 }
 
-function upload_svg() {
-    var file = this.files[0];
-    var modelID = 'ormjsid-model-0';
-    var view = ormjs.models[modelID].currentview;
+function upload_svg(view) {
+    var file = d3.select(`#uploadSvgButton`).node().files[0];
 
     // Set upload name based on filename
     d3.select("#uploadname").html(file.name);
 
     // Upload
-    ormjs.SVG.upload(file, view.id);
+    ormjs.SVG.upload(file, view.id, () => { 
+        console.log(`ormjs: View upload to ${view.id} complete.`) 
+        // Update svgscale
+        display_svgscale(view);
+    });
 }
 
 function download_svg(event) {
@@ -84,6 +86,15 @@ function download_name(df,suff) {
         return d3.select("#uploadname").html().split(".")[0] + suff;
     }
     return df;
+}
+
+function set_svgscale(view) {
+    view.svgscale_from_element("svgscale");
+}
+
+function display_svgscale(view) {
+    var d = view.d3object.datum();
+    d3.select("#svgscale").node().value = d.scale;
 }
 
 /* Settings that determine how to determine if facts are shadowed */
