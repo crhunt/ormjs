@@ -1,90 +1,3 @@
-:root {
-    /* Color palette */
-    --rai-dark-blue: rgb(0.5,6.5,77.1);
-    --rai-pink: rgb(241.8,126,96.2);
-    --overlay-blue: rgba(129, 218, 240, 0.5);
-    --constraint-purple: rgb(131, 57, 117);
-    --transparent-white: rgba(255, 255, 255,0.0);
-    --grey-black: #444444;
-    --white: rgba(255, 255, 255,1.0);
-    /* General color settings */
-    --overlay-color: var(--overlay-blue);
-    --constraint-color: var(--constraint-purple);
-    --clear-color: var(--transparent-white);
-    --line-color: var(--grey-black);
-    --fill-color: var(--white);
-    --text-color: var(--grey-black);
-    /* General sizes */
-    --svg-scale: 600;
-    --svg-scale-max: 1000;
-    --svg-scale-min: 100;
-    --stroke-width: 2px; /* 2 px */
-    --stroke-width-wide: 6px; /* 6 px */
-    --font-size-xl: 1.2em; /* 18 px */
-    --font-size-lg: 1em; /* 16 px */
-    --font-size-md: 0.8em; /* 14 px */
-    --font-size-sm: 0.7em; /* 14 px */
-    /* Entity / Value */
-    --entity-rx-ry: 7px; /* 7 px */
-    --entity-height: 51px; /* 50 px */
-    --entity-overlay-r: 12px; /* 12 px */
-    --entity-text-color: var(--text-color);
-    --entity-fill-color: var(--fill-color);
-    --value-fill-color: var(--fill-color);
-    --entity-border: var(--stroke-width);
-    --value-border: var(--stroke-width);
-    --entity-border-color: var(--line-color);
-    --value-border-color: var(--line-color);
-    /* Rolebox */
-    --rolebox-width: 51px; /* 51 px */
-    --rolebox-height: 19px; /* 19 px */
-    --rolebox-overlay-r: 8px; /* 8 px */
-    --rolebox-border: var(--stroke-width);
-    --role-fill-color: var(--fill-color);
-    --role-border-color: var(--line-color);
-    --predicate-text-color: var(--text-color);
-    /* Constraint */
-    --constraint-radius: 14px; /* 29 px */
-    --constraint-oradius: 22px; /* 29 px */
-    --constraint-border: var(--stroke-width);
-    --constraint-fill-color: var(--fill-color);
-    /* RAI color palette settings */
-    /*--line-color: #dcdee0;
-    --entity-fill-color: var(--rai-pink);
-    --value-fill-color: var(--rai-pink);
-    --role-fill-color: var(--rai-dark-blue);
-    --constraint-fill-color: var(--white);
-    --entity-text-color: var(--white);
-    --predicate-text-color: var(--rai-dark-blue);
-    --entity-border: 3px;
-    --entity-border-color: var(--white);
-    --value-border: 3px;
-    --value-border-color: var(--white);
-    --role-border-color: var(--white);
-    --constraint-color: rgb(172, 102, 159);
-    --line-color: rgb(22.1, 22.9, 23.7);*/
-    /* RAI color palette v3 (uncomment RAI settings above) */
-    /*--lite-line-color: #dcdee0;
-    --entity-border: var(--stroke-width);
-    --entity-border-color: var(--lite-line-color);
-    --value-border: var(--stroke-width);
-    --value-border-color: var(--lite-line-color);
-    --role-border-color: var(--lite-line-color);*/
-    /* No text (combine with other RAI settings above) */
-    /*--entity-text-color: var(--transparent-white);
-    --predicate-text-color: var(--transparent-white);*/
-    /* RAI color palette v2 (comment RAI settings above) */
-    /*--entity-border-color: var(--rai-dark-blue);
-    --value-border-color: var(--rai-dark-blue);
-    --role-border-color: var(--rai-dark-blue);
-    --constraint-color: var(--rai-pink);
-    --entity-text-color: var(--rai-dark-blue);
-    --predicate-text-color: var(--rai-dark-blue);
-    --line-color: #dcdee0;
-    --line-color: rgb(22.1, 22.9, 23.7);*/
-
-}
-
 @font-face {
     font-family: 'Montserrat Light';
     src: url(../style/fonts/Montserrat/Montserrat-Light.ttf)  format('truetype');
@@ -102,7 +15,7 @@
 
 body {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif; /* Back up font is for saving svgs */
-    font-size: var(--font-size-lg);
+    font-size: var(--ojs-font-size-lg);
 }
 
 svg { 
@@ -112,54 +25,54 @@ svg {
 
 /* All objects */
 
-.shadowed {
+.ormjs-shadowed {
     filter: drop-shadow(5px 5px 2px rgb(0,0,0,0.4));
 }
 
-.overlay {
-    fill: var(--overlay-color);
+.ormjs-overlay {
+    fill: var(--ojs-overlay-color);
     cursor: pointer;
     opacity: 0.0;
 }
 
-.overlay:hover {
-    fill: var(--overlay-color);
+.ormjs-overlay:hover {
+    fill: var(--ojs-overlay-color);
     opacity: 1.0;
 }
 
 /* Entities */
 
-.entity_prototype {
+.ormjs-entity_prototype {
     cursor: grab;
 }
 
-.entity {
-    fill: var(--entity-fill-color);
-    stroke: var(--entity-border-color);
-    stroke-width: var(--entity-border);
+.ormjs-entity {
+    fill: var(--ojs-entity-fill-color);
+    stroke: var(--ojs-entity-border-color);
+    stroke-width: var(--ojs-entity-border);
     /* width determined by entity name */
-    height: var(--entity-height);
-    rx: var(--entity-rx-ry);
-    ry: var(--entity-rx-ry);
+    height: var(--ojs-entity-height);
+    rx: var(--ojs-entity-rx-ry);
+    ry: var(--ojs-entity-rx-ry);
 }
 
-.eoverlay {
-    r: var(--entity-overlay-r);
+.ormjs-overlay.eoverlay {
+    r: var(--ojs-entity-overlay-r);
 }
 
-.ename {
+.ormjs-ename {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
-    font-size: var(--font-size-lg);
-    fill: var(--entity-text-color);
+    font-size: var(--ojs-font-size-lg);
+    fill: var(--ojs-entity-text-color);
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
 }
 
-.refmode {
+.ormjs-refmode {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
-    font-size: var(--font-size-md);
-    fill: var(--entity-text-color);
+    font-size: var(--ojs-font-size-md);
+    fill: var(--ojs-entity-text-color);
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
@@ -167,60 +80,69 @@ svg {
 
 /* Values */
 
-.value_prototype {
+.ormjs-value_prototype {
     cursor: grab;
 }
 
-.value {
-    fill: var(--value-fill-color);
-    stroke: var(--value-border-color);
-    stroke-width: var(--value-border);
+.ormjs-value {
+    fill: var(--ojs-value-fill-color);
+    stroke: var(--ojs-value-border-color);
+    stroke-width: var(--ojs-value-border);
     stroke-dasharray: 5,3;
     /* width determined by entity name */
-    height: var(--entity-height);
-    rx: var(--entity-rx-ry);
-    ry: var(--entity-rx-ry);
+    height: var(--ojs-entity-height);
+    rx: var(--ojs-entity-rx-ry);
+    ry: var(--ojs-entity-rx-ry);
 }
 
-.voverlay {
-    r: var(--entity-overlay-r);
+.ormjs-overlay.voverlay {
+    r: var(--ojs-entity-overlay-r);
+}
+
+.ormjs-vname {
+    font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
+    font-size: var(--ojs-font-size-lg);
+    fill: var(--ojs-value-text-color);
+    user-select: none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
 }
 
 /* Roleboxes */
 
-.rolebox_group {
+.ormjs-predicate_prototype {
     cursor: grab;
 }
 
-.rolebox {
-    fill: var(--role-fill-color);
-    stroke: var(--role-border-color);
-    stroke-width: var(--rolebox-border);
-    width: var(--rolebox-width);
-    height: var(--rolebox-height);
+.ormjs-rolebox {
+    fill: var(--ojs-role-fill-color);
+    stroke: var(--ojs-role-border-color);
+    stroke-width: var(--ojs-rolebox-border);
+    width: var(--ojs-rolebox-width);
+    height: var(--ojs-rolebox-height);
 }
 
-.rboverlay {
-    r: var(--rolebox-overlay-r);
+.ormjs-overlay.rboverlay {
+    r: var(--ojs-rolebox-overlay-r);
     stroke-width: 0;
 }
 
 
-.rbadd {
-    stroke: var(--overlay-color);
-    stroke-width: var(--stroke-width-wide);
+.ormjs-rbadd {
+    stroke: var(--ojs-overlay-color);
+    stroke-width: var(--ojs-stroke-width-wide);
     opacity: 0.0;
     cursor: pointer;
 }
 
-.rbadd:hover {
+.ormjs-rbadd:hover {
     opacity: 1.0;
 }
 
-.rbname {
+.ormjs-rbname {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
-    font-size: var(--font-size-md);
-    fill: var(--predicate-text-color);
+    font-size: var(--ojs-font-size-md);
+    fill: var(--ojs-predicate-text-color);
     user-select: none;
     -moz-user-select:none;
     -webkit-user-select:none;
@@ -228,106 +150,118 @@ svg {
 
 /* Rolebox Uniqueness Constraints */
 
-.rb_constraint {
-    stroke: var(--constraint-color);
-    stroke-width: var(--constraint-border);
+.ormjs-rb_constraint {
+    stroke: var(--ojs-constraint-color);
+    stroke-width: var(--ojs-constraint-border);
 }
 
 /* Connectors */
 
-.connector_prototype {
+.ormjs-connector_prototype {
     cursor: pointer;
 }
 
-.connector {
-    stroke-width: var(--stroke-width);
+.ormjs-connector {
+    stroke-width: var(--ojs-stroke-width);
     stroke-linecap: "round";
 }
 
-.connector.conn_mouseover {
-    stroke-width: var(--stroke-width-wide);
+.ormjs-connector.conn_mouseover {
+    stroke-width: var(--ojs-stroke-width-wide);
     opacity: 0.7;
     stroke-dasharray: none;
 }
 
-.clear.arrow.conn_mouseover {
-    stroke: var(--constraint-color);
+.ormjs-connector.clear.arrow.conn_mouseover {
+    stroke: var(--ojs-constraint-color);
 }
 
-.connector.clear {
-    stroke-width: var(--stroke-width-wide);
-    stroke: var(--clear-color);
-    fill: var(--constraint-color);
+.ormjs-connector.clear {
+    stroke-width: var(--ojs-stroke-width-wide);
+    stroke: var(--ojs-clear-color);
+    fill: var(--ojs-constraint-color);
     stroke-dasharray: none;
 }
 
-.connector.line {
-    stroke: var(--line-color);
+.ormjs-connector.line {
+    stroke: var(--ojs-line-color);
 }
 
-.connector.constraint {
+.ormjs-connector.constraint {
     stroke-dasharray: 4,5;
-    stroke: var(--constraint-color);
-    fill: var(--constraint-color);
+    stroke: var(--ojs-constraint-color);
+    fill: var(--ojs-constraint-color);
 }
 
-.subtype {
-    stroke: var(--constraint-color);
-    stroke-width: calc(1.5*var(--stroke-width));
-    fill: var(--constraint-color);
+.ormjs-connector.subtype {
+    stroke: var(--ojs-constraint-color);
+    stroke-width: calc(1.5*var(--ojs-stroke-width));
+    fill: var(--ojs-constraint-color);
 }
 
-.subtype.dashed {
+.ormjs-connector.subtype.dashed {
     stroke-dasharray: 4,5;
 }
 
 /* External constraints */
 
-.constraint_prototype {
+.ormjs-constraint_prototype {
     cursor: grab;
 }
 
-.constraint {
-    fill: var(--constraint-fill-color);
-    stroke: var(--constraint-color);
-    stroke-width: var(--stroke-width);
+.ormjs-constraint {
+    fill: var(--ojs-constraint-fill-color);
+    stroke: var(--ojs-constraint-color);
+    stroke-width: var(--ojs-stroke-width);
 }
-.constraint.clear {
-    fill: var(--clear-color);
-    stroke: var(--clear-color);
-}
-
-.constraint_val {
-    stroke: var(--constraint-color);
-    stroke-width: var(--stroke-width);
-    fill: var(--constraint-color);
+.ormjs-constraint.clear {
+    fill: var(--ojs-clear-color);
+    stroke: var(--ojs-clear-color);
 }
 
-.constraint_text {
+.ormjs-constraint_val {
+    stroke: var(--ojs-constraint-color);
+    stroke-width: var(--ojs-stroke-width);
+    fill: var(--ojs-constraint-color);
+}
+
+.ormjs-constraint_text {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
-    font-size: var(--font-size-lg);
+    font-size: var(--ojs-font-size-lg);
     letter-spacing: 0.1em;
-    color: var(--constraint-color);
-    fill: var(--constraint-color);
-    stroke: var(--constraint-color);
-    stroke-width: calc(var(--stroke-width)/2);
+    color: var(--ojs-constraint-color);
+    fill: var(--ojs-constraint-color);
+    stroke: var(--ojs-constraint-color);
+    stroke-width: calc(var(--ojs-stroke-width)/2);
     user-select: none;
 }
 
 /* Highlight Rectangle */
 
-.highlight_rect {
-    fill: var(--overlay-color);
-    stroke: var(--line-color);
+.ormjs-highlight_rect {
+    fill: var(--ojs-overlay-color);
+    stroke: var(--ojs-line-color);
     stroke-width: 0px;
 }
 
 /* Rel */
 
-.notparsed {
+.ormjs-notparsed {
     filter: drop-shadow(0px 0px 5px rgba(255, 51, 51, 0.7));
 }
 
-.selected {
-    filter: drop-shadow(0px 0px 5px var(--overlay-color));
+.ormjs-selected {
+    filter: drop-shadow(0px 0px 5px var(--ojs-overlay-color));
+}
+
+/* Export to PNG */
+
+.ormjs-hidden-canvas-container {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.ormjs-hidden-canvas {
+    visibility: hidden;
 }

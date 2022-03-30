@@ -1,0 +1,21 @@
+:root {
+    /* RAI color palette settings */
+    --ojs-entity-fill-color: var(--ojs-rai-pink);
+    --ojs-entity-text-color: var(--ojs-white);
+    --ojs-value-fill-color: var(--ojs-white);
+    --ojs-value-text-color: var(--ojs-rai-pink);
+    --ojs-role-fill-color: var(--ojs-rai-dark-blue);
+    --ojs-constraint-fill-color: var(--ojs-white);
+    --ojs-predicate-text-color: var(--ojs-rai-dark-blue);
+    --ojs-entity-border: 2px;
+    --ojs-entity-border-color: var(--ojs-white);
+    --ojs-value-border: 2px;
+    --ojs-value-border-color: var(--ojs-rai-pink);
+    --ojs-role-border-color: var(--ojs-white);
+    --ojs-line-color: var(--ojs-rai-dark-grey);
+    --ojs-constraint-color: rgb(240, 194, 181);
+    /* No text (combine with other RAI settings above) */
+    /*--ojs-entity-text-color: var(--ojs-transparent-white);
+    --ojs-predicate-text-color: var(--ojs-transparent-white);*/
+
+}

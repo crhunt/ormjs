@@ -13,6 +13,7 @@
     <script type="text/javascript" src="docs/app/lib/external/prism.js" charset="UTF-8"></script>
     <!-- Style -->
     <link rel="stylesheet" href="style/external/d3-context-menu.css" type="text/css" />
+    <link rel="stylesheet" href="style/ormjs-variables.css" type="text/css" />
     <link rel="stylesheet" href="style/ormjs-orm-style.css" type="text/css" />
     <link rel="stylesheet" href="style/ormjs-popup-style.css" type="text/css" />
     <link rel="stylesheet" href="style/ormjs-traversal.css" type="text/css" />
@@ -29,7 +30,7 @@
     <script type="text/javascript" src="lib/constructor/initialize-ormjs.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/constructor/model-constructor.js" charset="UTF-8"></script>
     <!-- Load ORMJS diagrams from SVG -->
-    <script type="text/javascript" src="lib/parsers/parse-svg.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/parsers/svg-load.js" charset="UTF-8"></script>
     <!-- Parse diagram to other formats -->
     <script type="text/javascript" src="lib/parsers/parse-to-rel.js" charset="UTF-8"></script>
     <!-- Graph constructors -->
@@ -43,8 +44,10 @@
     <script type="text/javascript" src="lib/constructor/constraint-paths.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/constructor/connector-constructor.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/constructor/connector-paths.js" charset="UTF-8"></script>
+    <!-- Graph tools -->
     <script type="text/javascript" src="lib/tools/highlight-region.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/tools/traversal.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/tools/svg-to-png.js" charset="UTF-8"></script>
     <!-- Object properties -->
     <script type="text/javascript" src="lib/menus/object-option-menus.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/menus/object-property-menu.js" charset="UTF-8"></script>
@@ -75,7 +78,7 @@
     <span class="zoom">Zoom: <input type="range" id="svgscale"></span> 
 </div>
 <div id="canvas"></div>
-<div class="canvas_container"><canvas id="hidden_canvas"></canvas></div>
+<!--div class="canvas_container"><canvas id="hidden_canvas"></canvas></div-->
 
 </div>
 
