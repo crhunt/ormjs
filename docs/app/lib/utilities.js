@@ -52,7 +52,7 @@ function upload_svg(view) {
     });
 }
 
-function download_svg(event) {
+function download_svg(view) {
     var dlbutton = "downloadSvgButton";
 
     // Set download name
@@ -60,13 +60,10 @@ function download_svg(event) {
         return download_name( d3.select(`#${dlbutton}`).attr("download"), ".svg" );
     });
 
-    var modelID = 'ormjsid-model-0';
-    var view = ormjs.models[modelID].currentview;
-
     ormjs.SVG.download(view.id, dlbutton);
 }
 
-function download_png(event) {
+function download_png(event, view) {
 
     var dlbutton = "downloadPngButton";
 
@@ -74,9 +71,6 @@ function download_png(event) {
     d3.select(`#${dlbutton}`).attr("download", () => {
         return download_name( d3.select(`#${dlbutton}`).attr("download"), ".png" );
     });
-
-    var modelID = 'ormjsid-model-0';
-    var view = ormjs.models[modelID].currentview;
 
     ormjs.PNG.download(event, view.id, dlbutton);
 }

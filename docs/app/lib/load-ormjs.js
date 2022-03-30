@@ -33,10 +33,10 @@ window.onload = function() {
     // Button actions
     // Download diagram as image
     d3.select("#downloadPngButton")
-      .on("click", download_png);
+      .on("click", (event) => { download_png(event, view); });
     // Download diagram
     d3.select("#downloadSvgButton")
-      .on("click", download_svg);
+      .on("click", () => { download_svg(view); });
     // Upload diagram
     d3.select("#uploadSvgButton")
       .on("change", () => { upload_svg(view); });
