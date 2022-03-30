@@ -7,9 +7,63 @@ function webapp_utilities() {
     activate_vdragbar("vdragbar","container","left_box");
 }
 
-function set_traversal(view) {
+function button_actions(view) {
 
-    console.log("set_traversal", view, view.id)
+    // Display settings
+    ormjs.display.graphFormat = false;
+    ormjs.display.shortFormat = true;
+    var model = ormjs.models[view.model];
+    model.generate_xml = false;
+    model.generate_rel = true;
+    model.rel_target = "rel";
+    model.xml_target = "rel";
+    view.traversal = false;
+    view.traversal_target = "rel";
+    view.highlight = false;
+
+
+    // Button actions
+    // Download diagram as image
+    d3.select("#downloadPngButton")
+      .on("click", (event) => { download_png(event, view); });
+    // Download diagram
+    d3.select("#downloadSvgButton")
+      .on("click", () => { download_svg(view); });
+    // Upload diagram
+    d3.select("#uploadSvgButton")
+      .on("change", () => { upload_svg(view); });
+    // SVG scale control
+    var d = view.d3object.datum();
+    d3.select("#svgscale")
+        .property("min", d.scale_min)
+        .property("max", d.scale_max)
+        .property("value", d.scale)
+        .on("change", () => { set_svgscale(view); });
+    // Highlight ORM elements not parsed to Rel
+    d3.select("#highlightNoParse")
+      .property("checked", view.highlight)
+      .on("change",() => { set_highlighter(view); });
+    // Traversal Mode
+    d3.select("#traversalMode")
+      .property("checked", view.traversal)
+      .on("change",() => { set_traversal(view); });
+    
+    // Set Rel display format
+    d3.select("#graphFormat")
+      .property("checked", ormjs.display.graphFormat)
+      .on("change",() => { set_graphformat(model); } );
+    d3.select("#shortFormat")
+      .property("checked", ormjs.display.shortFormat)
+      .on("change",() => { set_shortformat(model); } );
+    // Highlight ORM elements not parsed to Rel
+    d3.select("#parse_xml")
+      .property("checked", model.generate_xml)
+      .on("change", () => { set_xml_parser(model); });
+
+    model.update();
+}
+
+function set_traversal(view) {
 
     view.traversal_target = "rel";
     if(d3.select("#traversalMode").property("checked")){
