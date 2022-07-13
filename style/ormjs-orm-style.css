@@ -13,6 +13,11 @@
     src: url(../style/fonts/Montserrat/Montserrat-SemiBold.ttf)  format('truetype');
 }
 
+@font-face {
+    font-family: 'Symbola';
+    src: url(../style/fonts/Symbola/Symbola.ttf)  format('truetype');
+}
+
 body {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif; /* Back up font is for saving svgs */
     font-size: var(--ojs-font-size-lg);
@@ -140,7 +145,7 @@ svg {
 }
 
 .ormjs-rbname {
-    font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
+    font-family: 'Montserrat Light', 'Symbola', 'Trebuchet MS', Tahoma, Sans-Serif;
     font-size: var(--ojs-font-size-md);
     fill: var(--ojs-predicate-text-color);
     user-select: none;
