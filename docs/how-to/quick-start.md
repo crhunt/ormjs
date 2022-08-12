@@ -111,7 +111,7 @@ Each object must be assigned a view by id and a location in the view. The center
 
 ```
 // Draw an entity
-var entity = new ormjs.Entity({x: 0, y: 0, view: view.id})
+var entity = new ormjs.Entity({x: 0, y: 0, view: view.id});
 ```
 
 #### Set the entity name
@@ -132,15 +132,15 @@ entity.update_display_name();
 #### Make independent
 
 ```
-entity.d3object.datum().independent = true
+entity.d3object.datum().independent = true;
 entity.update_display_name();
 ```
 
 ### Draw a value
 
 ```
-// Draw an value
-var value = new ormjs.Value({x: 0, y: 0, view: view.id})
+// Draw a value
+var value = new ormjs.Value({x: 0, y: 0, view: view.id});
 ```
 
 #### Set the value name
@@ -154,25 +154,25 @@ value.update_display_name();
 
 ```
 // Draw a predicate
-var pred = new ormjs.Predicate({x: 0, y: 0, view: view.id})
+var pred = new ormjs.Predicate({x: 0, y: 0, view: view.id});
 ```
 
 #### Flip a predicate
 
 ```
-pred.flip()
+pred.flip();
 ```
 
 #### Rotate a predicate
 
 ```
-pred.rotate()
+pred.rotate();
 ```
 
 #### Add a rolebox to a predicate
 
 ```
-var rbox = pred.add_rolebox()
+var rbox = pred.add_rolebox();
 ```
 
 #### Rename the rolebox
@@ -187,7 +187,7 @@ Note that predicate name is always updated to reflect a combination of the roleb
 #### Set the reverse reading name for the predicate
 
 ```
-pred.d3object.datum().rname = "new name"
+pred.d3object.datum().rname = "new name";
 pred.update_display_name();
 ```
 
@@ -195,7 +195,7 @@ pred.update_display_name();
 
 ```
 rbox.d3object.datum().multiplicity = "none"; // or: "one", "many", "skip"
-rbox.set_internal_uc()
+rbox.set_internal_uc();
 ```
 
 Note that it is possible to set combinations of IUCs on a predicate that are disallowed in ORM.
@@ -203,13 +203,13 @@ Note that it is possible to set combinations of IUCs on a predicate that are dis
 #### Toggle mandatory constraint on rolebox true/false
 
 ```
-rbox.flip_mandatory()
+rbox.flip_mandatory();
 ```
 
 ### Create an external constraint
 
 ```
-var const = new ormjs.Constraint({x: 0, y: 0, view: view.id})
+var const = new ormjs.Constraint({x: 0, y: 0, view: view.id});
 ```
 
 #### Change type of external constraint
@@ -219,9 +219,9 @@ const.d3object.datum().type = "equality";
 const.redraw();
 ```
 
-Supported constraints: "inclusive-or", "exclusion", "exclusive-or", "equality","identifier", "preferred-identifier", "subset", "external-frequency", "internal-frequency"
+Supported constraints: "inclusive-or", "exclusion", "exclusive-or", "equality","identifier", "preferred-identifier", "subset", "external-frequency", and "internal-frequency".
 
-For constraint with content:
+For a constraint with user-defined content:
 
 ```
 const.d3object.datum().type = "external-frequency";
@@ -235,4 +235,11 @@ Any two objects can be connected via their ID's. The connection type will defaul
 
 ```
 var conn = ormjs.Connector.connect_by_id(entity.id, pred.id)
+```
+
+### Set subtype connector as preferred
+
+```
+conn.d3object.datum().preferred = true; // or: false
+conn.draw();
 ```
