@@ -114,11 +114,40 @@ Each object must be assigned a view by id and a location in the view. The center
 var entity = new ormjs.Entity({x: 0, y: 0, view: view.id})
 ```
 
+#### Set the entity name
+
+```
+entity.d3object.datum().name = "New Name";
+entity.update_display_name();
+```
+
+#### Set the entity reference mode
+
+```
+entity.d3object.datum().refmode = "reference mode";
+entity.d3object.datum().reftype = "popular"; // or: "unit", "general"
+entity.update_display_name();
+```
+
+#### Make independent
+
+```
+entity.d3object.datum().independent = true
+entity.update_display_name();
+```
+
 ### Draw a value
 
 ```
 // Draw an value
 var value = new ormjs.Value({x: 0, y: 0, view: view.id})
+```
+
+#### Set the value name
+
+```
+value.d3object.datum().name = "New Name";
+value.update_display_name();
 ```
 
 ### Draw a predicate
@@ -144,6 +173,22 @@ pred.rotate()
 
 ```
 var rbox = pred.add_rolebox()
+```
+
+#### Rename the rolebox
+
+```
+rbox.d3object.datum().name = "new name"
+pred.update_display_name();
+```
+
+Note that predicate name is always updated to reflect a combination of the rolebox names.
+
+#### Set the reverse reading name for the predicate
+
+```
+pred.d3object.datum().rname = "new name"
+pred.update_display_name();
 ```
 
 ### Set internal uniqueness constraint (IUC) on rolebox
