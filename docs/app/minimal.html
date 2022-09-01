@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <!-- ORMJS Style -->
+    <link rel="stylesheet" href="../../style/external/d3-context-menu.css" type="text/css" />
+    <link rel="stylesheet" href="../../style/ormjs.style.min.css" type="text/css" />
+    
+    <!-- ORMJS 3rd party libraries -->
+    <script type="text/javascript" src="../../lib/external/d3.v7.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../../lib/external/d3-context-menu.js" charset="UTF-8"></script>
+
+    <!-- ORMJS library -->
+    <script type="text/javascript" src="../../lib/ormjs.min.js" charset="UTF-8"></script>
+
+</head>
+
+<body>
+
+    <div id="canvas" width="100%" height="100%"></div>
+    
+    <script>
+    var ormjs;
+    
+    window.onload = function() {
+    
+        ormjs.initialize();
+    
+        // Create model
+        var model = new ormjs.Model();
+    
+        // Create SVG
+        var view = new ormjs.View({model: model.id, parent: "canvas"});
+    
+        // Draw an initial entity
+        new ormjs.Entity({x: 0, y: 0, view: view.id});
+    
+    }
+    </script>
+</body>
+
+</html>
