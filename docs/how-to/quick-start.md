@@ -72,11 +72,7 @@ The parent element needs to have a height and width specified as the view svg wi
 <div id="canvas" style="background-color: #ccc; height: 90vh; width: 100%"></div>
 
 <script>
-var ormjs;
-
 window.onload = function() {
-
-    ormjs.initialize();
 
     // Create model
     var model = new ormjs.Model();

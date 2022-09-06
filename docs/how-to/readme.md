@@ -1,14 +1,5 @@
 # How to build a diagram
 
-## Initialize ORMJS
-
-Initialize ORMJS at the start of a session or on page load.
-
-```
-var ormjs;
-ormjs.initialize();
-```
-
 ## Create a model
 
 ```
