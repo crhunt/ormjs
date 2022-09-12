@@ -1,0 +1,60 @@
+.appContainer {
+    background-color: rgb(230, 145, 130);
+    color:rgb(80, 23, 13);
+    position: absolute;
+    left: 2vw;
+    top: 2vw;
+    width: 94vw;
+    height: 90vh;
+    padding: 1em;
+}
+
+.leftContainer {
+    margin: 0;
+    width: 46vw;
+    height:90vh;
+    overflow-y: scroll;
+}
+
+.divContainer {
+    margin-top: 1em;
+}
+.divSubcontainer {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+h1.body, h2.body, h3.body {
+    color:rgb(202, 108, 91);
+}
+
+.ormView {
+    background-color: rgb(219, 219, 219);
+    color:rgb(126, 126, 126);
+    position: absolute;
+    left: 52vw;
+    top: 2vw;
+    height: calc(90vh - 2vw);
+    width: 42vw;
+}
+
+h1.regionOrm {
+    /*position: absolute;
+    left: calc(52vw + 0.25em);
+    top: calc(2vw + 0.25em);*/
+    margin: 0.5em;
+    color:rgb(126, 126, 126);
+}
+
+.ormjsParent {
+    height: inherit;
+    width: inherit;
+}
+
+.regionCode {
+    display:block;
+    width: 30vw;
+    height: 20vh;
+    background-color:rgb(228, 199, 194);
+    padding: 0.25em;
+}
