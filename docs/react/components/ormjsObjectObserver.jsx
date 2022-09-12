@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import styles from '../style/style.module.css';
 import { useMutationObservable } from './elementObserver';
 
@@ -12,26 +12,23 @@ export function ORMJS_CountObjects({targetRef}) {
     
     const onORMJSMutation = useCallback(
         (mutationList) => {
-            if(typeof ormjs != "undefined") { 
-                let grandparent = targetRef.current;
-                if(!grandparent) return
-                let viewID = grandparent.getElementsByTagName('svg')[0].id;
-                //let viewID = mutationList[0].target.children[0].firstChild.id;
-                let objlist = {all:[], entity:[], value:[], 
-                               constraint:[], predicate:[]};
-                objlist.all = ormjs.Graph.any_object(viewID).objects_in_view();
-                ["entity","value","constraint","predicate"].map( (type) => {
-                    objlist[type] = objlist.all.filter( (obj) => ( 
-                        ormjs.Graph.any_object(obj) && 
-                        ormjs.Graph.any_object(obj).kind == type
-                    ) );
-                });
-                setObjCount(objlist.all.length)
-                setEntityCount(objlist.entity.length);
-                setValueCount(objlist.value.length);
-                setConstraintCount(objlist.constraint.length);
-                setPredCount(objlist.predicate.length);
-            }
+            let viewID = ORMJS_view_from_ref({targetRef});
+            if (!viewID) return
+
+            let objlist = {all:[], entity:[], value:[], 
+                           constraint:[], predicate:[]};
+            objlist.all = ormjs.Graph.any_object(viewID).objects_in_view();
+            ["entity","value","constraint","predicate"].map( (type) => {
+                objlist[type] = objlist.all.filter( (obj) => ( 
+                    ormjs.Graph.any_object(obj) && 
+                    ormjs.Graph.any_object(obj).kind == type
+                ) );
+            });
+            setObjCount(objlist.all.length)
+            setEntityCount(objlist.entity.length);
+            setValueCount(objlist.value.length);
+            setConstraintCount(objlist.constraint.length);
+            setPredCount(objlist.predicate.length);
         },
         [setObjCount, setEntityCount, setValueCount, setConstraintCount, setPredCount]
     );
@@ -53,10 +50,8 @@ export function ORMJS_CountObjects({targetRef}) {
 export function ORMJS_CreateEntity({targetRef}) {
 
     function createEntityHandler() {
-        if(typeof ormjs != "undefined") { 
-            let grandparent = targetRef.current;
-            if(!grandparent) return
-            let viewID = grandparent.getElementsByTagName('svg')[0].id;
+        let viewID = ORMJS_view_from_ref({targetRef});
+        if (viewID) {
             new ormjs.Entity({x: 0, y: 0, view: viewID})
         }
     }
@@ -67,4 +62,14 @@ export function ORMJS_CreateEntity({targetRef}) {
             <button onClick={createEntityHandler}>New Entity</button>
         </div>
     )
+}
+
+export function ORMJS_view_from_ref({targetRef}) {
+    if(typeof ormjs != "undefined") { 
+        let grandparent = targetRef.current;
+        if(!grandparent) return null
+        let viewID = grandparent.getElementsByTagName('svg')[0].id;
+        return viewID
+    }
+    return null
 }
