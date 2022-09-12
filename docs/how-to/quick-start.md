@@ -43,7 +43,7 @@ Your header will look something like,
     <script type="text/javascript" src="lib/external/d3.v7.js" charset="UTF-8"></script>
     <script type="text/javascript" src="lib/external/d3-context-menu.js" charset="UTF-8"></script>
 
-    <!-- ORMJS library -- -->
+    <!-- ORMJS library -->
     <script type="text/javascript" src="lib/ormjs.min.js" charset="UTF-8"></script>
 
 </head>
