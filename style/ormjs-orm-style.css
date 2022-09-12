@@ -1,31 +1,38 @@
 @font-face {
     font-family: 'Montserrat Light';
-    src: url(../style/fonts/Montserrat/Montserrat-Light.ttf)  format('truetype');
+    src: url(fonts/Montserrat/Montserrat-Light.ttf)  format('truetype');
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url(../style/fonts/Montserrat/Montserrat-Regular.ttf)  format('truetype');
+    src: url(fonts/Montserrat/Montserrat-Regular.ttf)  format('truetype');
 }
 
 @font-face {
     font-family: 'Montserrat Bold';
-    src: url(../style/fonts/Montserrat/Montserrat-SemiBold.ttf)  format('truetype');
+    src: url(fonts/Montserrat/Montserrat-SemiBold.ttf)  format('truetype');
 }
 
 @font-face {
     font-family: 'Symbola';
-    src: url(../style/fonts/Symbola/Symbola.ttf)  format('truetype');
+    src: url(fonts/Symbola/Symbola.ttf)  format('truetype');
 }
 
-body {
+/* Views */
+
+.ormjs-svg_prototype {
     font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif; /* Back up font is for saving svgs */
     font-size: var(--ojs-font-size-lg);
 }
 
-svg { 
+svg.ormjs-svg_prototype { 
     transform-box: fill-box;
     transform-origin: center;
+}
+
+.d3-context-menu-theme {
+	font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif;
+    font-size: var(--ojs-font-size-md);
 }
 
 /* All objects */
