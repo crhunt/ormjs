@@ -29,8 +29,6 @@ Stylesheets:
 
 ### Header
 
-### Header
-
 Your header will look something like,
 
 ```
