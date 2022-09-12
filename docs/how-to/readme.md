@@ -1,14 +1,5 @@
 # How to build a diagram
 
-## Initialize ORMJS
-
-Initialize ORMJS at the start of a session or on page load.
-
-```
-var ormjs;
-ormjs.initialize();
-```
-
 ## Create a model
 
 ```
@@ -46,11 +37,21 @@ Optional settings:
 | view.traversal | boolean | Enable traversal viewing mode. |
 | view.traversal_target | string | Id of DOM element innerHTML to receive the traversal data. |
 
-Views may also be generated from SVG data exported from ORMJS. To create a view from a DOM element containing SVG data, 
+Views may also be generated from SVG data exported from ORMJS. To create a view from a DOM element containing SVG data (in this example, an element with id "canvas"), 
 
 ```
-var view = ormjs.View.from_parent("canvas");
+var view = ormjs.SVG.activate_view("canvas", _callback);
 ```
+
+Providing a callback function (`_callback`) is optional. 
+
+To load all ORMJS views on a page,
+
+```
+ormjs.SVG.load_page(_callback);
+```
+
+Providing a callback function (`_callback`) is optional.
 
 ## Draw an entity
 

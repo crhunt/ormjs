@@ -73,12 +73,10 @@
 </div>
 
 <script>
-
-    var ormjs;
     
     window.onload = function() {
     
-        ormjs.initialize( () => {
+        ormjs.SVG.load_page( () => {
             var view = ormjs.View.from_parent("canvas");
     
             // Add actions to buttons

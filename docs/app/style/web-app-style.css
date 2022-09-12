@@ -3,6 +3,11 @@
     functionality.
  */
 
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url(fonts/Montserrat/Montserrat-Light.ttf)  format('truetype');
+}
+
 :root {
     /* Div sizes */
     --topbar-h: 40px;
@@ -21,6 +26,8 @@
 
 body {
     overflow: hidden;
+    font-family: 'Montserrat Light', 'Trebuchet MS', Tahoma, Sans-Serif; /* Back up font is for saving svgs */
+    font-size: var(--ojs-font-size-lg);
 }
 
 .left_box {
