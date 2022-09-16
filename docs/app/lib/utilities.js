@@ -1,28 +1,67 @@
 // Initialize all the utilities required by the web-app.
 
 var ormjs;
+var viewparents;
 
 function webapp_utilities() {
     highlight_listener();
     activate_vdragbar("vdragbar","container","left_box");
 }
 
-function button_actions(view) {
+/* Model level actions */
 
+function model_settings(model) {
     // Display settings
     ormjs.display.graphFormat = false;
     ormjs.display.shortFormat = true;
-    var model = ormjs.models[view.model];
     model.generate_xml = false;
     model.generate_rel = true;
     model.rel_target = "rel";
     model.xml_target = "rel";
+}
+
+function view_tabs(model) {
+    // Button actions
+    d3.select("#newView")
+      .on("click", () => { create_view(model) });
+}
+
+function create_view(model) {
+    // Create SVG
+    var view = new ormjs.View({model: model.id, parent: "canvas"});
+    model.currentview ? inherit_view_settings(view)
+                      : view_settings(view);
+    view.set_current();
+
+    button_actions(view);
+
+    // Draw an initial entity
+    new ormjs.Entity({x: 0, y: 0, view: view.id});
+
+    model.update();
+
+    return view
+}
+
+/* Actions on a view */
+
+function view_settings(view) {
     view.traversal = false;
     view.traversal_target = "rel";
     view.highlight = false;
+}
 
+function inherit_view_settings(view) {
+    let cview = ormjs.models[view.model].currentview;
+    view.traversal = cview.traversal;
+    view.traversal_target = cview.traversal_target;
+    view.highlight = cview.hightlight;
+}
 
-    // Button actions
+function button_actions(view) {
+
+    let model = ormjs.models[view.model];
+
     // Download diagram as image
     d3.select("#downloadPngButton")
       .on("click", (event) => { download_png(event, view); });
