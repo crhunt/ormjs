@@ -26,6 +26,21 @@ function view_tabs(model) {
       .on("click", () => { create_view(model) });
 }
 
+function create_tab() {
+
+    let tabID = `canvas-${viewparents.length}`
+
+    d3.select("#viewdisplay")
+      .append("div")
+      .attr("class", "canvas")
+      .attr("id", tabID);
+
+    let content = `<label class="file-upload"><a id="${tabID}" class="topbutton">View</a></label>`
+    d3.select("#viewtabs")
+      .append("span")
+      .html(content);
+}
+
 function create_view(model) {
     // Create SVG
     var view = new ormjs.View({model: model.id, parent: "canvas"});
