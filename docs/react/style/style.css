@@ -1,0 +1,61 @@
+#app {
+    background-color: rgb(230, 145, 130);
+    color:rgb(80, 23, 13);
+    position: absolute;
+    left: 2vw;
+    top: 2vw;
+    width: 96vw;
+    height: 90vh;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.app-container {
+    margin: 1em;
+}
+
+.div-container {
+    margin-top: 1em;
+}
+.div-subcontainer {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+h1, h2, h3 {
+    color:rgb(202, 108, 91);
+}
+
+#region-ormjs {
+    position: absolute;
+    left: 52vw;
+    top: 2vw;
+    height: calc(90vh - 4vw);
+    width: 42vw;
+}
+
+.orm-view {
+    background-color: rgb(219, 219, 219);
+    color:rgb(126, 126, 126);
+}
+
+h1.region-orm {
+    position: absolute;
+    left: calc(52vw + 0.25em);
+    top: calc(2vw + 0.25em);
+    color:rgb(126, 126, 126);
+    margin: 0.5em;
+}
+
+.ormjs-parent {
+    height: inherit;
+    width: inherit;
+}
+
+.region-code {
+    display:block;
+    width: 30vw;
+    height: 20vh;
+    background-color:rgb(228, 199, 194);
+    padding: 0.25em;
+}
