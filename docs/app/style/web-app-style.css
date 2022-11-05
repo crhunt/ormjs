@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Montserrat Light';
-    src: url(fonts/Montserrat/Montserrat-Light.ttf)  format('truetype');
+    src: url(../../../style/fonts/Montserrat/Montserrat-Light.ttf)  format('truetype');
 }
 
 :root {
