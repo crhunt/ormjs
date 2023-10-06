@@ -62,7 +62,18 @@ body {
     height: calc( var(--canvas-h) );
     background: none;
     margin: 0 auto;
-  }
+}
+
+#viewtabs {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: var(--topbar-h);
+    /*width: calc( var(--canvas-w) - var(--margin-h) );*/
+    width: inherit;
+    padding-left: 0px;
+    padding-top: calc( var(--margin-h) );
+}
 
 #topbar {
     position: relative;
@@ -75,7 +86,7 @@ body {
     padding-top: calc( var(--margin-h) );
 }
 
-#canvas {
+.canvas {
     position: relative;
     top: 0px;
     left: 0px;
@@ -184,6 +195,11 @@ input[type="file"] {
 }
 
 .zoom {
+    float: right;
+    margin-right: 15px;
+}
+
+.model-name {
     float: right;
     margin-right: 15px;
 }
